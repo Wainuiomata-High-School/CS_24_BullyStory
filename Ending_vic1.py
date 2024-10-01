@@ -388,6 +388,102 @@ victim_story = {
             2: {'text': "Try to avoid stress altogether", 'next_node': 57}
         }
     },
+    49: {
+        'text': "Zach backs away from therapy, feeling overwhelmed by the intensity of revisiting his trauma. He convinces himself that he can handle it alone, but without the support, his anxiety starts creeping back. What should he do next?",
+        'choices': {
+            1: {'text': "Reach out to a trusted friend for support", 'next_node': 64},
+            2: {'text': "Isolate himself further, thinking it's for the best", 'next_node': 65}
+        }
+    },
+
+    50: {
+        'text': "Zach takes a leave of absence from work to focus on his mental health. During this time, he learns to prioritize self-care and engages in activities that bring him joy. He starts feeling a sense of hope for recovery. What should he focus on now?",
+        'choices': {
+            1: {'text': "Develop a routine that incorporates wellness practices", 'next_node': 66},
+            2: {'text': "Avoid thinking about work and distract himself", 'next_node': 67}
+        }
+    },
+
+    51: {
+        'text': "Zach decides to continue working despite his declining mental health. Eventually, he experiences a breakdown during a meeting, unable to function. After this incident, he realizes he can no longer ignore his needs. What should he do?",
+        'choices': {
+            1: {'text': "Seek professional help immediately", 'next_node': 68},
+            2: {'text': "Try to keep pushing through, hoping it gets better", 'next_node': 69}
+        }
+    },
+
+    52: {
+        'text': "Zach continues therapy, focusing on addressing the deeper issues related to his past trauma. The work is challenging, but he feels a renewed sense of purpose. He begins to develop healthier coping mechanisms. What should he do next?",
+        'choices': {
+            1: {'text': "Incorporate mindfulness practices into his routine", 'next_node': 70},
+            2: {'text': "Engage more with friends and family for support", 'next_node': 71}
+        }
+    },
+
+    53: {
+        'text': "Zach tries to manage his anxiety without professional help, but he struggles to cope effectively. He finds himself feeling lost and alone. After a few months, he realizes that he's not improving. What should he do?",
+        'choices': {
+            1: {'text': "Reach out to a therapist for guidance", 'next_node': 72},
+            2: {'text': "Continue trying to handle it on his own", 'next_node': 73}
+        }
+    },
+
+    54: {
+        'text': "After waking up in the hospital, Zach finally seeks help for his addiction. He enters a rehab program, where he learns about the effects of addiction and develops strategies for recovery. His journey is just beginning. What should he focus on next?",
+        'choices': {
+            1: {'text': "Commit to a sobriety plan and attend support meetings", 'next_node': 74},
+            2: {'text': "Ignore the program's advice and try to go it alone", 'next_node': 75}
+        }
+    },
+
+    55: {
+        'text': "Zach ignores the wake-up call and continues drinking. However, the consequences of his addiction worsen. He faces severe personal and professional setbacks, which lead him to question his choices. What should he do?",
+        'choices': {
+            1: {'text': "Seek help after hitting rock bottom", 'next_node': 76},
+            2: {'text': "Continue down this path, hoping things will change", 'next_node': 77}
+        }
+    },
+
+    56: {
+        'text': "Zach focuses on developing coping strategies for stress, including mindfulness and breathing exercises. He feels more equipped to handle anxiety and begins to see improvements in his overall well-being. What should he focus on next?",
+        'choices': {
+            1: {'text': "Practice these strategies regularly to maintain progress", 'next_node': 78},
+            2: {'text': "Share his coping strategies with others", 'next_node': 79}
+        }
+    },
+
+    57: {
+        'text': "Zach tries to avoid stress altogether, but life inevitably presents challenges. When he encounters stressors, he feels overwhelmed and struggles to cope. What should he do?",
+        'choices': {
+            1: {'text': "Face his stressors head-on and learn from them", 'next_node': 80},
+            2: {'text': "Retreat further into avoidance", 'next_node': 81}
+        }
+    },
+
+    58: {
+        'text': "Zach decides to incorporate mindfulness practices into his routine. He learns to stay present, reducing his anxiety levels significantly. This new habit fosters a greater sense of control in his life. What should he focus on next?",
+        'choices': {
+            1: {'text': "Attend a mindfulness retreat to deepen his practice", 'next_node': 82},
+            2: {'text': "Use mindfulness techniques in social situations", 'next_node': 83}
+        }
+    },
+
+    59: {
+        'text': "Zach engages more with friends and family for support, strengthening his relationships. This social connection helps combat feelings of loneliness and enhances his mental well-being. What should he focus on now?",
+        'choices': {
+            1: {'text': "Organize regular get-togethers with loved ones", 'next_node': 84},
+            2: {'text': "Open up about his mental health journey with them", 'next_node': 85}
+        }
+    },
+
+    60: {
+        'text': "Zach reaches out to a therapist for guidance, realizing he needs professional support. He begins attending regular sessions, where he learns to address his feelings and develop healthier coping mechanisms. What should he focus on next?",
+        'choices': {
+            1: {'text': "Work on building a strong support network", 'next_node': 86},
+            2: {'text': "Focus on personal growth and self-acceptance", 'next_node': 87}
+        }
+    },
+
 
     #### **Node 61 to 80**: Midlife and Beyond – The Long-Term Battle
 
