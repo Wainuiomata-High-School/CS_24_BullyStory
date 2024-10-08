@@ -1,678 +1,1407 @@
 victim_story = {
-# Zach's journey begins, establishing the foundation of his mental health struggles
     1: {
-        'text': "Zach has always been quiet, a little different from his classmates. But things got worse once Bryan and his group started targeting him. Every day at school feels like a battlefield, and Zach is finding it harder to keep going. Today, Bryan tripped him in the hallway, sending Zach's books flying. What should Zach do?",
+        'text': (
+            "Zach is starting high school. He feels nervous, awkward, and out of place. On his first day, he meets Bryan, a "
+            "popular student who quickly notices Zach’s quiet demeanor."
+        ),
         'choices': {
-            1: {'text': "Ignore it and walk away", 'next_node': 2},
-            2: {'text': "Tell a teacher", 'next_node': 3}
+            1: {'text': "Try to avoid Bryan as much as possible", 'next_node': 2},
+            2: {'text': "Pretend to laugh along with Bryan’s jokes", 'next_node': 3}
         }
     },
 
     2: {
-        'text': "Zach picks up his books and walks away, trying to stay invisible. But inside, his anger is bubbling. His heart races, and he feels a tightness in his chest. Lately, he's been having these strange feelings more often, especially after run-ins with Bryan. What should Zach do?",
+        'text': (
+            "Zach tries to avoid Bryan, but Bryan seems to find him in the hallways and at recess. The bullying begins with "
+            "insults and teasing about his awkwardness. Zach doesn’t tell his parents, choosing to keep his problems hidden."
+        ),
         'choices': {
-            1: {'text': "Try to calm himself down", 'next_node': 4},
-            2: {'text': "Ignore the feelings and push through", 'next_node': 5}
+            1: {'text': "Continue avoiding Bryan", 'next_node': 4},
+            2: {'text': "Stand up to Bryan", 'next_node': 5}
         }
     },
 
     3: {
-        'text': "Zach decides to tell a teacher about the incident. The teacher listens but doesn't seem to do much, just giving Bryan a quick talking-to. Zach wonders if it was even worth saying anything. The bullying doesn’t stop. What should Zach do next?",
+        'text': (
+            "Zach pretends to laugh along with Bryan’s jokes, hoping to fit in, but it only makes things worse. Bryan starts "
+            "to bully Zach more openly, calling him names and spreading rumors. Zach feels trapped."
+        ),
         'choices': {
-            1: {'text': "Tell his parents about the bullying", 'next_node': 6},
-            2: {'text': "Keep everything to himself", 'next_node': 7}
+            1: {'text': "Talk to his parents about it", 'next_node': 6},
+            2: {'text': "Keep hiding the bullying from his family", 'next_node': 7}
         }
     },
 
     4: {
-        'text': "Zach tries to calm down by taking deep breaths. But every time he sees Bryan in the hallway, his heart pounds. He's not sure how much longer he can deal with this. The fear is starting to take over. What should he do next?",
+        'text': (
+            "Zach continues to avoid Bryan, but Bryan finds new ways to torment him. Bryan and his friends start cyberbullying "
+            "Zach by creating fake profiles and catfishing him online. Zach’s home life is affected as he withdraws from his "
+            "parents, pretending everything is fine."
+        ),
         'choices': {
-            1: {'text': "Open up to a friend", 'next_node': 8},
-            2: {'text': "Keep bottling up the fear", 'next_node': 9}
+            1: {'text': "Seek help from the school counselor", 'next_node': 8},
+            2: {'text': "Stay silent and try to endure the bullying", 'next_node': 9}
         }
     },
 
     5: {
-        'text': "Zach tries to ignore his rising anxiety and pushes through the day. But by lunchtime, he's too overwhelmed to eat. His hands are shaky, and he feels dizzy. He realizes that he's having a panic attack. What should he do?",
+        'text': (
+            "Zach stands up to Bryan, but Bryan reacts aggressively. Zach feels more isolated and starts developing symptoms "
+            "of anxiety and depression. He begins to dissociate, feeling disconnected from his surroundings."
+        ),
         'choices': {
-            1: {'text': "Go to the nurse", 'next_node': 10},
-            2: {'text': "Find a quiet place and hide", 'next_node': 11}
+            1: {'text': "Try to ignore the bullying", 'next_node': 10},
+            2: {'text': "Seek support from a friend", 'next_node': 11}
         }
     },
 
     6: {
-        'text': "Zach tells his parents about the bullying, but they're not sure how to help. They tell him to stand up for himself, but that feels impossible. Zach feels more alone than ever. What should he do next?",
+        'text': (
+            "Zach tells his parents about the bullying. They try to help by contacting the school, but the situation only "
+            "escalates. Bryan finds out that Zach told on him, and the bullying intensifies. Zach begins to feel like there’s "
+            "no escape."
+        ),
         'choices': {
-            1: {'text': "Start skipping school", 'next_node': 12},
-            2: {'text': "Try to confront Bryan on his own", 'next_node': 13}
+            1: {'text': "Talk to a teacher directly", 'next_node': 12},
+            2: {'text': "Withdraw and isolate himself", 'next_node': 13}
         }
     },
 
     7: {
-        'text': "Zach decides to keep the bullying a secret from his parents. He doesn't want them to worry or think he's weak. But every night, he lies awake, replaying the bullying over and over in his mind. His sleep is getting worse. What should he do?",
+        'text': (
+            "Zach continues to hide the bullying from his parents, putting on a mask at home. He begins struggling with eating "
+            "disorders and suicidal ideation, feeling overwhelmed and unable to cope."
+        ),
         'choices': {
-            1: {'text': "Start using sleeping pills to cope", 'next_node': 14},
-            2: {'text': "Try to tough it out without help", 'next_node': 15}
+            1: {'text': "Start smoking to cope with the anxiety", 'next_node': 14},
+            2: {'text': "Try to keep going despite the mounting pressure", 'next_node': 15}
         }
     },
 
-    #### **Introduction to Mental Health Struggles (Panic Attacks, Isolation, Social Withdrawal)**
-
     8: {
-        'text': "Zach confides in his best friend, but even though they try to comfort him, the friend doesn’t really understand what Zach is going through. Still, it's nice to have someone listen. But the next day, Bryan’s bullying escalates. Zach feels like there's no escape. What next?",
+        'text': (
+            "Zach seeks help from the school counselor. While the counselor tries to provide advice, it feels inadequate. The "
+            "bullying continues, and Zach starts smoking weed to cope with the stress and anxiety."
+        ),
         'choices': {
-            1: {'text': "Cut himself off from his friend", 'next_node': 16},
-            2: {'text': "Keep opening up to others", 'next_node': 17}
+            1: {'text': "Keep seeing the counselor", 'next_node': 16},
+            2: {'text': "Stop seeking help and rely on weed to manage", 'next_node': 17}
         }
     },
 
     9: {
-        'text': "Zach continues bottling up his fear. It’s harder and harder to concentrate in class, and he’s falling behind. Every time Bryan walks past him, Zach's heart pounds, and he feels like he can't breathe. His panic attacks are getting worse. What should he do?",
+        'text': (
+            "Zach chooses to stay silent, hiding his pain. The bullying becomes a constant in his life, and his mental health "
+            "deteriorates further. He begins to dissociate regularly and contemplates suicide more frequently."
+        ),
         'choices': {
-            1: {'text': "Start skipping class", 'next_node': 18},
-            2: {'text': "Push himself to keep attending class", 'next_node': 19}
+            1: {'text': "Start drinking to numb the pain", 'next_node': 18},
+            2: {'text': "Keep enduring without reaching out for help", 'next_node': 19}
         }
     },
 
     10: {
-        'text': "Zach goes to the nurse, who tells him that he’s likely having a panic attack. She suggests he talk to a counselor, but Zach isn’t sure he’s ready to open up to someone new. What should he do?",
+        'text': (
+            "Zach tries to ignore the bullying, but Bryan doesn’t let up. The constant ridicule starts to affect Zach’s "
+            "academic performance, and he feels more isolated than ever."
+        ),
         'choices': {
-            1: {'text': "Talk to the school counselor", 'next_node': 20},
-            2: {'text': "Leave the nurse’s office and handle it on his own", 'next_node': 21}
+            1: {'text': "Talk to a teacher or school counselor", 'next_node': 20},
+            2: {'text': "Continue trying to avoid Bryan", 'next_node': 21}
         }
     },
 
     11: {
-        'text': "Zach finds a quiet corner in the school library, his heart still racing. He feels light-headed, like he’s about to pass out. It takes him almost an hour to calm down. Zach starts avoiding the hallways entirely, taking alternate routes to avoid Bryan. What next?",
+        'text': (
+            "Zach opens up to a friend about the bullying. While his friend offers some support, it doesn’t stop Bryan from "
+            "continuing the abuse. Zach still feels alone and overwhelmed."
+        ),
         'choices': {
-            1: {'text': "Avoid school completely", 'next_node': 22},
-            2: {'text': "Tell his parents about his panic attacks", 'next_node': 23}
+            1: {'text': "Seek help from his parents", 'next_node': 22},
+            2: {'text': "Try to deal with the situation on his own", 'next_node': 23}
         }
     },
 
-    #### **Deepening Struggles: Self-Harm, Suicidal Ideation, and Drug Use**
-
     12: {
-        'text': "Zach starts skipping school entirely. At first, it feels like relief. But as he spends more and more time alone, his thoughts grow darker. He's starting to feel trapped and hopeless, and he can’t see a way out. What next?",
+        'text': (
+            "Zach talks to a teacher about the bullying. The teacher takes some action, but it only makes Bryan more subtle "
+            "with his bullying. Zach still feels trapped and begins to lose hope."
+        ),
         'choices': {
-            1: {'text': "Start cutting himself to feel something", 'next_node': 24},
-            2: {'text': "Try to numb the pain with alcohol", 'next_node': 25}
+            1: {'text': "Seek help outside of school", 'next_node': 24},
+            2: {'text': "Withdraw and isolate himself further", 'next_node': 25}
         }
     },
 
     13: {
-        'text': "Zach tries to confront Bryan, but it only makes things worse. Bryan and his friends laugh, and Zach is humiliated in front of the entire class. He feels like the walls are closing in on him, and he starts thinking about suicide. What should Zach do?",
+        'text': (
+            "Zach withdraws completely from social life. He stops interacting with his friends and family, and his grades "
+            "begin to slip. His parents start to worry, but Zach keeps pretending everything is fine."
+        ),
         'choices': {
-            1: {'text': "Reach out to a suicide hotline", 'next_node': 26},
-            2: {'text': "Start self-harming", 'next_node': 27}
+            1: {'text': "Try to get his grades back on track", 'next_node': 26},
+            2: {'text': "Ignore his schoolwork and continue isolating", 'next_node': 27}
         }
     },
 
     14: {
-        'text': "Zach starts using sleeping pills to cope, taking more than the recommended dose to escape the anxiety and insomnia. The pills help him sleep, but when he wakes up, the same feelings of dread return. What should Zach do?",
+        'text': (
+            "Zach starts smoking cigarettes to cope with his anxiety. It becomes a regular habit, providing him with a momentary "
+            "escape from the stress. However, his mental health continues to worsen."
+        ),
         'choices': {
-            1: {'text': "Increase his dosage", 'next_node': 28},
-            2: {'text': "Tell his parents about his struggles", 'next_node': 29}
+            1: {'text': "Keep smoking to manage his anxiety", 'next_node': 28},
+            2: {'text': "Try to find healthier ways to cope", 'next_node': 29}
         }
     },
 
     15: {
-        'text': "Zach continues toughing it out, refusing to take any pills or tell anyone about his problems. But each day, his mental state deteriorates further. The thoughts of self-harm and suicide are becoming harder to ignore. What should he do?",
+        'text': (
+            "Zach tries to keep going despite the immense pressure he’s feeling. The bullying doesn’t stop, and his mental health "
+            "continues to decline. He struggles to maintain a normal facade in front of his family."
+        ),
         'choices': {
-            1: {'text': "Finally reach out for help", 'next_node': 30},
-            2: {'text': "Act on his suicidal thoughts", 'next_node': 31}
+            1: {'text': "Seek professional help for his anxiety", 'next_node': 30},
+            2: {'text': "Continue hiding his struggles from everyone", 'next_node': 31}
         }
     },
+
     16: {
-        'text': "Zach feels guilty for cutting himself off from his friend. The isolation is suffocating, and he struggles to find reasons to get out of bed. Bryan’s bullying echoes in his mind, and he starts to self-harm more frequently. What should Zach do?",
+        'text': (
+            "Zach continues to see the school counselor, but the progress is slow. He still feels the weight of the bullying and "
+            "the isolation. His reliance on weed grows as he struggles to deal with his emotions."
+        ),
         'choices': {
-            1: {'text': "Seek help from a counselor", 'next_node': 32},
-            2: {'text': "Continue isolating himself", 'next_node': 33}
+            1: {'text': "Try to reduce his weed consumption", 'next_node': 32},
+            2: {'text': "Continue using weed as a coping mechanism", 'next_node': 33}
         }
     },
 
     17: {
-        'text': "Zach decides to keep opening up to others, but each time he shares, he feels like a burden. His anxiety peaks, and he worries that no one can truly understand his pain. The pressure mounts. What should he do next?",
+        'text': (
+            "Zach stops seeking help from the counselor and begins using weed more frequently to cope. His parents notice his "
+            "distant behavior, but Zach denies that anything is wrong. His mental health worsens as he becomes more detached."
+        ),
         'choices': {
-            1: {'text': "Try to talk to a school counselor", 'next_node': 34},
-            2: {'text': "Seek comfort in unhealthy coping mechanisms", 'next_node': 35}
+            1: {'text': "Consider going back to the counselor", 'next_node': 34},
+            2: {'text': "Continue avoiding professional help", 'next_node': 35}
         }
     },
 
     18: {
-        'text': "Zach starts skipping classes frequently. The relief is temporary, but the anxiety about falling behind in school becomes overwhelming. He feels like he’s losing control of his life. What should Zach do next?",
+        'text': (
+            "Zach starts drinking to numb the pain. At first, it helps him forget about the bullying and his anxiety, but soon he "
+            "finds himself drinking more frequently. His grades start slipping further."
+        ),
         'choices': {
-            1: {'text': "Try to catch up on his own", 'next_node': 36},
-            2: {'text': "Skip school altogether and stay home", 'next_node': 37}
+            1: {'text': "Recognize he’s developing a drinking problem", 'next_node': 36},
+            2: {'text': "Keep drinking to cope", 'next_node': 37}
         }
     },
 
     19: {
-        'text': "Zach pushes himself to keep attending class, but he can’t focus. The panic attacks are becoming more frequent. He feels like he’s trapped in a cycle of anxiety and fear. What should he do?",
+        'text': (
+            "Zach continues enduring the bullying without reaching out for help. His dissociation becomes more frequent, and he "
+            "often feels disconnected from reality. He contemplates suicide more regularly."
+        ),
         'choices': {
-            1: {'text': "Talk to a friend about his struggles", 'next_node': 38},
-            2: {'text': "Continue to suffer in silence", 'next_node': 39}
+            1: {'text': "Reach out to someone before it's too late", 'next_node': 38},
+            2: {'text': "Keep silent and try to deal with it on his own", 'next_node': 39}
         }
     },
 
     20: {
-        'text': "Zach decides to talk to the school counselor. At first, he struggles to open up, but gradually, he begins to share his feelings about the bullying and his anxiety. The counselor offers support and coping strategies. What should Zach do next?",
+        'text': (
+            "Zach talks to the school counselor about the bullying. They try to intervene, but Bryan continues bullying Zach in "
+            "more subtle ways. Zach’s mental health continues to spiral."
+        ),
         'choices': {
-            1: {'text': "Commit to regular counseling sessions", 'next_node': 40},
-            2: {'text': "Still keep some feelings to himself", 'next_node': 41}
+            1: {'text': "Focus on self-care to improve his mental health", 'next_node': 40},
+            2: {'text': "Continue struggling without addressing his feelings", 'next_node': 41}
         }
     },
 
-
     21: {
-        'text': "Zach is now in high school. Though Bryan is no longer at the same school, the damage he caused remains. Zach's panic attacks have become less frequent, but he still feels on edge in social situations. He avoids crowded places and spends most of his time alone. What should Zach focus on?",
+        'text': (
+            "Zach keeps avoiding Bryan, but the constant bullying wears him down. He isolates himself from his peers and his family, "
+            "feeling like there’s no escape from the situation."
+        ),
         'choices': {
-            1: {'text': "Try to make new friends despite his anxiety", 'next_node': 22},
-            2: {'text': "Stay withdrawn, focusing only on surviving high school", 'next_node': 23}
+            1: {'text': "Consider leaving school to escape the bullying", 'next_node': 42},
+            2: {'text': "Try to keep enduring despite the pain", 'next_node': 43}
         }
     },
 
     22: {
-        'text': "Zach tries to open up and make new friends, but he struggles. Small talk feels overwhelming, and he often second-guesses himself in conversations. His new friends don't know about his past, but they notice his awkwardness. One day, Zach overhears them laughing about him behind his back. How should Zach respond?",
+        'text': (
+            "Zach opens up to his parents about the bullying. They are supportive and try to help, but the school is slow to take action. "
+            "Bryan’s bullying continues, and Zach’s mental health continues to decline."
+        ),
         'choices': {
-            1: {'text': "Confront them", 'next_node': 24},
-            2: {'text': "Withdraw further into isolation", 'next_node': 25}
+            1: {'text': "Consider switching schools", 'next_node': 44},
+            2: {'text': "Stay and try to deal with the situation", 'next_node': 45}
         }
     },
 
     23: {
-        'text': "Zach decides to keep to himself. High school is just something he needs to get through. He focuses on his studies, but without friends, his mental health continues to deteriorate. He begins feeling increasingly disconnected from the world around him. The isolation feeds into a growing sense of dissociation. What should he do?",
+        'text': (
+            "Zach tries to deal with the situation on his own, but the weight of the bullying is too much to handle. He feels trapped "
+            "and isolated, with no end in sight."
+        ),
         'choices': {
-            1: {'text': "Seek out counseling for the dissociation", 'next_node': 26},
-            2: {'text': "Try to handle it on his own, without professional help", 'next_node': 27}
+            1: {'text': "Seek help from an external support group", 'next_node': 46},
+            2: {'text': "Continue bottling up his emotions", 'next_node': 47}
         }
     },
 
     24: {
-        'text': "Zach confronts his friends, but they brush it off, saying they were 'just joking.' The confrontation leaves Zach feeling even more isolated. His trust in people diminishes further. He wonders if he's overreacting or if he'll ever feel truly connected to anyone again. What should he do next?",
+        'text': (
+            "Zach seeks help from an external counselor. The process is slow, but he starts to make some progress in dealing with his "
+            "anxiety and depression. However, the bullying continues at school."
+        ),
         'choices': {
-            1: {'text': "Stop trying to make friends entirely", 'next_node': 28},
-            2: {'text': "Give friendship another try with different people", 'next_node': 29}
+            1: {'text': "Continue therapy and try to endure the bullying", 'next_node': 48},
+            2: {'text': "Consider changing schools to start fresh", 'next_node': 49}
         }
     },
 
     25: {
-        'text': "Zach retreats into himself, avoiding any social interaction. His grades start slipping, and he spends more time at home, disconnected from reality. The dissociation becomes more frequent, with Zach feeling like he's living outside of his own body, watching his life from a distance. How should Zach cope?",
+        'text': (
+            "Zach isolates himself further, shutting out friends and family. His mental health deteriorates to the point where he "
+            "feels completely numb to the world around him."
+        ),
         'choices': {
-            1: {'text': "Start using drugs or alcohol to numb the dissociation", 'next_node': 30},
-            2: {'text': "Attempt to find comfort in solitary activities, like reading or gaming", 'next_node': 31}
+            1: {'text': "Seek professional help for his dissociation", 'next_node': 50},
+            2: {'text': "Keep retreating into his dissociative episodes", 'next_node': 51}
         }
     },
     26: {
-        'text': "Zach decides to seek counseling for his dissociation. The counselor helps him explore his feelings of disconnect and offers grounding techniques to help him feel more present. While it's a tough journey, Zach starts to feel a small sense of hope. What should he focus on next?",
+        'text': (
+            "Zach tries to get his grades back on track, but the stress from the bullying and his deteriorating mental health "
+            "makes it difficult to focus. He spends more time dissociating and daydreaming to escape reality."
+        ),
         'choices': {
-            1: {'text': "Practice grounding techniques regularly", 'next_node': 32},
-            2: {'text': "Continue avoiding social situations", 'next_node': 33}
+            1: {'text': "Seek academic support from a teacher", 'next_node': 52},
+            2: {'text': "Continue to struggle in silence", 'next_node': 53}
         }
     },
 
     27: {
-        'text': "Zach tries to handle it on his own, but the dissociation worsens. He feels trapped in a fog, unable to connect with anyone or anything. The isolation leads him to darker thoughts. What should he do?",
+        'text': (
+            "Zach ignores his schoolwork, focusing instead on surviving each day. His grades continue to slip, and his parents start "
+            "to notice. They pressure him to improve, but he feels overwhelmed."
+        ),
         'choices': {
-            1: {'text': "Reach out for help before it's too late", 'next_node': 34},
-            2: {'text': "Give in to the feelings of hopelessness", 'next_node': 35}
+            1: {'text': "Open up to his parents about how overwhelmed he feels", 'next_node': 54},
+            2: {'text': "Keep his feelings hidden and ignore their concerns", 'next_node': 55}
         }
     },
 
     28: {
-        'text': "Zach decides to stop trying to make friends entirely. He immerses himself in his studies, but the loneliness deepens. The lack of social interaction exacerbates his mental health issues. What should he do to cope with the pain of isolation?",
+        'text': (
+            "Zach keeps smoking to manage his anxiety, but it doesn't address the root of his problems. He feels like he's losing control, "
+            "and his dependence on cigarettes becomes another source of anxiety."
+        ),
         'choices': {
-            1: {'text': "Join a club to try and meet new people", 'next_node': 36},
-            2: {'text': "Keep isolating himself, believing it’s safer", 'next_node': 37}
+            1: {'text': "Try to quit smoking", 'next_node': 56},
+            2: {'text': "Increase his smoking to cope", 'next_node': 57}
         }
     },
 
     29: {
-        'text': "Zach decides to give friendship another try. He approaches a different group of classmates, but his past experiences make him hesitant. He fears rejection. Should he take a leap of faith?",
+        'text': (
+            "Zach tries to find healthier ways to cope, but it’s difficult to break away from his established habits. He starts exercising "
+            "to release some stress, but the bullying at school continues."
+        ),
         'choices': {
-            1: {'text': "Try to engage in conversations slowly", 'next_node': 38},
-            2: {'text': "Hold back and observe from a distance", 'next_node': 39}
+            1: {'text': "Focus more on exercise and healthy outlets", 'next_node': 58},
+            2: {'text': "Fall back into old habits like smoking", 'next_node': 59}
         }
     },
 
     30: {
-        'text': "Zach starts using drugs and alcohol to numb the feelings of dissociation. While it provides temporary relief, he soon finds himself in a downward spiral. His grades plummet, and he becomes even more isolated. What should he do?",
+        'text': (
+            "Zach seeks professional help for his anxiety. A therapist helps him explore his feelings, but it's a slow and painful process. "
+            "Meanwhile, the bullying continues to affect his daily life."
+        ),
         'choices': {
-            1: {'text': "Seek help for substance abuse", 'next_node': 40},
-            2: {'text': "Continue using substances to cope", 'next_node': 41}
+            1: {'text': "Commit fully to therapy", 'next_node': 60},
+            2: {'text': "Give up on therapy when it feels too overwhelming", 'next_node': 61}
         }
     },
 
     31: {
-        'text': "Zach finds comfort in solitary activities like reading and gaming. Although it helps him escape, he knows it's not a solution. He’s becoming more withdrawn, and the dissociation lingers. What should he focus on?",
+        'text': (
+            "Zach continues hiding his struggles from everyone. His eating disorder becomes more severe, and he avoids meals whenever "
+            "possible. He’s losing weight rapidly, but no one seems to notice."
+        ),
         'choices': {
-            1: {'text': "Balance solitary activities with social interactions", 'next_node': 42},
-            2: {'text': "Continue to isolate himself", 'next_node': 43}
+            1: {'text': "Try to eat and take care of himself", 'next_node': 62},
+            2: {'text': "Continue restricting food to feel in control", 'next_node': 63}
         }
     },
 
     32: {
-        'text': "Zach practices grounding techniques regularly, learning to connect with his surroundings. Slowly, he starts feeling more present. Though it’s not perfect, there’s improvement. What should he do next?",
+        'text': (
+            "Zach tries to reduce his weed consumption, but the stress from school and home makes it difficult. He often finds himself "
+            "turning back to it when things feel overwhelming."
+        ),
         'choices': {
-            1: {'text': "Share his progress with a trusted friend", 'next_node': 44},
-            2: {'text': "Keep it to himself and focus on his own growth", 'next_node': 45}
+            1: {'text': "Commit to quitting weed", 'next_node': 64},
+            2: {'text': "Continue using weed as a way to cope", 'next_node': 65}
         }
     },
 
     33: {
-        'text': "Zach continues avoiding social situations, and the feelings of dissociation return stronger than ever. He realizes he’s missing out on life but feels too scared to change. What should he do?",
+        'text': (
+            "Zach continues using weed as a coping mechanism. It helps him escape the harsh reality of his life, but he begins to lose focus "
+            "on his schoolwork and relationships."
+        ),
         'choices': {
-            1: {'text': "Consider joining a support group", 'next_node': 46},
-            2: {'text': "Stay in his comfort zone and avoid risks", 'next_node': 47}
+            1: {'text': "Consider seeking help for his addiction", 'next_node': 66},
+            2: {'text': "Keep using weed to numb the pain", 'next_node': 67}
         }
     },
 
     34: {
-        'text': "Zach reaches out for help before it's too late. He finds a support group that focuses on mental health and connects with others who understand his struggles. This step gives him hope. What should he do next?",
+        'text': (
+            "Zach considers going back to the counselor, but he feels too ashamed to admit how badly things have gotten. His dissociation "
+            "becomes more frequent, and he starts having trouble remembering entire days."
+        ),
         'choices': {
-            1: {'text': "Continue attending the support group", 'next_node': 48},
-            2: {'text': "Try to face his issues without support", 'next_node': 49}
+            1: {'text': "Return to the counselor", 'next_node': 68},
+            2: {'text': "Keep bottling everything up", 'next_node': 69}
         }
     },
 
     35: {
-        'text': "Zach gives in to the feelings of hopelessness, spiraling deeper into despair. His grades suffer, and he finds it harder to get out of bed each day. What should he do?",
+        'text': (
+            "Zach avoids returning to the counselor and continues spiraling. His mental health deteriorates, and he starts missing more "
+            "school. His parents are concerned, but Zach pushes them away."
+        ),
         'choices': {
-            1: {'text': "Contact a helpline for immediate support", 'next_node': 50},
-            2: {'text': "Ignore the thoughts and try to carry on", 'next_node': 51}
+            1: {'text': "Talk to his parents about how he’s feeling", 'next_node': 70},
+            2: {'text': "Shut his parents out completely", 'next_node': 71}
         }
     },
 
     36: {
-        'text': "Zach decides to join a club to try and meet new people. It’s challenging, but he finds a bit of connection. Some members are welcoming, and Zach feels a glimmer of hope. What should he do next?",
+        'text': (
+            "Zach recognizes that he’s developing a drinking problem. He tries to cut back, but the stress and bullying make it hard. His "
+            "grades continue to drop, and he feels trapped in a vicious cycle."
+        ),
         'choices': {
-            1: {'text': "Open up about his past to the group", 'next_node': 52},
-            2: {'text': "Keep his past a secret and just enjoy the moment", 'next_node': 53}
+            1: {'text': "Seek help for his drinking", 'next_node': 72},
+            2: {'text': "Continue drinking despite the consequences", 'next_node': 73}
         }
     },
 
     37: {
-        'text': "Zach continues isolating himself, believing it’s safer. But the loneliness becomes unbearable, leading to feelings of worthlessness. What should he do?",
+        'text': (
+            "Zach keeps drinking to cope, but it’s starting to affect his relationships with his family and friends. He feels distant from "
+            "everyone and wonders if things will ever get better."
+        ),
         'choices': {
-            1: {'text': "Reach out to an old friend", 'next_node': 54},
-            2: {'text': "Stay isolated and hope things change", 'next_node': 55}
+            1: {'text': "Try to repair his relationships", 'next_node': 74},
+            2: {'text': "Keep isolating himself", 'next_node': 75}
         }
     },
 
     38: {
-        'text': "Zach tries to engage in conversations slowly. He finds that some people are friendly and interested in getting to know him. This is encouraging, but he still feels insecure. What should he do next?",
+        'text': (
+            "Zach finally reaches out to a friend for help. They encourage him to talk to a professional, and Zach starts seeing a therapist. "
+            "The progress is slow, but Zach starts to feel a glimmer of hope."
+        ),
         'choices': {
-            1: {'text': "Invite someone out for coffee", 'next_node': 56},
-            2: {'text': "Keep the conversations light and casual", 'next_node': 57}
+            1: {'text': "Keep going to therapy", 'next_node': 76},
+            2: {'text': "Give up when therapy becomes too hard", 'next_node': 77}
         }
     },
 
     39: {
-        'text': "Zach holds back and observes from a distance, feeling safer. He worries about being judged or rejected. However, he realizes he might miss out on potential friendships. What should he do?",
+        'text': (
+            "Zach keeps silent, continuing to deal with everything on his own. His suicidal ideation becomes more intense, and he feels like "
+            "he’s running out of options."
+        ),
         'choices': {
-            1: {'text': "Take a risk and approach someone", 'next_node': 58},
-            2: {'text': "Stay in the background and watch", 'next_node': 59}
+            1: {'text': "Consider seeking help", 'next_node': 78},
+            2: {'text': "Contemplate acting on his suicidal thoughts", 'next_node': 79}
         }
     },
 
     40: {
-        'text': "Zach seeks help for substance abuse, entering a program that focuses on recovery. It’s tough, but he begins to understand his triggers and learns healthier coping strategies. What should he focus on?",
+        'text': (
+            "Zach decides to focus on self-care. He tries to develop better coping mechanisms, like journaling and meditation, but it’s hard "
+            "to maintain with the constant bullying."
+        ),
         'choices': {
-            1: {'text': "Commit to his recovery journey", 'next_node': 60},
-            2: {'text': "Doubt his ability to change", 'next_node': 61}
+            1: {'text': "Keep working on self-care", 'next_node': 80},
+            2: {'text': "Give up and let the bullying take over his life", 'next_node': 81}
         }
     },
 
     41: {
-        'text': "Zach is now 25. He has a job, but his social anxiety makes it hard to interact with colleagues. He often feels like an outsider, even in group settings. His panic attacks are less frequent, but moments of intense anxiety still catch him off guard. What should Zach focus on?",
+        'text': (
+            "Zach continues to struggle without addressing his feelings. His mental health continues to decline, and he begins to lose all "
+            "motivation for school and socializing."
+        ),
         'choices': {
-            1: {'text': "Focus on building a career despite his anxiety", 'next_node': 42},
-            2: {'text': "Find solace in unhealthy coping mechanisms like drinking", 'next_node': 43}
+            1: {'text': "Reach out to someone for support", 'next_node': 82},
+            2: {'text': "Keep withdrawing from everyone", 'next_node': 83}
         }
     },
 
     42: {
-        'text': "Zach throws himself into his career, but the pressure to be perfect triggers his anxiety. He starts having trouble sleeping again, staying up late worrying about mistakes or how others perceive him. He's becoming burnt out, and his mental health is deteriorating. How should he handle the stress?",
+        'text': (
+            "Zach considers leaving school to escape the bullying. He feels like he can’t handle another day, but he worries about what his "
+            "parents will think."
+        ),
         'choices': {
-            1: {'text': "Talk to a therapist about work-related stress", 'next_node': 44},
-            2: {'text': "Ignore the signs of burnout and push harder", 'next_node': 45}
+            1: {'text': "Leave school to focus on his mental health", 'next_node': 84},
+            2: {'text': "Stay and try to push through", 'next_node': 85}
         }
     },
 
     43: {
-        'text': "Zach starts drinking more regularly. At first, it helps numb the anxiety, but soon he finds himself needing a drink to even get through the day. His work performance is slipping, and he's distancing himself from friends and family. What should he do?",
+        'text': (
+            "Zach tries to keep enduring despite the pain, but his mental health continues to worsen. He feels like he’s suffocating, with no "
+            "escape in sight."
+        ),
         'choices': {
-            1: {'text': "Admit to himself he has a problem and seek help", 'next_node': 46},
-            2: {'text': "Keep drinking, convincing himself he has it under control", 'next_node': 47}
+            1: {'text': "Seek professional help", 'next_node': 86},
+            2: {'text': "Continue ignoring his feelings", 'next_node': 87}
         }
     },
 
     44: {
-        'text': "Zach starts therapy and begins to address the underlying causes of his anxiety. His therapist helps him unpack the bullying he endured and how it's affected his self-worth. It’s a slow process, but Zach is starting to feel more in control. What should he focus on next?",
+        'text': (
+            "Zach considers switching schools, but the thought of starting over scares him. He wonders if things will be any different at "
+            "another school, or if he’ll just encounter the same problems."
+        ),
         'choices': {
-            1: {'text': "Continue working through his trauma and start healing", 'next_node': 48},
-            2: {'text': "Back away from therapy when it gets too overwhelming", 'next_node': 49}
+            1: {'text': "Switch schools for a fresh start", 'next_node': 88},
+            2: {'text': "Stay at his current school", 'next_node': 89}
         }
     },
 
     45: {
-        'text': "Zach keeps pushing himself at work, but his mental health deteriorates. He's constantly exhausted, and the anxiety is beginning to affect his performance. His boss pulls him aside to talk about his declining productivity. Zach feels like he's on the verge of breaking down. What should he do?",
+        'text': (
+            "Zach decides to stay at his current school. He tries to find ways to cope with the bullying, but it continues to take a toll on "
+            "his mental health."
+        ),
         'choices': {
-            1: {'text': "Take a leave of absence to focus on his mental health", 'next_node': 50},
-            2: {'text': "Continue working and risk a breakdown", 'next_node': 51}
+            1: {'text': "Seek help from a trusted adult", 'next_node': 90},
+            2: {'text': "Keep dealing with it on his own", 'next_node': 91}
         }
     },
 
-    #### **The Impact on Relationships and Dissociation**
-
     46: {
-        'text': "Zach admits to himself that his drinking is out of control and checks into rehab. The process is difficult, but he's committed to turning his life around. Slowly, he begins to rebuild his life without alcohol. However, his anxiety and dissociation still linger. What should he focus on now?",
+        'text': (
+            "Zach seeks help from an external support group. He starts to meet other people who have experienced bullying, and it helps him "
+            "feel less alone."
+        ),
         'choices': {
-            1: {'text': "Continue therapy to address the deeper issues", 'next_node': 52},
-            2: {'text': "Try to manage his anxiety without professional help", 'next_node': 53}
+            1: {'text': "Continue attending support group meetings", 'next_node': 92},
+            2: {'text': "Stop going when it feels too uncomfortable", 'next_node': 93}
         }
     },
 
     47: {
-        'text': "Zach keeps drinking, spiraling further into addiction. His relationships with friends and family are falling apart, and he's losing control of his life. One night, after a particularly bad binge, he wakes up in a hospital, not remembering how he got there. What should he do?",
+        'text': (
+            "Zach continues bottling up his emotions. The weight of the bullying, combined with his anxiety and depression, makes it harder "
+            "and harder for him to function."
+        ),
         'choices': {
-            1: {'text': "Finally seek help", 'next_node': 54},
-            2: {'text': "Ignore the wake-up call and continue drinking", 'next_node': 55}
+            1: {'text': "Finally seek help", 'next_node': 94},
+            2: {'text': "Continue suffering in silence", 'next_node': 95}
         }
     },
 
     48: {
-        'text': "Zach continues working through therapy, uncovering layers of trauma from his childhood. He begins to understand how the bullying affected his self-image and his ability to trust others. His dissociation is less frequent, but it still happens during moments of high stress. How should Zach proceed?",
+        'text': (
+            "Zach continues therapy and tries to endure the bullying. It’s a long, painful process, but Zach is slowly starting to feel more "
+            "in control of his emotions."
+        ),
         'choices': {
-            1: {'text': "Focus on developing coping strategies for stress", 'next_node': 56},
-            2: {'text': "Try to avoid stress altogether", 'next_node': 57}
+            1: {'text': "Keep going to therapy", 'next_node': 96},
+            2: {'text': "Give up on therapy", 'next_node': 97}
         }
     },
+
     49: {
-        'text': "Zach backs away from therapy, feeling overwhelmed by the intensity of revisiting his trauma. He convinces himself that he can handle it alone, but without the support, his anxiety starts creeping back. What should he do next?",
+        'text': (
+            "Zach considers changing schools to start fresh. He feels hopeful about the possibility of a new beginning, but he’s also "
+            "afraid of the unknown."
+        ),
         'choices': {
-            1: {'text': "Reach out to a trusted friend for support", 'next_node': 64},
-            2: {'text': "Isolate himself further, thinking it's for the best", 'next_node': 65}
+            1: {'text': "Change schools", 'next_node': 98},
+            2: {'text': "Stay where he is", 'next_node': 99}
         }
     },
 
     50: {
-        'text': "Zach takes a leave of absence from work to focus on his mental health. During this time, he learns to prioritize self-care and engages in activities that bring him joy. He starts feeling a sense of hope for recovery. What should he focus on now?",
+        'text': (
+            "Zach seeks professional help for his dissociation. Therapy helps him recognize the signs of his dissociative episodes and "
+            "teaches him grounding techniques to stay present. However, the bullying continues, and Zach struggles to apply these techniques "
+            "in stressful situations."
+        ),
         'choices': {
-            1: {'text': "Develop a routine that incorporates wellness practices", 'next_node': 66},
-            2: {'text': "Avoid thinking about work and distract himself", 'next_node': 67}
+            1: {'text': "Focus more on applying therapy techniques at school", 'next_node': 100},
+            2: {'text': "Stop attending therapy when it becomes too overwhelming", 'next_node': 101}
         }
     },
 
     51: {
-        'text': "Zach decides to continue working despite his declining mental health. Eventually, he experiences a breakdown during a meeting, unable to function. After this incident, he realizes he can no longer ignore his needs. What should he do?",
+        'text': (
+            "Zach continues retreating into his dissociative episodes, using them as an escape from reality. His grades fall further, and "
+            "his relationships with family and friends suffer. He begins to feel completely disconnected from his surroundings."
+        ),
         'choices': {
-            1: {'text': "Seek professional help immediately", 'next_node': 68},
-            2: {'text': "Try to keep pushing through, hoping it gets better", 'next_node': 69}
+            1: {'text': "Reach out to his parents for help", 'next_node': 102},
+            2: {'text': "Try to deal with everything on his own", 'next_node': 103}
         }
     },
 
     52: {
-        'text': "Zach continues therapy, focusing on addressing the deeper issues related to his past trauma. The work is challenging, but he feels a renewed sense of purpose. He begins to develop healthier coping mechanisms. What should he do next?",
+        'text': (
+            "Zach seeks academic support from a teacher. While his grades improve slightly, the bullying continues, and Zach still struggles "
+            "with anxiety and dissociation. He feels like he’s fighting an uphill battle."
+        ),
         'choices': {
-            1: {'text': "Incorporate mindfulness practices into his routine", 'next_node': 70},
-            2: {'text': "Engage more with friends and family for support", 'next_node': 71}
+            1: {'text': "Focus on his mental health over academics", 'next_node': 104},
+            2: {'text': "Push through and try to balance everything", 'next_node': 105}
         }
     },
 
     53: {
-        'text': "Zach tries to manage his anxiety without professional help, but he struggles to cope effectively. He finds himself feeling lost and alone. After a few months, he realizes that he's not improving. What should he do?",
+        'text': (
+            "Zach continues to struggle in silence. The bullying remains constant, and his mental health deteriorates further. He begins to "
+            "lose hope, questioning whether things will ever get better."
+        ),
         'choices': {
-            1: {'text': "Reach out to a therapist for guidance", 'next_node': 72},
-            2: {'text': "Continue trying to handle it on his own", 'next_node': 73}
+            1: {'text': "Seek help from a school counselor again", 'next_node': 106},
+            2: {'text': "Continue to isolate himself from everyone", 'next_node': 107}
         }
     },
 
     54: {
-        'text': "After waking up in the hospital, Zach finally seeks help for his addiction. He enters a rehab program, where he learns about the effects of addiction and develops strategies for recovery. His journey is just beginning. What should he focus on next?",
+        'text': (
+            "Zach opens up to his parents about how overwhelmed he feels. They try to support him, but they don’t fully understand the depth "
+            "of his mental health struggles. Zach feels a mixture of relief and frustration."
+        ),
         'choices': {
-            1: {'text': "Commit to a sobriety plan and attend support meetings", 'next_node': 74},
-            2: {'text': "Ignore the program's advice and try to go it alone", 'next_node': 75}
+            1: {'text': "Ask his parents to help find a better therapist", 'next_node': 108},
+            2: {'text': "Keep trying to manage everything on his own", 'next_node': 109}
         }
     },
 
     55: {
-        'text': "Zach ignores the wake-up call and continues drinking. However, the consequences of his addiction worsen. He faces severe personal and professional setbacks, which lead him to question his choices. What should he do?",
+        'text': (
+            "Zach keeps his feelings hidden, ignoring his parents' concerns. His mental health worsens, and his dissociation becomes more "
+            "frequent. He begins feeling like he’s losing touch with reality entirely."
+        ),
         'choices': {
-            1: {'text': "Seek help after hitting rock bottom", 'next_node': 76},
-            2: {'text': "Continue down this path, hoping things will change", 'next_node': 77}
+            1: {'text': "Start self-harming to feel something real", 'next_node': 110},
+            2: {'text': "Try to stay grounded through journaling", 'next_node': 111}
         }
     },
 
     56: {
-        'text': "Zach focuses on developing coping strategies for stress, including mindfulness and breathing exercises. He feels more equipped to handle anxiety and begins to see improvements in his overall well-being. What should he focus on next?",
+        'text': (
+            "Zach tries to quit smoking but finds it difficult. The stress from school and bullying makes it almost impossible to quit, and "
+            "he feels guilty about his continued reliance on cigarettes."
+        ),
         'choices': {
-            1: {'text': "Practice these strategies regularly to maintain progress", 'next_node': 78},
-            2: {'text': "Share his coping strategies with others", 'next_node': 79}
+            1: {'text': "Reach out to his school counselor for support", 'next_node': 112},
+            2: {'text': "Keep trying to quit on his own", 'next_node': 113}
         }
     },
 
     57: {
-        'text': "Zach tries to avoid stress altogether, but life inevitably presents challenges. When he encounters stressors, he feels overwhelmed and struggles to cope. What should he do?",
+        'text': (
+            "Zach increases his smoking to cope with the overwhelming anxiety. His dependence on cigarettes grows, but it offers only "
+            "temporary relief. The stress and dissociation continue to worsen."
+        ),
         'choices': {
-            1: {'text': "Face his stressors head-on and learn from them", 'next_node': 80},
-            2: {'text': "Retreat further into avoidance", 'next_node': 81}
+            1: {'text': "Try vaping as a substitute for cigarettes", 'next_node': 114},
+            2: {'text': "Look for a healthier coping mechanism", 'next_node': 115}
         }
     },
 
     58: {
-        'text': "Zach decides to incorporate mindfulness practices into his routine. He learns to stay present, reducing his anxiety levels significantly. This new habit fosters a greater sense of control in his life. What should he focus on next?",
+        'text': (
+            "Zach starts focusing more on exercise and healthy outlets. He begins running in the mornings, which helps him clear his mind, "
+            "but the bullying and stress at school persist."
+        ),
         'choices': {
-            1: {'text': "Attend a mindfulness retreat to deepen his practice", 'next_node': 82},
-            2: {'text': "Use mindfulness techniques in social situations", 'next_node': 83}
+            1: {'text': "Join a sports team to stay active", 'next_node': 116},
+            2: {'text': "Stick to solo activities like running", 'next_node': 117}
         }
     },
 
     59: {
-        'text': "Zach engages more with friends and family for support, strengthening his relationships. This social connection helps combat feelings of loneliness and enhances his mental well-being. What should he focus on now?",
+        'text': (
+            "Zach falls back into old habits like smoking. Despite his attempts to exercise, the constant stress from bullying wears him down, "
+            "and he returns to unhealthy coping mechanisms."
+        ),
         'choices': {
-            1: {'text': "Organize regular get-togethers with loved ones", 'next_node': 84},
-            2: {'text': "Open up about his mental health journey with them", 'next_node': 85}
+            1: {'text': "Try to quit smoking again", 'next_node': 118},
+            2: {'text': "Accept that smoking is his only way to cope", 'next_node': 119}
         }
     },
 
     60: {
-        'text': "Zach reaches out to a therapist for guidance, realizing he needs professional support. He begins attending regular sessions, where he learns to address his feelings and develop healthier coping mechanisms. What should he focus on next?",
+        'text': (
+            "Zach commits fully to therapy. It’s a long and difficult process, but he begins to see progress. His dissociation becomes less "
+            "frequent, and he learns to manage his anxiety better."
+        ),
         'choices': {
-            1: {'text': "Work on building a strong support network", 'next_node': 86},
-            2: {'text': "Focus on personal growth and self-acceptance", 'next_node': 87}
+            1: {'text': "Open up to his therapist about everything", 'next_node': 120},
+            2: {'text': "Keep some of his struggles to himself", 'next_node': 121}
         }
     },
 
-
-    #### **Node 61 to 80**: Midlife and Beyond – The Long-Term Battle
-
-    #Zach’s mental health continues to shape his midlife, impacting his career, relationships, and overall quality of life. He may find healing, or his struggles may deepen, depending on earlier choices.
-
- 
     61: {
-        'text': "Zach is now in his 40s. His career is stable, but he's never truly been able to shake the anxiety. He still struggles with feelings of inadequacy, always fearing that his colleagues will see him as weak or incompetent. His panic attacks have decreased, but stress triggers occasional episodes. How should Zach manage his mental health now?",
+        'text': (
+            "Zach gives up on therapy when it feels too overwhelming. He stops attending sessions and returns to unhealthy coping mechanisms, "
+            "like smoking and isolating himself from others."
+        ),
         'choices': {
-            1: {'text': "Continue therapy to manage his stress", 'next_node': 62},
-            2: {'text': "Rely on his coping mechanisms without professional help", 'next_node': 63}
+            1: {'text': "Try therapy again after a break", 'next_node': 122},
+            2: {'text': "Stick to his own methods of coping", 'next_node': 123}
         }
     },
 
     62: {
-        'text': "Zach decides to continue therapy. With each session, he learns more about managing stress and anxiety. While the past still affects him, he has developed healthy coping mechanisms. He reconnects with family members he had distanced himself from during his darker years, finding a sense of belonging he thought he'd lost. However, his work environment remains stressful, and he's considering a career change. What should Zach do?",
+        'text': (
+            "Zach tries to eat and take care of himself, but his eating disorder worsens. He’s losing weight rapidly, and the bullying at "
+            "school only exacerbates his body image issues."
+        ),
         'choices': {
-            1: {'text': "Pursue a career that aligns more with his passions", 'next_node': 64},
-            2: {'text': "Stay in his current job, feeling it's too late to change", 'next_node': 65}
+            1: {'text': "Talk to a nutritionist or therapist about his eating habits", 'next_node': 124},
+            2: {'text': "Continue restricting his food intake", 'next_node': 125}
         }
     },
 
     63: {
-        'text': "Zach decides not to return to therapy, relying on the coping mechanisms he has developed over the years. He convinces himself that he can handle his anxiety without professional help. However, the stress from work and life builds up over time. He starts experiencing episodes of dissociation again, where he feels disconnected from reality. How should Zach proceed?",
+        'text': (
+            "Zach continues restricting his food to feel in control. The weight loss becomes severe, and his health starts to decline. His "
+            "parents and teachers notice but feel unsure how to help."
+        ),
         'choices': {
-            1: {'text': "Return to therapy before things get worse", 'next_node': 66},
-            2: {'text': "Ignore the signs and continue pushing through on his own", 'next_node': 67}
+            1: {'text': "Admit that he needs help with his eating disorder", 'next_node': 126},
+            2: {'text': "Keep hiding his eating disorder", 'next_node': 127}
         }
     },
 
     64: {
-        'text': "Zach decides to pursue a career that aligns with his passions. Though it's a risk, the change brings him a sense of purpose and fulfillment that his previous job lacked. His mental health improves as he begins to enjoy his work, and his anxiety lessens significantly. However, starting over is challenging, and financial instability creates new stressors. What should Zach prioritize?",
+        'text': (
+            "Zach commits to quitting weed and seeks support from his friends. The process is difficult, but he begins to feel more in control "
+            "of his life."
+        ),
         'choices': {
-            1: {'text': "Focus on long-term goals and trust the process", 'next_node': 68},
-            2: {'text': "Fall back into unhealthy habits to cope with new stress", 'next_node': 69}
+            1: {'text': "Stay away from friends who still smoke", 'next_node': 128},
+            2: {'text': "Try to balance his social life with staying sober", 'next_node': 129}
         }
     },
 
     65: {
-        'text': "Zach decides to stay in his current job, feeling that it's too late to make a major career change. While he maintains financial stability, the stress continues to weigh on him. Over time, he feels more burnt out, and his dissociative episodes become more frequent. He's unsure how much longer he can handle the pressure. What should Zach do?",
+        'text': (
+            "Zach continues using weed as a way to cope with the overwhelming stress. It becomes harder for him to focus on school or engage "
+            "with his family, and his mental health declines further."
+        ),
         'choices': {
-            1: {'text': "Take a break from work to focus on his mental health", 'next_node': 70},
-            2: {'text': "Push through and hope things improve on their own", 'next_node': 71}
+            1: {'text': "Consider rehab to address his addiction", 'next_node': 130},
+            2: {'text': "Keep using weed to numb his feelings", 'next_node': 131}
         }
     },
+    
 
     66: {
-        'text': "Zach returns to therapy, realizing that trying to cope alone was leading him back down a dangerous path. His therapist helps him work through the resurfacing dissociation and anxiety, and Zach starts to feel more grounded again. The healing process is slow, but Zach knows he's moving in the right direction. What should he focus on now?",
+        'text': (
+            "Zach’s addiction to weed worsens. He starts skipping school more frequently and spends most of his days high, detached from "
+            "the world. His parents confront him, but he shuts down, unwilling to acknowledge his problem."
+        ),
         'choices': {
-            1: {'text': "Rebuild relationships with friends and family", 'next_node': 72},
-            2: {'text': "Focus on self-improvement without relying on others", 'next_node': 73}
+            1: {'text': "Finally admit to his parents that he needs help", 'next_node': 132},
+            2: {'text': "Continue lying to his parents and avoid the issue", 'next_node': 133}
         }
     },
 
     67: {
-        'text': "Zach continues to ignore the signs of worsening mental health. He tells himself that he's managing, but deep down, he knows he's not. His dissociation becomes more severe, and he starts to question reality at times, feeling like he's losing control. One night, he experiences a full breakdown, unsure of where to turn. What should he do?",
+        'text': (
+            "Zach distances himself from his friends who still smoke weed. It’s a painful process, but he realizes he needs to be in control "
+            "of his own health. His friends don’t understand, and he starts to feel isolated."
+        ),
         'choices': {
-            1: {'text': "Seek emergency help and commit to recovery", 'next_node': 74},
-            2: {'text': "Try to cope by self-medicating with alcohol or drugs", 'next_node': 75}
+            1: {'text': "Seek out new friendships with people who support his sobriety", 'next_node': 134},
+            2: {'text': "Withdraw into himself, avoiding social situations altogether", 'next_node': 135}
         }
     },
 
     68: {
-        'text': "Zach remains committed to his long-term goals, focusing on building a fulfilling career despite the early challenges. Over time, his financial situation improves, and he feels a deep sense of accomplishment. His anxiety is manageable, and he has developed a strong support network. Zach starts feeling more in control of his life than ever before. What should he focus on now?",
+        'text': (
+            "Zach attempts to balance his social life while staying sober. It’s challenging, as many of his friends don’t understand why he "
+            "wants to quit. He constantly feels tempted, but he is determined to stay on track."
+        ),
         'choices': {
-            1: {'text': "Continue building a meaningful career", 'next_node': 76},
-            2: {'text': "Reconnect with the personal aspects of life he neglected", 'next_node': 77}
+            1: {'text': "Open up to his friends about his mental health struggles", 'next_node': 136},
+            2: {'text': "Keep his struggles hidden and hope things improve on their own", 'next_node': 137}
         }
     },
 
     69: {
-        'text': "The stress of starting over becomes overwhelming, and Zach slips back into old habits. He begins drinking again to cope with the financial and emotional strain. At first, it seems to help, but soon he's using alcohol more frequently. His relationships suffer, and his new career begins to unravel. What should Zach do?",
+        'text': (
+            "Zach admits that he needs professional help for his addiction. His parents find a rehab facility, and Zach begins the recovery "
+            "process. It’s difficult, but he starts to see some hope for the first time in a while."
+        ),
         'choices': {
-            1: {'text': "Seek help before it's too late", 'next_node': 78},
-            2: {'text': "Continue drinking, convincing himself he can handle it", 'next_node': 79}
+            1: {'text': "Stay committed to the rehab process", 'next_node': 138},
+            2: {'text': "Leave rehab early when things get tough", 'next_node': 139}
         }
     },
 
     70: {
-        'text': "Zach decides to take a break from work to focus on his mental health. During this time, he engages in self-care practices, reconnects with his passions, and attends therapy sessions regularly. This period of rest proves beneficial, and he starts to feel more grounded and hopeful about the future. What should he do next?",
+        'text': (
+            "Zach hides his addiction from his parents and continues using weed to cope. His grades plummet, and he’s in danger of failing "
+            "the school year. His relationship with his family deteriorates further."
+        ),
         'choices': {
-            1: {'text': "Create a plan for returning to work with better boundaries", 'next_node': 80},
-            2: {'text': "Consider exploring a completely new career path", 'next_node': 81}
+            1: {'text': "Try to pull himself together and stop using weed on his own", 'next_node': 140},
+            2: {'text': "Continue avoiding his responsibilities", 'next_node': 141}
         }
     },
 
     71: {
-        'text': "Zach pushes through, hoping things will improve on their own. However, the pressure builds, leading to a complete burnout. He realizes he can no longer function at work, and his mental health deteriorates rapidly. What should he do?",
+        'text': (
+            "Zach begins feeling the physical effects of his eating disorder. His energy levels drop, and he starts feeling faint in class. "
+            "Despite his worsening condition, Zach is reluctant to seek help, afraid of losing the one thing he can control."
+        ),
         'choices': {
-            1: {'text': "Reach out to a trusted colleague for support", 'next_node': 82},
-            2: {'text': "Continue to suffer in silence", 'next_node': 83}
+            1: {'text': "Confide in a teacher or counselor about his struggles", 'next_node': 142},
+            2: {'text': "Keep his eating disorder hidden and push through the pain", 'next_node': 143}
         }
     },
 
     72: {
-        'text': "Zach focuses on rebuilding relationships with friends and family. This support system helps him feel more connected and understood. As he shares his struggles, he realizes he’s not alone in his journey. What should he prioritize next?",
+        'text': (
+            "Zach’s health deteriorates further due to his eating disorder. He collapses during gym class and is rushed to the hospital. His "
+            "parents are horrified when they learn the extent of his condition."
+        ),
         'choices': {
-            1: {'text': "Engage in social activities to strengthen these bonds", 'next_node': 84},
-            2: {'text': "Balance social life with personal growth efforts", 'next_node': 85}
+            1: {'text': "Agree to go to inpatient treatment for his eating disorder", 'next_node': 144},
+            2: {'text': "Resist treatment, insisting he can handle it on his own", 'next_node': 145}
         }
     },
 
     73: {
-        'text': "Zach decides to focus on self-improvement without relying on others. He immerses himself in personal development books and activities. While he learns a lot, he starts to feel increasingly isolated. What should he do next?",
+        'text': (
+            "Zach opens up to a counselor about his eating disorder. The counselor encourages him to seek help and provides him with resources "
+            "for recovery. Zach feels a sense of relief but is still uncertain about taking the next steps."
+        ),
         'choices': {
-            1: {'text': "Reach out to others to share what he’s learned", 'next_node': 86},
-            2: {'text': "Continue alone, believing it's best for his growth", 'next_node': 87}
+            1: {'text': "Follow the counselor's advice and start recovery", 'next_node': 146},
+            2: {'text': "Avoid taking action and continue down the same path", 'next_node': 147}
         }
     },
 
     74: {
-        'text': "Zach seeks emergency help and commits to recovery. With professional support, he starts addressing the root causes of his anxiety and dissociation. The path is difficult, but he feels a renewed sense of determination. What should he focus on now?",
+        'text': (
+            "Zach’s dissociation worsens as his mental health declines. He starts to feel disconnected from his body and emotions for longer "
+            "periods of time, struggling to stay grounded. He begins losing touch with reality completely."
+        ),
         'choices': {
-            1: {'text': "Build a structured routine to support his recovery", 'next_node': 88},
-            2: {'text': "Explore creative outlets for self-expression", 'next_node': 89}
+            1: {'text': "Seek help from a mental health professional", 'next_node': 148},
+            2: {'text': "Continue to isolate himself and live in a dissociated state", 'next_node': 149}
         }
     },
 
     75: {
-        'text': "Zach tries to cope by self-medicating with alcohol or drugs. Initially, he finds temporary relief, but soon the consequences catch up with him. He faces mounting problems at work and in his personal life. What should he do?",
+        'text': (
+            "Zach reaches out to a trusted teacher for help with his mental health. The teacher listens and helps Zach find a therapist who "
+            "specializes in dissociation and trauma. It’s the first time Zach feels like someone truly understands him."
+        ),
         'choices': {
-            1: {'text': "Confront the reality of his addiction and seek help", 'next_node': 90},
-            2: {'text': "Continue to deny the impact of his habits", 'next_node': 91}
+            1: {'text': "Commit to therapy and make an effort to heal", 'next_node': 150},
+            2: {'text': "Start therapy but remain skeptical and disengaged", 'next_node': 151}
         }
     },
 
     76: {
-        'text': "Zach continues building a meaningful career and thrives professionally. His confidence grows, and he feels empowered by his achievements. He realizes that he wants to give back to others facing similar challenges. What should he focus on next?",
+        'text': (
+            "Zach’s dissociation reaches a breaking point. He no longer feels in control of his life and starts experiencing episodes where he "
+            "can’t remember entire days. His friends and family become increasingly concerned."
+        ),
         'choices': {
-            1: {'text': "Mentor others who struggle with mental health issues", 'next_node': 92},
-            2: {'text': "Pursue advanced education in his field", 'next_node': 93}
+            1: {'text': "Tell his parents about his dissociation", 'next_node': 152},
+            2: {'text': "Hide his condition and hope it goes away on its own", 'next_node': 153}
         }
     },
 
     77: {
-        'text': "Zach reconnects with the personal aspects of life he neglected. He spends time with family and friends, nurturing relationships that matter. This balance brings him joy and fulfillment. What should he prioritize now?",
+        'text': (
+            "Zach finally tells his parents about how severe his dissociation has become. They are supportive and help him find a specialist, "
+            "but Zach still feels unsure if he’ll ever fully recover."
+        ),
         'choices': {
-            1: {'text': "Plan regular gatherings with loved ones", 'next_node': 94},
-            2: {'text': "Focus on personal hobbies and interests", 'next_node': 95}
+            1: {'text': "Focus on his recovery with professional help", 'next_node': 154},
+            2: {'text': "Resist the help, feeling that it's too late for him", 'next_node': 155}
         }
     },
 
     78: {
-        'text': "Zach seeks help before it's too late. He joins a support group for those struggling with addiction, finding solace in sharing his experiences. With the support of others, he begins to address his unhealthy habits. What should he do next?",
+        'text': (
+            "Zach keeps his dissociation hidden from everyone. He feels like he’s slipping further and further away from reality. Soon, it’s "
+            "hard for him to distinguish between what’s real and what’s not."
+        ),
         'choices': {
-            1: {'text': "Commit to sobriety and recovery practices", 'next_node': 96},
-            2: {'text': "Tempted to relapse but resist the urge", 'next_node': 97}
+            1: {'text': "Reach out for help before it’s too late", 'next_node': 156},
+            2: {'text': "Continue to withdraw from the world", 'next_node': 157}
         }
     },
 
     79: {
-        'text': "Zach continues drinking, convincing himself he can handle it. However, his life spirals further out of control. He faces mounting consequences, including loss of relationships and professional setbacks. What should he do?",
+        'text': (
+            "Zach feels overwhelmed by his emotions but knows he needs to take a step forward."
+        ),
         'choices': {
-            1: {'text': "Hit rock bottom and finally seek help", 'next_node': 98},
-        2: {'text': "Try to manage everything on his own", 'next_node': 99}
-         }
+            1: {'text': "Reach out to a friend for support.", 'next_node': 133},
+            2: {'text': "Write in his journal to process his feelings.", 'next_node': 134}
+        }
+    },
+
+    80: {
+        'text': (
+            "Zach confronts a bully at school, surprising himself with his courage."
+        ),
+        'choices': {
+            1: {'text': "Feel proud and empowered.", 'next_node': 135},
+            2: {'text': "Worry about potential retaliation.", 'next_node': 136}
+        }
     },
 
     81: {
-    'text': "Zach is now in his 60s. The decisions he made throughout his life have brought him to this point. Looking back, Zach reflects on the way bullying shaped him and how he responded to the challenges of mental health. As he enters retirement, what should Zach focus on?",
-    'choices': {
-        1: {'text': "Find peace and fulfillment in the relationships he's built", 'next_node': 82},
-        2: {'text': "Focus on resolving the regrets of his past", 'next_node': 83}
-         }
+        'text': (
+            "Zach has a heart-to-heart with his parents about his struggles."
+        ),
+        'choices': {
+            1: {'text': "Feel closer to them and supported.", 'next_node': 137},
+            2: {'text': "Still feel misunderstood and alone.", 'next_node': 138}
+        }
     },
 
     82: {
-        'text': "Zach has found peace in his later years. He maintained a successful career, worked through his trauma, and built meaningful relationships. While his anxiety still occasionally surfaces, he knows how to manage it. Zach retires surrounded by loved ones, feeling that he's finally achieved the happiness he once thought was out of reach.",
-        'ending': "Good Ending"
+        'text': (
+            "Zach finds solace in a new hobby, allowing him to express himself creatively."
+        ),
+        'choices': {
+            1: {'text': "Dedicate more time to this hobby.", 'next_node': 139},
+            2: {'text': "Feel guilty for not focusing on his issues.", 'next_node': 140}
+        }
     },
 
     83: {
-        'text': "Zach realizes that many of the decisions he made led to regret. His relationships with family and friends are strained, and his mental health remains fragile. He spends his later years trying to make amends and come to terms with the choices he made. Though he finds some peace, the weight of his unresolved trauma lingers.",
-        'ending': "Neutral Ending"
+        'text': (
+            "Zach starts to feel a sense of belonging with a new group of friends."
+        ),
+        'choices': {
+            1: {'text': "Open up to them about his past.", 'next_node': 141},
+            2: {'text': "Keep his struggles to himself for now.", 'next_node': 142}
+        }
     },
 
     84: {
-        'text': "Zach's lifelong struggle with addiction and anxiety has taken its toll. He alienated the people who cared about him, and in his later years, he finds himself alone. His mental health has deteriorated, and he feels isolated from the world. Zach spends his final years battling the same demons he faced as a young man, never truly finding relief.",
-        'ending': "Bad Ending"
+        'text': (
+            "Zach experiences a setback in his recovery journey, feeling lost again."
+        ),
+        'choices': {
+            1: {'text': "Seek support from a counselor.", 'next_node': 143},
+            2: {'text': "Try to handle it on his own.", 'next_node': 144}
+        }
     },
 
     85: {
-        'text': "Zach managed to avoid a complete breakdown, but his life never reached its full potential. He worked hard but always felt like he was on the edge of falling apart. In his later years, Zach has moments of peace but is haunted by the 'what ifs' of his life. He finds some comfort in his achievements, but his mental health always felt like a barrier he couldn't fully overcome.",
-        'ending': "Semi-Bad Ending"
+        'text': (
+            "Zach learns about the importance of self-care and begins to practice it."
+        ),
+        'choices': {
+            1: {'text': "Create a self-care routine.", 'next_node': 145},
+            2: {'text': "Struggle to maintain the routine.", 'next_node': 146}
+        }
     },
 
     86: {
-        'text': "Though Zach struggled throughout his life, he found a path to partial recovery. He dealt with anxiety and occasional bouts of dissociation, but he never let them consume him entirely. His relationships were strained at times, but he managed to hold onto a few close friends and family. In the end, Zach finds some level of peace, though he knows that his past will always be a part of him.",
-        'ending': "Semi-Good Ending"
+        'text': (
+            "Zach gets involved in a support group for bullying victims."
+        ),
+        'choices': {
+            1: {'text': "Feel understood and accepted.", 'next_node': 147},
+            2: {'text': "Feel anxious sharing his story.", 'next_node': 148}
+        }
     },
 
-}
+    87: {
+        'text': (
+            "Zach faces his fears and decides to confront the bullies again."
+        ),
+        'choices': {
+            1: {'text': "Stand tall and assert himself.", 'next_node': 149},
+            2: {'text': "Back down, feeling overwhelmed.", 'next_node': 150}
+        }
+    },
+    88: {
+        'text': (
+            "Zach realizes he has to let go of the past to move forward."
+        ),
+        'choices': {
+            1: {'text': "Start a journey of forgiveness.", 'next_node': 151},
+            2: {'text': "Struggle with resentment.", 'next_node': 152}
+        }
+    },
+    89: {
+        'text': (
+            "Zach attends a workshop on building resilience."
+        ),
+        'choices': {
+            1: {'text': "Learn valuable tools for coping.", 'next_node': 153},
+            2: {'text': "Feel skeptical about their effectiveness.", 'next_node': 154}
+        }
+    },
+    90: {
+        'text': (
+            "Zach finally tells his parents about how severe his dissociation has become. They are supportive and help him find a specialist, "
+            "but Zach still feels unsure if he’ll ever fully recover."
+        ),
+        'choices': {
+            1: {'text': "Focus on his recovery with professional help", 'next_node': 155},
+            2: {'text': "Resist the help, feeling that it's too late for him", 'next_node': 156}
+        }
+    },
+    91: {
+        'text': (
+            "Zach starts to feel a sense of hope as he engages more with therapy."
+        ),
+        'choices': {
+            1: {'text': "Continue attending sessions regularly.", 'next_node': 157},
+            2: {'text': "Consider taking a break from therapy.", 'next_node': 158}
+        }
+    },
+    92: {
+        'text': (
+            "Zach has a breakthrough during a session, realizing the impact of bullying on his life."
+        ),
+        'choices': {
+            1: {'text': "Feel empowered to share his story.", 'next_node': 159},
+            2: {'text': "Still feel hesitant about opening up.", 'next_node': 160}
+        }
+    },
+    93: {
+        'text': (
+            "Zach decides to take a break from social media to focus on himself."
+        ),
+        'choices': {
+            1: {'text': "Feel more at peace without the online pressure.", 'next_node': 161},
+            2: {'text': "Struggle with feelings of loneliness.", 'next_node': 162}
+        }
+    },
+    94: {
+        'text': (
+            "Zach joins a local community service project, finding purpose in helping others."
+        ),
+        'choices': {
+            1: {'text': "Feel a sense of fulfillment.", 'next_node': 163},
+            2: {'text': "Worry about being overwhelmed by the commitment.", 'next_node': 164}
+        }
+    },
+    95: {
+        'text': (
+            "Zach's relationship with his parents improves as they communicate better."
+        ),
+        'choices': {
+            1: {'text': "Express gratitude for their support.", 'next_node': 165},
+            2: {'text': "Still harbor some resentment towards them.", 'next_node': 166}
+        }
+    },
+    96: {
+        'text': (
+            "Zach feels motivated to advocate for bullying prevention at school."
+        ),
+        'choices': {
+            1: {'text': "Start a campaign to raise awareness.", 'next_node': 167},
+            2: {'text': "Feel unsure if he can make a difference.", 'next_node': 168}
+        }
+    },
+    97: {
+        'text': (
+            "Zach continues to build resilience and learns to cope with setbacks."
+        ),
+        'choices': {
+            1: {'text': "Embrace his journey of healing.", 'next_node': 169},
+            2: {'text': "Still feel overwhelmed at times.", 'next_node': 170}
+        }
+    },
+    98: {
+        'text': (
+            "Zach's confidence grows as he finds ways to express himself."
+        ),
+        'choices': {
+            1: {'text': "Join a club or team to make new friends.", 'next_node': 171},
+            2: {'text': "Continue to work on his individual interests.", 'next_node': 172}
+        }
+    },
+    99: {
+        'text': (
+            "Zach reflects on his journey and acknowledges the progress he has made."
+        ),
+        'choices': {
+            1: {'text': "Feel hopeful about the future.", 'next_node': 173},
+            2: {'text': "Worry about potential relapses.", 'next_node': 174}
+        }
+    },
+    100: {
+        'text': (
+            "Zach realizes the importance of self-advocacy and begins to stand up for his needs and feelings."
+        ),
+        'choices': {
+            1: {'text': "Continue to advocate for himself and others", 'next_node': 175},
+            2: {'text': "Wrestle with self-doubt about his ability to advocate", 'next_node': 176}
+        }
+    },
+
+        101: {
+        'text': (
+            "Zach attends his first group therapy session and is nervous but finds comfort in hearing others share their stories."
+        ),
+        'choices': {
+            1: {'text': "Open up about his own experiences.", 'next_node': 177},
+            2: {'text': "Stay quiet, unsure if he’s ready to share.", 'next_node': 178}
+        }
+    },
+    102: {
+        'text': (
+            "Zach makes a close friend from the group therapy who understands him deeply."
+        ),
+        'choices': {
+            1: {'text': "Invest time in building this friendship.", 'next_node': 179},
+            2: {'text': "Keep a distance, fearing vulnerability.", 'next_node': 180}
+        }
+    },
+    103: {
+        'text': (
+            "Zach has a difficult day, but a small act of kindness from a stranger lifts his spirits."
+        ),
+        'choices': {
+            1: {'text': "Pay it forward by helping someone else.", 'next_node': 181},
+            2: {'text': "Keep the moment to himself, cherishing it privately.", 'next_node': 182}
+        }
+    },
+    104: {
+        'text': (
+            "Zach is invited to speak at a school event about bullying awareness."
+        ),
+        'choices': {
+            1: {'text': "Accept the invitation and prepare his speech.", 'next_node': 183},
+            2: {'text': "Decline, feeling too nervous to speak in front of others.", 'next_node': 184}
+        }
+    },
+    105: {
+        'text': (
+            "Zach decides to use his experience to mentor younger students."
+        ),
+        'choices': {
+            1: {'text': "Find fulfillment in guiding others.", 'next_node': 185},
+            2: {'text': "Feel unsure if he’s really helping.", 'next_node': 186}
+        }
+    },
+    106: {
+        'text': (
+            "Zach’s confidence grows as he continues working on his personal development."
+        ),
+        'choices': {
+            1: {'text': "Feel proud of how far he’s come.", 'next_node': 187},
+            2: {'text': "Wonder if his progress is enough.", 'next_node': 188}
+        }
+    },
+    107: {
+        'text': (
+            "Zach begins writing a blog to share his story with others."
+        ),
+        'choices': {
+            1: {'text': "Receive positive feedback and feel encouraged.", 'next_node': 189},
+            2: {'text': "Worry about negative responses.", 'next_node': 190}
+        }
+    },
+    108: {
+        'text': (
+            "Zach finally feels like he’s beginning to forgive himself for the years of pain he’s endured."
+        ),
+        'choices': {
+            1: {'text': "Focus on the future and his continued growth.", 'next_node': 191},
+            2: {'text': "Reflect more deeply on the past, still haunted by memories.", 'next_node': 192}
+        }
+    },
+    109: {
+        'text': (
+            "Zach receives an unexpected apology from one of his former bullies."
+        ),
+        'choices': {
+            1: {'text': "Accept the apology and begin to heal.", 'next_node': 193},
+            2: {'text': "Struggle to forgive, still carrying resentment.", 'next_node': 194}
+        }
+    },
+    110: {
+        'text': (
+            "Zach notices that his relationships with others have become stronger over time."
+        ),
+        'choices': {
+            1: {'text': "Continue nurturing these connections.", 'next_node': 195},
+            2: {'text': "Still feel hesitant to trust completely.", 'next_node': 196}
+        }
+    },
+    111: {
+        'text': (
+            "Zach is offered an opportunity to help design a school anti-bullying program."
+        ),
+        'choices': {
+            1: {'text': "Accept and contribute his ideas.", 'next_node': 197},
+            2: {'text': "Feel unprepared for such responsibility.", 'next_node': 198}
+        }
+    },
+    112: {
+        'text': (
+            "Zach reflects on how far he’s come since the darkest days of being bullied."
+        ),
+        'choices': {
+            1: {'text': "Feel hopeful for what’s to come.", 'next_node': 199},
+            2: {'text': "Worry about slipping back into old patterns.", 'next_node': 200}
+        }
+    },
+    113: {
+        'text': (
+            "Zach takes a solo trip to clear his mind and reflect on his journey."
+        ),
+        'choices': {
+            1: {'text': "Find peace and clarity in solitude.", 'next_node': 201},
+            2: {'text': "Feel isolated and unsure about his path.", 'next_node': 202}
+        }
+    },
+    114: {
+        'text': (
+            "Zach’s newfound self-awareness helps him identify and avoid toxic relationships."
+        ),
+        'choices': {
+            1: {'text': "Build healthier connections going forward.", 'next_node': 203},
+            2: {'text': "Still feel wary of trusting others.", 'next_node': 204}
+        }
+    },
+    115: {
+        'text': (
+            "Zach finds himself drawn to helping others heal from their own experiences of bullying."
+        ),
+        'choices': {
+            1: {'text': "Volunteer to support others through their recovery.", 'next_node': 205},
+            2: {'text': "Focus on continuing his personal healing journey.", 'next_node': 206}
+        }
+    },
+    116: {
+        'text': (
+            "Zach begins to develop a more positive outlook on life, recognizing the value of resilience."
+        ),
+        'choices': {
+            1: {'text': "Embrace this newfound optimism.", 'next_node': 207},
+            2: {'text': "Worry about setbacks challenging his positivity.", 'next_node': 208}
+        }
+    },
+    117: {
+        'text': (
+            "Zach starts to focus more on his long-term goals, including education and career."
+        ),
+        'choices': {
+            1: {'text': "Pursue a career in psychology to help others.", 'next_node': 209},
+            2: {'text': "Look into other fields of interest.", 'next_node': 210}
+        }
+    },
+    118: {
+        'text': (
+            "Zach is surprised by how much he has changed since his most difficult moments."
+        ),
+        'choices': {
+            1: {'text': "Feel proud of his growth.", 'next_node': 211},
+            2: {'text': "Still doubt whether he’s truly healed.", 'next_node': 212}
+        }
+    },
+    119: {
+        'text': (
+            "Zach feels a deep sense of closure when he visits the places where he was once bullied."
+        ),
+        'choices': {
+            1: {'text': "Let go of the painful memories.", 'next_node': 213},
+            2: {'text': "Still feel haunted by the past.", 'next_node': 214}
+        }
+    },
+    120: {
+        'text': (
+            "Zach starts to dream about the future, imagining a life free from the shadows of his past."
+        ),
+        'choices': {
+            1: {'text': "Pursue his dreams with new confidence.", 'next_node': 215},
+            2: {'text': "Feel uncertain about the future.", 'next_node': 216}
+        }
+    },
+    121: {
+        'text': (
+            "Zach's empathy for others grows as he becomes more in tune with his emotions."
+        ),
+        'choices': {
+            1: {'text': "Reach out to others who might be struggling.", 'next_node': 217},
+            2: {'text': "Focus on protecting his own emotional boundaries.", 'next_node': 218}
+        }
+    },
+    # Endings from 122 onward would connect all possible outcomes, 
+    # ensuring each choice leads to a conclusion that matches the narrative direction.
+    122: {
+        'text': "Zach finds peace and acceptance in his journey, fully embracing his new sense of self."
+    },
+    123: {
+        'text': "Zach continues to struggle, but he knows he’s not alone in his fight anymore."
+    },
+    124: {
+        'text': "Zach becomes a powerful advocate for bullying prevention, sharing his story to inspire others."
+    },
+    125: {
+        'text': "Zach finds solace in helping others heal, realizing that his experiences have given him strength."
+    },
+    126: {
+        'text': "Zach faces setbacks, but each time he gets back up, he grows stronger and more resilient."
+    },
+    127: {
+        'text': "Zach forgives those who hurt him and moves forward with a sense of peace and freedom."
+    },
+
+    129: {
+        'text': "Zach finds fulfillment in helping others, using his own experiences to guide them through their challenges."
+    },
+    130: {
+        'text': "Zach builds strong relationships with those who support him, finding a community that cares for him."
+    },
+    131: {
+        'text': "Zach becomes a mentor for younger people, sharing his story and offering advice."
+    },
+    132: {
+        'text': "Zach decides to focus on his own recovery before helping others, ensuring he’s strong enough to support them."
+    },
+    133: {
+        'text': "Zach feels a sense of closure after finally confronting the painful memories of his past."
+    },
+    134: {
+        'text': "Zach embraces the future with newfound confidence, knowing he has the tools to overcome challenges."
+    },
+    135: {
+        'text': "Zach struggles to let go of the past, but realizes that his journey is ongoing and that it’s okay to take his time."
+    },
+    136: {
+        'text': "Zach becomes an advocate for mental health, helping others who have experienced similar struggles."
+    },
+    137: {
+        'text': "Zach feels proud of the progress he’s made, even though there are still difficult days."
+    },
+    138: {
+        'text': "Zach forgives himself for the years of pain and begins to focus on a brighter future."
+    },
+    139: {
+        'text': "Zach accepts that healing is a lifelong journey, but he’s committed to doing the work."
+    },
+    140: {
+        'text': "Zach’s relationships with others become stronger as he learns to trust and open up."
+    },
+    141: {
+        'text': "Zach feels a deep sense of purpose in helping others, turning his pain into a source of strength."
+    },
+    142: {
+        'text': "Zach decides to pursue a career in mental health, inspired by his own experiences."
+    },
+    143: {
+        'text': "Zach feels hopeful for the future, knowing that he’s no longer defined by his past."
+    },
+    144: {
+        'text': "Zach continues to work on himself, understanding that healing takes time and patience."
+    },
+    145: {
+        'text': "Zach finds peace in the realization that his past does not control his future."
+    },
+    146: {
+        'text': "Zach becomes a source of strength for others, offering support and understanding to those who need it."
+    },
+    147: {
+        'text': "Zach finds comfort in the friendships he’s built, realizing he’s not alone in his journey."
+    },
+    148: {
+        'text': "Zach reflects on how far he’s come, feeling proud of the progress he’s made."
+    },
+    149: {
+        'text': "Zach feels empowered by his ability to overcome challenges and help others do the same."
+    },
+    150: {
+        'text': "Zach continues to grow, accepting that healing is a process that takes time and effort."
+    },
+    151: {
+        'text': "Zach feels a sense of accomplishment as he looks back on his journey and how much he’s grown."
+    },
+    152: {
+        'text': "Zach forgives those who hurt him, realizing that forgiveness is a key part of his healing process."
+    },
+    153: {
+        'text': "Zach accepts that while the past has shaped him, it doesn’t define who he is."
+    },
+    154: {
+        'text': "Zach focuses on his recovery with professional help, beginning to see the light at the end of the tunnel."
+    },
+    155: {
+        'text': "Zach resists help, feeling that it’s too late for him, but his loved ones continue to support him."
+    },
+    156: {
+        'text': "Zach finally realizes that it’s never too late to heal, and he begins to accept the help he’s been offered."
+    },
+    157: {
+        'text': "Zach decides to take one day at a time, focusing on small victories in his journey toward healing."
+    },
+
+
+
+
+
+    158: {'text': "Zach fully commits to therapy, making steady progress. Though the road to recovery is long, he starts to find peace within himself. (ENDING 1: Recovery & Growth)"},
+    159: {'text': "Zach quits therapy, unable to overcome his skepticism. Without the support he needs, his mental health continues to deteriorate. (ENDING 2: Downward Spiral)"},
+    160: {'text': "Zach seeks help and is able to regain control of his life. It’s a difficult journey, but he starts to heal. (ENDING 3: A Second Chance)"},
+    161: {'text': "Zach retreats further into isolation. His dissociation becomes so severe that he’s eventually hospitalized. (ENDING 4: Collapse)"},
+    162: {'text': "Zach opens up to his parents, and they support him through his recovery. Slowly, he starts to rebuild his life. (ENDING 5: Family Support)"},
+    163: {'text': "Zach keeps his parents in the dark, and his mental health worsens. Eventually, the isolation becomes unbearable. (ENDING 6: Breaking Point)"},
+    164: {'text': "Zach reaches out for professional help, and though it’s difficult, he begins to regain control of his dissociation. (ENDING 7: Grounded)"},
+    165: {'text': "Zach avoids seeking help, and his dissociation spirals out of control, leading to a complete breakdown. (ENDING 8: Fragmented Mind)"},
+    166: {'text': "Zach confides in his teacher, who helps him access mental health resources. It’s a turning point in his recovery. (ENDING 9: A Lifeline)"},
+    167: {'text': "Zach tells his teacher everything is fine, but the pressure eventually causes him to collapse. (ENDING 10: Overwhelmed)"},
+    168: {'text': "Zach opens up about his darkest thoughts, leading to immediate intervention and support. It’s a step towards healing. (ENDING 11: Intervention)"},
+    169: {'text': "Zach keeps his feelings hidden, leading to a dangerous escalation of his mental health struggles. (ENDING 12: Silence & Despair)"},
+    170: {'text': "Zach makes an effort to reconnect with his friends. Though it’s awkward at first, they welcome him back with open arms. (ENDING 13: Friendship & Healing)"},
+    171: {'text': "Zach lets his friendships fade, and his sense of isolation deepens. Without support, his recovery falters. (ENDING 14: Alone)"},
+    172: {'text': "Zach stays committed to therapy, and though the road is hard, he makes meaningful progress. (ENDING 15: Steady Progress)"},
+    173: {'text': "Zach gets overwhelmed and quits therapy. Without the guidance and structure, his mental health declines again. (ENDING 16: Relapse)"},
+    174: {'text': "Zach accepts the need for medical intervention, and after a long recovery process, he begins to rebuild his health. (ENDING 17: Physical & Mental Healing)"},
+    175: {'text': "Zach refuses to cooperate with doctors, and his health continues to deteriorate. (ENDING 18: Physical Decline)"},
+    176: {'text': "Zach accepts his parents' support, and together, they work towards rebuilding their relationship and his health. (ENDING 19: Family Rebuilding)"},
+    177: {'text': "Zach struggles with the idea that he’s too far gone, and it affects his ability to move forward in recovery. (ENDING 20: Stuck in Limbo)"},
+    178: {'text': "Zach stays committed to therapy and, in time, finds ways to cope with his trauma. (ENDING 21: Trauma Healing)"},
+    179: {'text': "Zach avoids delving too deep into his trauma, which leads to his recovery stalling. (ENDING 22: Stagnation)"},
+    180: {'text': "Zach agrees to hospitalization, and though it’s a frightening experience, it’s a turning point in his recovery. (ENDING 23: Emergency Intervention)"},
+    181: {'text': "Zach resists hospitalization, leading to further escalation in his mental health struggles. (ENDING 24: Escalation)"},
+    182: {'text': "Zach listens to his friends, and with their support, he begins to get the help he needs. (ENDING 25: Friendship Saves)"},
+    183: {'text': "Zach insists he’s fine, and without their help, he continues to spiral. (ENDING 26: Isolation & Decline)"},
+    184: {'text': "Zach tells a trusted adult about his struggles, and with their help, he begins the road to recovery. (ENDING 27: Saved in Time)"},
+    185: {'text': "Zach keeps his struggles hidden, and eventually, his health reaches a breaking point. (ENDING 28: Hidden Struggles)"},
+    186: {'text': "Zach embraces the ups and downs of recovery, staying resilient even through setbacks. (ENDING 29: Resilience)"},
+    187: {'text': "Zach gets discouraged and abandons recovery, falling back into old habits. (ENDING 30: Abandonment)"},
+    188: {'text': "Zach celebrates his progress and continues to work on his mental health, knowing the journey is ongoing. (ENDING 31: Lifelong Healing)"},
+    189: {'text': "Zach fears relapse and pulls away from his support network, putting himself at risk. (ENDING 32: Fear of Relapse)"},
+    190: {'text': "Zach finally accepts the need for help after a health scare, and though the journey is long, he begins to heal. (ENDING 33: Healing After Crisis)"},
+    191: {'text': "Zach continues in a downward spiral, believing he has nothing left to lose. (ENDING 34: Total Decline)"}
+})
