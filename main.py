@@ -91,3 +91,10 @@ class StoryGame:
             self.button1.config(text=choices[1]['text'], command=lambda: self.make_choice(1))
             self.button2.config(text=choices[2]['text'], command=lambda: self.make_choice(2))
             self.button2.pack(side=tk.RIGHT, padx=20, pady=10)
+
+# Create the main window
+root = tk.Tk()
+game = StoryGame(root)
+
+# Run the application
+root.mainloop()
