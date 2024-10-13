@@ -18,7 +18,8 @@ victim_story = {
         'choices': {
             1: {'text': "Continue avoiding Bryan", 'next_node': 4},
             2: {'text': "Stand up to Bryan", 'next_node': 5}
-        }
+        },
+        'image': 'bullygamescene.png'
     },
 
     3: {
@@ -1404,4 +1405,4 @@ victim_story = {
     189: {'text': "Zach fears relapse and pulls away from his support network, putting himself at risk. (ENDING 32: Fear of Relapse)"},
     190: {'text': "Zach finally accepts the need for help after a health scare, and though the journey is long, he begins to heal. (ENDING 33: Healing After Crisis)"},
     191: {'text': "Zach continues in a downward spiral, believing he has nothing left to lose. (ENDING 34: Total Decline)"}
-})
+}
