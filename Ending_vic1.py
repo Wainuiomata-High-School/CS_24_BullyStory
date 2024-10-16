@@ -19,7 +19,7 @@ victim_story = {
             1: {'text': "Continue avoiding Bryan", 'next_node': 4},
             2: {'text': "Stand up to Bryan", 'next_node': 5}
         },
-        'image': 'images/bullygamescene.pgm'
+        'image': 'images/bullygamescene.png'
     },
 
     3: {
