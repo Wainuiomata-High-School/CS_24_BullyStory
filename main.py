@@ -5,6 +5,7 @@ from PIL import Image, ImageTk  # Import from Pillow
 from Ending_per1 import bully_story
 from Ending_vic1 import victim_story
 
+
 class StoryGame:
     def __init__(self, root):
         self.root = root
@@ -84,7 +85,9 @@ class StoryGame:
             self.image_label.config(image=self.story_image)
         else:
             self.image_label.config(image='')  # Clear image if none for this node
-
+        
+        print(f"Loading image from: {image_path}")
+        
         choices = current_story[self.current_node]['choices']
         if len(choices) == 1:
             self.button1.config(text=choices[1]['text'], command=lambda: self.make_choice(1))
