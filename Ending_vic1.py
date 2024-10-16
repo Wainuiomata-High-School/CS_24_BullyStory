@@ -19,7 +19,7 @@ victim_story = {
             1: {'text': "Continue avoiding Bryan", 'next_node': 4},
             2: {'text': "Stand up to Bryan", 'next_node': 5}
         },
-        'image': 'Images/bullygamescene.png'
+        'image': 'images/bullygamescene.png'
     },
 
     3: {
@@ -856,8 +856,8 @@ victim_story = {
             "hard for him to distinguish between what’s real and what’s not."
         ),
         'choices': {
-            1: {'text': "Reach out for help before it’s too late", 'next_node': 156},
-            2: {'text': "Continue to withdraw from the world", 'next_node': 157}
+            #1: {'text': "Reach out for help before it’s too late", 'next_node': 156},
+            #2: {'text': "Continue to withdraw from the world", 'next_node': 157}
         }
     },
 
@@ -866,8 +866,8 @@ victim_story = {
             "Zach feels overwhelmed by his emotions but knows he needs to take a step forward."
         ),
         'choices': {
-            1: {'text': "Reach out to a friend for support.", 'next_node': 133},
-            2: {'text': "Write in his journal to process his feelings.", 'next_node': 134}
+           #1: {'text': "Reach out to a friend for support.", 'next_node': 133},
+           #2: {'text': "Write in his journal to process his feelings.", 'next_node': 134}
         }
     },
 
@@ -876,8 +876,8 @@ victim_story = {
             "Zach confronts a bully at school, surprising himself with his courage."
         ),
         'choices': {
-            1: {'text': "Feel proud and empowered.", 'next_node': 135},
-            2: {'text': "Worry about potential retaliation.", 'next_node': 136}
+            #1: {'text': "Feel proud and empowered.", 'next_node': 135},
+            #2: {'text': "Worry about potential retaliation.", 'next_node': 136}
         }
     },
 
@@ -886,8 +886,8 @@ victim_story = {
             "Zach has a heart-to-heart with his parents about his struggles."
         ),
         'choices': {
-            1: {'text': "Feel closer to them and supported.", 'next_node': 137},
-            2: {'text': "Still feel misunderstood and alone.", 'next_node': 138}
+            #1: {'text': "Feel closer to them and supported.", 'next_node': 137},
+            #2: {'text': "Still feel misunderstood and alone.", 'next_node': 138}
         }
     },
 
@@ -896,8 +896,8 @@ victim_story = {
             "Zach finds solace in a new hobby, allowing him to express himself creatively."
         ),
         'choices': {
-            1: {'text': "Dedicate more time to this hobby.", 'next_node': 139},
-            2: {'text': "Feel guilty for not focusing on his issues.", 'next_node': 140}
+            #1: {'text': "Dedicate more time to this hobby.", 'next_node': 139},
+            #2: {'text': "Feel guilty for not focusing on his issues.", 'next_node': 140}
         }
     },
 
@@ -906,7 +906,7 @@ victim_story = {
             "Zach starts to feel a sense of belonging with a new group of friends."
         ),
         'choices': {
-            1: {'text': "Open up to them about his past.", 'next_node': 141},
+            #1: {'text': "Open up to them about his past.", 'next_node': 141},
             2: {'text': "Keep his struggles to himself for now.", 'next_node': 142}
         }
     },
@@ -1069,7 +1069,7 @@ victim_story = {
         }
     },
 
-        101: {
+    101: {
         'text': (
             "Zach attends his first group therapy session and is nervous but finds comfort in hearing others share their stories."
         ),

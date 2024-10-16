@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
+from PIL import Image, ImageTk  # Import from Pillow
 
 from Ending_per1 import bully_story
 from Ending_vic1 import victim_story
@@ -78,6 +79,7 @@ class StoryGame:
         # Load and display image if it exists for the current node
         image_path = current_story[self.current_node].get('image', None)
         if image_path:
+            img = Image.open(image_path)
             self.story_image = tk.PhotoImage(file=image_path)
             self.image_label.config(image=self.story_image)
         else:
@@ -91,3 +93,10 @@ class StoryGame:
             self.button1.config(text=choices[1]['text'], command=lambda: self.make_choice(1))
             self.button2.config(text=choices[2]['text'], command=lambda: self.make_choice(2))
             self.button2.pack(side=tk.RIGHT, padx=20, pady=10)
+
+# Create the main window
+root = tk.Tk()
+game = StoryGame(root)
+
+# Run the application
+root.mainloop()
