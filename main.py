@@ -42,21 +42,21 @@ class StoryGame:
         self.setup_game_screen()
         self.update_story()
 
-    def setup_game_screen(self):
-        self.clear_screen()
+def setup_game_screen(self):
+    self.clear_screen()
 
-        self.story_label = tk.Label(self.root, textvariable=self.story_text, wraplength=400)
-        self.story_label.pack(pady=20)
+    self.story_label = tk.Label(self.root, textvariable=self.story_text, wraplength=400)
+    self.story_label.grid(row=0, column=0, columnspan=2, pady=20)
 
-        self.image_label = tk.Label(self.root)  # Image display label
-        self.image_label.pack(pady=10)
+    self.image_label = tk.Label(self.root)  # Image display label
+    self.image_label.grid(row=1, column=0, columnspan=2, pady=10)
 
-        self.button1 = tk.Button(self.root, text="", command=lambda: self.make_choice(1))
-        self.button1.pack(side=tk.LEFT, padx=20, pady=10)
+    self.button1 = tk.Button(self.root, text="", command=lambda: self.make_choice(1))
+    self.button1.grid(row=2, column=0, padx=20, pady=10)
 
-        self.button2 = tk.Button(self.root, text="", command=lambda: self.make_choice(2))
-        self.button2.pack(side=tk.RIGHT, padx=20, pady=10)
-
+    self.button2 = tk.Button(self.root, text="", command=lambda: self.make_choice(2))
+    self.button2.grid(row=2, column=1, padx=20, pady=10)
+    
     def clear_screen(self):
         for widget in self.root.winfo_children():
             widget.destroy()
@@ -87,7 +87,7 @@ class StoryGame:
             self.image_label.config(image='')  # Clear image if none for this node
         
         print(f"Loading image from: {image_path}")
-        
+       
         choices = current_story[self.current_node]['choices']
         if len(choices) == 1:
             self.button1.config(text=choices[1]['text'], command=lambda: self.make_choice(1))
@@ -102,4 +102,4 @@ root = tk.Tk()
 game = StoryGame(root)
 
 # Run the application
-root.mainloop()
+root.mainloop() 
