@@ -32,6 +32,7 @@ victim_story = {
             1: {'text': "Talk to his parents about it", 'next_node': 6},
             2: {'text': "Keep hiding the bullying from his family", 'next_node': 7}
         }
+        
     },
 
     4: {
@@ -89,7 +90,8 @@ victim_story = {
         'choices': {
             1: {'text': "Keep seeing the counselor", 'next_node': 16},
             2: {'text': "Stop seeking help and rely on weed to manage", 'next_node': 17}
-        }
+        },
+        'image' :   'images/bullyscene_node2.png'
     },
 
     9: {
