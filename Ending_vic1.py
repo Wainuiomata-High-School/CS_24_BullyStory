@@ -7,7 +7,8 @@ victim_story = {
         'choices': {
             1: {'text': "Try to avoid Bryan as much as possible", 'next_node': 2},
             2: {'text': "Pretend to laugh along with Bryan’s jokes", 'next_node': 3}
-        }
+        },
+        'image' :   'images/Node_1.webp'
     },
 
     2: {
