@@ -17,6 +17,7 @@ class StoryGame:
         self.story_image = None  # To keep a reference to the image
         self.bind_keys()
 
+
         self.stories = {
             'bully': bully_story,
             'victim': victim_story
@@ -131,16 +132,26 @@ class StoryGame:
         pause_popup.destroy()
 
     def save_game(self):
-        # Prepare the game state dictionary
         game_state = {
             "player_name": self.player_name.get(),
             "current_story_key": self.current_story_key,
             "current_node": self.current_node
         }
-        # Save to JSON file
-        with open("game_save.json", "w") as save_file:
+        
+        # Determine a unique filename by checking existing files
+        base_filename = f"save_{self.player_name.get()}"
+        index = 1
+        filename = f"{base_filename}_{index}.json"
+        while os.path.exists(filename):
+            index += 1
+            filename = f"{base_filename}_{index}.json"
+        
+        # Save to a new JSON file
+        with open(filename, "w") as save_file:
             json.dump(game_state, save_file)
-        messagebox.showinfo("Save Game", "Game saved successfully.")
+        
+        messagebox.showinfo("Save Game", f"Game saved successfully as {filename}.")
+
 
     def load_game(self):
         try:
