@@ -15,6 +15,7 @@ class StoryGame:
         self.story_text = tk.StringVar()
         self.player_name = tk.StringVar()
         self.story_image = None  # To keep a reference to the image
+        self.bind_keys()
 
         self.stories = {
             'bully': bully_story,
@@ -27,6 +28,13 @@ class StoryGame:
         # Set up intro screen and menu
         self.setup_intro_screen()
         self.setup_menu()
+        
+    def bind_keys(self):
+        # Bind "P" key to open pause menu globally
+        self.root.bind_all("<p>", lambda event: self.pause_game())
+        print("Keys bound")  # Debug to confirm method execution
+
+
 
     def setup_intro_screen(self):
         self.clear_screen()
@@ -83,24 +91,43 @@ class StoryGame:
         self.update_story()
 
     def pause_game(self):
-        # Disable buttons to pause interaction
+        print("Pause menu triggered")
+        # Disable main choice buttons to pause interaction
         self.button1.config(state=tk.DISABLED)
         self.button2.config(state=tk.DISABLED)
         
-        # Popup window for resume
+        # Create a popup window for the pause menu
         pause_popup = tk.Toplevel(self.root)
         pause_popup.title("Game Paused")
-        tk.Label(pause_popup, text="Game is paused.").pack(pady=10)
-        
+        pause_popup.geometry("200x150")  # Set a size for better layout
+
+        # Pause label
+        pause_label = tk.Label(pause_popup, text="Game is paused.", font=("Arial", 12))
+        pause_label.pack(pady=10)
+
         # Resume button
-        tk.Button(pause_popup, text="Resume", command=lambda: self.resume_game(pause_popup)).pack(pady=10)
+        resume_button = tk.Button(pause_popup, text="Resume", command=lambda: self.resume_game(pause_popup))
+        resume_button.pack(pady=5)
+
+        # Save button
+        save_button = tk.Button(pause_popup, text="Save", command=self.save_game)
+        save_button.pack(pady=5)
+
+        # Quit button
+        quit_button = tk.Button(pause_popup, text="Quit", command=self.quit_game)
+        quit_button.pack(pady=5)
+
+        # Keep the focus on the pause popup
+        pause_popup.transient(self.root)  # Keeps the popup on top
+        pause_popup.grab_set()  # Prevents interaction with the main window until popup is closed
+        pause_popup.protocol("WM_DELETE_WINDOW", lambda: self.resume_game(pause_popup))  # Resume if closed
 
     def resume_game(self, pause_popup):
         # Enable buttons to resume interaction
         self.button1.config(state=tk.NORMAL)
         self.button2.config(state=tk.NORMAL)
-        
-        # Close pause popup
+            
+        # Close pause popup            
         pause_popup.destroy()
 
     def save_game(self):
@@ -185,3 +212,5 @@ game = StoryGame(root)
 
 # Run the application
 root.mainloop()
+
+
