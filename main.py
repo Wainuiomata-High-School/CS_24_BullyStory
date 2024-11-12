@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import messagebox
-from turtle import fd
 from PIL import Image, ImageTk  # Import from Pillow
 import json  # For saving and loading the game state
 import os  # For file path checks
@@ -19,7 +18,6 @@ class StoryGame:
         self.story_image = None  # To keep a reference to the image
         self.bind_keys()
 
-
         self.stories = {
             'bully': bully_story,
             'victim': victim_story
@@ -37,16 +35,12 @@ class StoryGame:
         self.root.bind_all("<p>", lambda event: self.pause_game())
         print("Keys bound")  # Debug to confirm method execution
 
-
-
     def setup_intro_screen(self):
         self.clear_screen()
 
         tk.Label(self.root, text="Enter your name:").pack(pady=10)
         tk.Entry(self.root, textvariable=self.player_name).pack(pady=50)
 
-        #tk.Button(self.root, text="Play as Bully", command=lambda: self.start_game('bully')).pack(pady=10)
-        # Removed option to play from Bryans perspective, didnt have the time to finish it
         tk.Button(self.root, text="Begin Zach's story", command=lambda: self.start_game('victim')).pack(pady=10)
         tk.Button(self.root, text="Load Game", command=self.load_game).pack(pady=10)
         tk.Button(self.root, text="Quit", command=self.quit_game).pack(pady=10)
@@ -105,41 +99,31 @@ class StoryGame:
         pause_popup.title("Game Paused")
         pause_popup.geometry("200x150")  # Set a size for better layout
 
-        # Pause label
         pause_label = tk.Label(pause_popup, text="Game is paused.", font=("Arial", 12))
         pause_label.pack(pady=10)
 
-        # Resume button
         resume_button = tk.Button(pause_popup, text="Resume", command=lambda: self.resume_game(pause_popup))
         resume_button.pack(pady=5)
 
-        # Save button
         save_button = tk.Button(pause_popup, text="Save", command=self.save_game)
         save_button.pack(pady=5)
 
-        # Quit button
         quit_button = tk.Button(pause_popup, text="Quit", command=self.quit_game)
         quit_button.pack(pady=5)
 
-        # Keep the focus on the pause popup
-        pause_popup.transient(self.root)  # Keeps the popup on top
-        pause_popup.grab_set()  # Prevents interaction with the main window until popup is closed
-        pause_popup.protocol("WM_DELETE_WINDOW", lambda: self.resume_game(pause_popup))  # Resume if closed
+        pause_popup.transient(self.root)
+        pause_popup.grab_set()
+        pause_popup.protocol("WM_DELETE_WINDOW", lambda: self.resume_game(pause_popup))
 
     def resume_game(self, pause_popup):
-        # Enable buttons to resume interaction
         self.button1.config(state=tk.NORMAL)
         self.button2.config(state=tk.NORMAL)
-            
-        # Close pause popup            
         pause_popup.destroy()
 
     def save_game(self):
-        # Ensure the save directory exists
         save_dir = "saves"
         os.makedirs(save_dir, exist_ok=True)
         
-        # Determine a unique filename by checking existing files
         base_filename = os.path.join(save_dir, f"save_{self.player_name.get()}")
         index = 1
         filename = f"{base_filename}_{index}.json"
@@ -147,25 +131,23 @@ class StoryGame:
             index += 1
             filename = f"{base_filename}_{index}.json"
         
-        # Prepare the game state dictionary
         game_state = {
             "player_name": self.player_name.get(),
             "current_story_key": self.current_story_key,
             "current_node": self.current_node
         }
         
-        # Save to a new JSON file
-        with open(filename, "w") as save_file:
-            json.dump(game_state, save_file)
-        
-        messagebox.showinfo("Save Game", f"Game saved successfully as {filename}.")
+        try:
+            with open(filename, "w") as save_file:
+                json.dump(game_state, save_file)
+            messagebox.showinfo("Save Game", f"Game saved successfully as {filename}.")
+        except Exception as e:
+            messagebox.showerror("Save Game", f"Failed to save game: {e}")
 
     def load_game(self):
-        # Ensure the save directory exists
         save_dir = "saves"
         os.makedirs(save_dir, exist_ok=True)
         
-        # Open a file dialog to select a JSON save file
         filename = fd.askopenfilename(
             initialdir=save_dir,
             title="Select Save File",
@@ -173,12 +155,10 @@ class StoryGame:
         )
         
         if filename:
-            # Load the selected save file
             try:
                 with open(filename, "r") as save_file:
                     game_state = json.load(save_file)
                 
-                # Restore game state
                 self.player_name.set(game_state["player_name"])
                 self.current_story_key = game_state["current_story_key"]
                 self.current_node = game_state["current_node"]
@@ -186,8 +166,8 @@ class StoryGame:
                 self.update_story()
                 messagebox.showinfo("Load Game", "Game loaded successfully.")
             
-            except (FileNotFoundError, KeyError, json.JSONDecodeError):
-                messagebox.showwarning("Load Game", "Failed to load the selected game file.")
+            except (FileNotFoundError, KeyError, json.JSONDecodeError) as e:
+                messagebox.showwarning("Load Game", f"Failed to load the game: {e}")
 
     def quit_game(self):
         if messagebox.askyesno("Quit Game", "Do you want to save before quitting?"):
@@ -196,53 +176,39 @@ class StoryGame:
 
     def make_choice(self, choice):
         current_story = self.stories[self.current_story_key]
-        next_node = current_story[self.current_node]['choices'][choice]['next_node']
-        if isinstance(next_node, int):
-            self.current_node = next_node
-            self.update_story()
+        if choice in current_story[self.current_node]['choices']:
+            next_node = current_story[self.current_node]['choices'][choice]['next_node']
+            if isinstance(next_node, int):
+                self.current_node = next_node
+                self.update_story()
+            else:
+                self.current_story_key = next_node
+                self.current_node = 1
+                self.update_story()
         else:
-            self.current_story_key = next_node
-            self.current_node = 1
-            self.update_story()
+            messagebox.showwarning("Invalid Choice", "This choice is not available.")
 
     def update_story(self):
         current_story = self.stories[self.current_story_key]
         story_data = current_story[self.current_node]
         
-        # Update the story text
         story_text = story_data['text'].format(name=self.player_name.get())
         self.story_text.set(story_text)
 
-        # Load and display image if it exists for the current node
         image_path = story_data.get('image', None)
         if image_path and os.path.exists(image_path):
             img = Image.open(image_path)
             self.story_image = ImageTk.PhotoImage(img)
             self.image_label.config(image=self.story_image)
-            self.image_label.pack(pady=10)
         else:
             self.image_label.config(image='')
             self.image_label.pack_forget()
 
-        # Get and display choices for the current node
         choices = story_data.get('choices', {})
-        if 1 in choices:
-            self.button1.config(text=choices[1]['text'], command=lambda: self.make_choice(1))
-            self.button1.pack(side=tk.LEFT, padx=20, pady=10)
-        else:
-            self.button1.config(text="")
+        self.button1.config(text=choices.get(1, {}).get('text', ""), state=tk.NORMAL if 1 in choices else tk.DISABLED)
+        self.button2.config(text=choices.get(2, {}).get('text', ""), state=tk.NORMAL if 2 in choices else tk.DISABLED)
 
-        if 2 in choices:
-            self.button2.config(text=choices[2]['text'], command=lambda: self.make_choice(2))
-            self.button2.pack(side=tk.RIGHT, padx=20, pady=10)
-        else:
-            self.button2.pack_forget()
 
-# Create the main window
 root = tk.Tk()
 game = StoryGame(root)
-
-# Run the application
 root.mainloop()
-
-
