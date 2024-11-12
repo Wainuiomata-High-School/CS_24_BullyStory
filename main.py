@@ -1,8 +1,10 @@
 import tkinter as tk
 from tkinter import messagebox
+from turtle import fd
 from PIL import Image, ImageTk  # Import from Pillow
 import json  # For saving and loading the game state
 import os  # For file path checks
+import tkinter.filedialog as fd
 
 from Ending_per1 import bully_story
 from Ending_vic1 import victim_story
@@ -43,8 +45,9 @@ class StoryGame:
         tk.Label(self.root, text="Enter your name:").pack(pady=10)
         tk.Entry(self.root, textvariable=self.player_name).pack(pady=50)
 
-        tk.Button(self.root, text="Play as Bully", command=lambda: self.start_game('bully')).pack(pady=10)
-        tk.Button(self.root, text="Play as Victim", command=lambda: self.start_game('victim')).pack(pady=10)
+        #tk.Button(self.root, text="Play as Bully", command=lambda: self.start_game('bully')).pack(pady=10)
+        # Removed option to play from Bryans perspective, didnt have the time to finish it
+        tk.Button(self.root, text="Begin Zach's story", command=lambda: self.start_game('victim')).pack(pady=10)
         tk.Button(self.root, text="Load Game", command=self.load_game).pack(pady=10)
         tk.Button(self.root, text="Quit", command=self.quit_game).pack(pady=10)
 
@@ -132,19 +135,24 @@ class StoryGame:
         pause_popup.destroy()
 
     def save_game(self):
-        game_state = {
-            "player_name": self.player_name.get(),
-            "current_story_key": self.current_story_key,
-            "current_node": self.current_node
-        }
+        # Ensure the save directory exists
+        save_dir = "saves"
+        os.makedirs(save_dir, exist_ok=True)
         
         # Determine a unique filename by checking existing files
-        base_filename = f"save_{self.player_name.get()}"
+        base_filename = os.path.join(save_dir, f"save_{self.player_name.get()}")
         index = 1
         filename = f"{base_filename}_{index}.json"
         while os.path.exists(filename):
             index += 1
             filename = f"{base_filename}_{index}.json"
+        
+        # Prepare the game state dictionary
+        game_state = {
+            "player_name": self.player_name.get(),
+            "current_story_key": self.current_story_key,
+            "current_node": self.current_node
+        }
         
         # Save to a new JSON file
         with open(filename, "w") as save_file:
@@ -152,21 +160,34 @@ class StoryGame:
         
         messagebox.showinfo("Save Game", f"Game saved successfully as {filename}.")
 
-
     def load_game(self):
-        try:
-            # Load game state from file
-            with open("game_save.json", "r") as save_file:
-                game_state = json.load(save_file)
-            # Restore game state
-            self.player_name.set(game_state["player_name"])
-            self.current_story_key = game_state["current_story_key"]
-            self.current_node = game_state["current_node"]
-            self.setup_game_screen()
-            self.update_story()
-            messagebox.showinfo("Load Game", "Game loaded successfully.")
-        except (FileNotFoundError, KeyError):
-            messagebox.showwarning("Load Game", "No saved game found.")
+        # Ensure the save directory exists
+        save_dir = "saves"
+        os.makedirs(save_dir, exist_ok=True)
+        
+        # Open a file dialog to select a JSON save file
+        filename = fd.askopenfilename(
+            initialdir=save_dir,
+            title="Select Save File",
+            filetypes=[("JSON files", "*.json")]
+        )
+        
+        if filename:
+            # Load the selected save file
+            try:
+                with open(filename, "r") as save_file:
+                    game_state = json.load(save_file)
+                
+                # Restore game state
+                self.player_name.set(game_state["player_name"])
+                self.current_story_key = game_state["current_story_key"]
+                self.current_node = game_state["current_node"]
+                self.setup_game_screen()
+                self.update_story()
+                messagebox.showinfo("Load Game", "Game loaded successfully.")
+            
+            except (FileNotFoundError, KeyError, json.JSONDecodeError):
+                messagebox.showwarning("Load Game", "Failed to load the selected game file.")
 
     def quit_game(self):
         if messagebox.askyesno("Quit Game", "Do you want to save before quitting?"):

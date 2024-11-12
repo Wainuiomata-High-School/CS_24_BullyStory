@@ -20,7 +20,7 @@ victim_story = {
             1: {'text': "Continue avoiding Bryan", 'next_node': 4},
             2: {'text': "Stand up to Bryan", 'next_node': 5}
         },
-        'image' : 'images/bullygamescene.png'
+        'image' : 'images/bullyscene_node2.png'
     },
 
     3: {
@@ -56,7 +56,8 @@ victim_story = {
         'choices': {
             1: {'text': "Try to ignore the bullying", 'next_node': 10},
             2: {'text': "Seek support from a friend", 'next_node': 11}
-        }
+        },
+        'image' :   'images/bullyscene_node5.png'
     },
 
     6: {
@@ -91,7 +92,7 @@ victim_story = {
             1: {'text': "Keep seeing the counselor", 'next_node': 16},
             2: {'text': "Stop seeking help and rely on weed to manage", 'next_node': 17}
         },
-        'image' :   'images/bullyscene_node2.png'
+        'image' :   'images/bullyscene_node8.png'
     },
 
     9: {
@@ -113,7 +114,8 @@ victim_story = {
         'choices': {
             1: {'text': "Talk to a teacher or school counselor", 'next_node': 20},
             2: {'text': "Continue trying to avoid Bryan", 'next_node': 21}
-        }
+        },
+        'image' :   'images/bullyscene_node10.png'
     },
 
     11: {
@@ -146,7 +148,8 @@ victim_story = {
         'choices': {
             1: {'text': "Try to get his grades back on track", 'next_node': 26},
             2: {'text': "Ignore his schoolwork and continue isolating", 'next_node': 27}
-        }
+        },
+        'image' :   'images/bullyscene_node13.png'
     },
 
     14: {
