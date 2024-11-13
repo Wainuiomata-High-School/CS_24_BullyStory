@@ -7,8 +7,8 @@ victim_story = {
         'choices': {
             1: {'text': "Try to avoid Bryan as much as possible", 'next_node': 2},
             2: {'text': "Pretend to laugh along with Bryan’s jokes", 'next_node': 3}
-        }
-        
+        },
+        'image': 'images/bullyscene_node1.png'
     },
 
     2: {
@@ -20,7 +20,7 @@ victim_story = {
             1: {'text': "Continue avoiding Bryan", 'next_node': 4},
             2: {'text': "Stand up to Bryan", 'next_node': 5}
         },
-        'image' : 'images/bullyscene_node2.png'
+        'image': 'images/bullyscene_node2.png'
     },
 
     3: {
@@ -31,8 +31,8 @@ victim_story = {
         'choices': {
             1: {'text': "Talk to his parents about it", 'next_node': 6},
             2: {'text': "Keep hiding the bullying from his family", 'next_node': 7}
-        }
-        
+        },
+        'image': 'images/bullyscene_node3.png'
     },
 
     4: {
@@ -45,7 +45,7 @@ victim_story = {
             1: {'text': "Seek help from the school counselor", 'next_node': 8},
             2: {'text': "Stay silent and try to endure the bullying", 'next_node': 9}
         },
-        'image' :   'images/bullyscene_node1.png'
+        'image': 'images/bullyscene_node4.png'
     },
 
     5: {
@@ -57,7 +57,7 @@ victim_story = {
             1: {'text': "Try to ignore the bullying", 'next_node': 10},
             2: {'text': "Seek support from a friend", 'next_node': 11}
         },
-        'image' :   'images/bullyscene_node5.png'
+        'image': 'images/bullyscene_node5.png'
     },
 
     6: {
@@ -69,7 +69,8 @@ victim_story = {
         'choices': {
             1: {'text': "Talk to a teacher directly", 'next_node': 12},
             2: {'text': "Withdraw and isolate himself", 'next_node': 13}
-        }
+        },
+        'image': 'images/bullyscene_node6.png'
     },
 
     7: {
@@ -80,7 +81,8 @@ victim_story = {
         'choices': {
             1: {'text': "Start smoking to cope with the anxiety", 'next_node': 14},
             2: {'text': "Try to keep going despite the mounting pressure", 'next_node': 15}
-        }
+        },
+        'image': 'images/bullyscene_node7.png'
     },
 
     8: {
@@ -92,7 +94,7 @@ victim_story = {
             1: {'text': "Keep seeing the counselor", 'next_node': 16},
             2: {'text': "Stop seeking help and rely on weed to manage", 'next_node': 17}
         },
-        'image' :   'images/bullyscene_node8.png'
+        'image': 'images/bullyscene_node8.png'
     },
 
     9: {
@@ -103,7 +105,8 @@ victim_story = {
         'choices': {
             1: {'text': "Start drinking to numb the pain", 'next_node': 18},
             2: {'text': "Keep enduring without reaching out for help", 'next_node': 19}
-        }
+        },
+        'image': 'images/bullyscene_node9.png'
     },
 
     10: {
@@ -115,153 +118,165 @@ victim_story = {
             1: {'text': "Talk to a teacher or school counselor", 'next_node': 20},
             2: {'text': "Continue trying to avoid Bryan", 'next_node': 21}
         },
-        'image' :   'images/bullyscene_node10.png'
+        'image': 'images/bullyscene_node10.png'
     },
 
     11: {
         'text': (
-            "Zach opens up to a friend about the bullying. While his friend offers some support, it doesn’t stop Bryan from "
-            "continuing the abuse. Zach still feels alone and overwhelmed."
+            "Zach reaches out to a friend, who listens but feels powerless to help. Although he feels some relief from "
+            "sharing his burden, the bullying persists, and Zach struggles to find any sense of security."
         ),
         'choices': {
-            1: {'text': "Seek help from his parents", 'next_node': 22},
-            2: {'text': "Try to deal with the situation on his own", 'next_node': 23}
-        }
+            1: {'text': "Ask his friend to confront Bryan", 'next_node': 22},
+            2: {'text': "Continue enduring the bullying alone", 'next_node': 23}
+        },
+        'image': 'images/bullyscene_node11.png'
     },
 
     12: {
         'text': (
-            "Zach talks to a teacher about the bullying. The teacher takes some action, but it only makes Bryan more subtle "
-            "with his bullying. Zach still feels trapped and begins to lose hope."
+            "Zach decides to talk to a teacher directly, hoping for intervention. The teacher promises to look into it, but "
+            "Bryan and his friends find out and make things worse. Zach’s sense of betrayal deepens, and he feels unsafe at school."
         ),
         'choices': {
-            1: {'text': "Seek help outside of school", 'next_node': 24},
-            2: {'text': "Withdraw and isolate himself further", 'next_node': 25}
-        }
+            1: {'text': "Try another teacher for support", 'next_node': 24},
+            2: {'text': "Withdraw from school activities", 'next_node': 25}
+        },
+        'image': 'images/bullyscene_node12.png'
     },
 
     13: {
         'text': (
-            "Zach withdraws completely from social life. He stops interacting with his friends and family, and his grades "
-            "begin to slip. His parents start to worry, but Zach keeps pretending everything is fine."
+            "Zach begins to isolate himself more, avoiding social interactions. His grades start to slip, and he becomes more "
+            "withdrawn from his family. He feels like he's disappearing into the background, unseen and unheard."
         ),
         'choices': {
-            1: {'text': "Try to get his grades back on track", 'next_node': 26},
-            2: {'text': "Ignore his schoolwork and continue isolating", 'next_node': 27}
+            1: {'text': "Seek solace in online forums", 'next_node': 26},
+            2: {'text': "Stop attending school regularly", 'next_node': 27}
         },
-        'image' :   'images/bullyscene_node13.png'
+        'image': 'images/bullyscene_node13.png'
     },
 
     14: {
         'text': (
-            "Zach starts smoking cigarettes to cope with his anxiety. It becomes a regular habit, providing him with a momentary "
-            "escape from the stress. However, his mental health continues to worsen."
+            "Zach starts smoking to cope with the stress and anxiety. It helps him feel better temporarily, but his addiction "
+            "grows, leading him down a path that alienates him further from his family and friends."
         ),
         'choices': {
-            1: {'text': "Keep smoking to manage his anxiety", 'next_node': 28},
-            2: {'text': "Try to find healthier ways to cope", 'next_node': 29}
-        }
+            1: {'text': "Try to quit and seek other ways to cope", 'next_node': 28},
+            2: {'text': "Continue smoking and pushing people away", 'next_node': 29}
+        },
+        'image': 'images/bullyscene_node14.png'
     },
 
     15: {
         'text': (
-            "Zach tries to keep going despite the immense pressure he’s feeling. The bullying doesn’t stop, and his mental health "
-            "continues to decline. He struggles to maintain a normal facade in front of his family."
+            "Zach tries to keep going, focusing on his studies, but the emotional toll becomes overwhelming. He feels exhausted "
+            "and begins experiencing insomnia and lack of appetite. The daily dread weighs heavily on him."
         ),
         'choices': {
-            1: {'text': "Seek professional help for his anxiety", 'next_node': 30},
-            2: {'text': "Continue hiding his struggles from everyone", 'next_node': 31}
-        }
+            1: {'text': "Seek help from a mental health hotline", 'next_node': 30},
+            2: {'text': "Keep everything bottled up", 'next_node': 31}
+        },
+        'image': 'images/bullyscene_node15.png'
     },
 
     16: {
         'text': (
-            "Zach continues to see the school counselor, but the progress is slow. He still feels the weight of the bullying and "
-            "the isolation. His reliance on weed grows as he struggles to deal with his emotions."
+            "Zach keeps seeing the school counselor, but progress is slow. He starts feeling frustrated, doubting if talking "
+            "really helps. However, he’s reluctant to give up entirely, clinging to a faint hope that things might improve."
         ),
         'choices': {
-            1: {'text': "Try to reduce his weed consumption", 'next_node': 32},
-            2: {'text': "Continue using weed as a coping mechanism", 'next_node': 33}
-        }
+            1: {'text': "Express his frustrations to the counselor", 'next_node': 32},
+            2: {'text': "Seek external support from a therapist", 'next_node': 33}
+        },
+        'image': 'images/bullyscene_node16.png'
     },
 
     17: {
         'text': (
-            "Zach stops seeking help from the counselor and begins using weed more frequently to cope. His parents notice his "
-            "distant behavior, but Zach denies that anything is wrong. His mental health worsens as he becomes more detached."
+            "Zach decides to rely solely on weed to manage his stress. His attendance drops, and he becomes distant from friends "
+            "and family. The sense of isolation deepens as he loses touch with what once mattered to him."
         ),
         'choices': {
-            1: {'text': "Consider going back to the counselor", 'next_node': 34},
-            2: {'text': "Continue avoiding professional help", 'next_node': 35}
-        }
+            1: {'text': "Try to get clean", 'next_node': 34},
+            2: {'text': "Continue down the path of substance use", 'next_node': 35}
+        },
+        'image': 'images/bullyscene_node17.png'
     },
 
     18: {
         'text': (
-            "Zach starts drinking to numb the pain. At first, it helps him forget about the bullying and his anxiety, but soon he "
-            "finds himself drinking more frequently. His grades start slipping further."
+            "Zach turns to drinking to numb the pain. At first, it helps him feel less burdened, but his dependence on alcohol "
+            "grows. His family becomes worried, but he pushes them away, choosing solitude."
         ),
         'choices': {
-            1: {'text': "Recognize he’s developing a drinking problem", 'next_node': 36},
-            2: {'text': "Keep drinking to cope", 'next_node': 37}
-        }
+            1: {'text': "Seek professional help", 'next_node': 36},
+            2: {'text': "Continue drinking", 'next_node': 37}
+        },
+        'image': 'images/bullyscene_node18.png'
     },
 
     19: {
         'text': (
-            "Zach continues enduring the bullying without reaching out for help. His dissociation becomes more frequent, and he "
-            "often feels disconnected from reality. He contemplates suicide more regularly."
+            "Zach decides to keep enduring, hoping the situation will eventually resolve itself. He becomes increasingly numb, "
+            "avoiding emotional connections and feeling like he's merely going through the motions each day."
         ),
         'choices': {
-            1: {'text': "Reach out to someone before it's too late", 'next_node': 38},
-            2: {'text': "Keep silent and try to deal with it on his own", 'next_node': 39}
-        }
+            1: {'text': "Reach out online for support", 'next_node': 38},
+            2: {'text': "Withdraw further into isolation", 'next_node': 39}
+        },
+        'image': 'images/bullyscene_node19.png'
     },
 
     20: {
         'text': (
-            "Zach talks to the school counselor about the bullying. They try to intervene, but Bryan continues bullying Zach in "
-            "more subtle ways. Zach’s mental health continues to spiral."
+            "Zach talks to a school counselor, who suggests he join a support group. The idea of sharing his experiences with "
+            "others going through similar struggles seems daunting, but he considers it."
         ),
         'choices': {
-            1: {'text': "Focus on self-care to improve his mental health", 'next_node': 40},
-            2: {'text': "Continue struggling without addressing his feelings", 'next_node': 41}
-        }
+            1: {'text': "Join the support group", 'next_node': 40},
+            2: {'text': "Decide against it and handle it alone", 'next_node': 41}
+        },
+        'image': 'images/bullyscene_node20.png'
     },
 
     21: {
         'text': (
-            "Zach keeps avoiding Bryan, but the constant bullying wears him down. He isolates himself from his peers and his family, "
-            "feeling like there’s no escape from the situation."
+            "Zach tries to continue avoiding Bryan, but Bryan’s tactics become more relentless. He feels like there’s nowhere "
+            "to hide and begins dreading going to school altogether."
         ),
         'choices': {
-            1: {'text': "Consider leaving school to escape the bullying", 'next_node': 42},
-            2: {'text': "Try to keep enduring despite the pain", 'next_node': 43}
-        }
+            1: {'text': "Try transferring to a different school", 'next_node': 42},
+            2: {'text': "Confront Bryan directly", 'next_node': 43}
+        },
+        'image': 'images/bullyscene_node21.png'
     },
 
     22: {
         'text': (
-            "Zach opens up to his parents about the bullying. They are supportive and try to help, but the school is slow to take action. "
-            "Bryan’s bullying continues, and Zach’s mental health continues to decline."
+            "Zach asks his friend to confront Bryan, but his friend is hesitant. Eventually, they both decide it might be too "
+            "risky. Zach is disappointed but understands the difficulty."
         ),
         'choices': {
-            1: {'text': "Consider switching schools", 'next_node': 44},
-            2: {'text': "Stay and try to deal with the situation", 'next_node': 45}
-        }
+            1: {'text': "Talk to his parents for additional support", 'next_node': 44},
+            2: {'text': "Try to endure the bullying alone", 'next_node': 45}
+        },
+        'image': 'images/bullyscene_node22.png'
     },
 
     23: {
         'text': (
-            "Zach tries to deal with the situation on his own, but the weight of the bullying is too much to handle. He feels trapped "
-            "and isolated, with no end in sight."
+            "Zach decides to continue handling things on his own. The weight of isolation grows heavier, and he starts to feel "
+            "like no one truly understands him."
         ),
         'choices': {
-            1: {'text': "Seek help from an external support group", 'next_node': 46},
-            2: {'text': "Continue bottling up his emotions", 'next_node': 47}
-        }
+            1: {'text': "Reach out to a therapist", 'next_node': 46},
+            2: {'text': "Turn to destructive habits", 'next_node': 47}
+        },
+        'image': 'images/bullyscene_node23.png'
     },
-
+    
     24: {
         'text': (
             "Zach seeks help from an external counselor. The process is slow, but he starts to make some progress in dealing with his "
