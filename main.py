@@ -176,15 +176,25 @@ class StoryGame:
 
     def make_choice(self, choice):
         current_story = self.stories[self.current_story_key]
-        if choice in current_story[self.current_node]['choices']:
-            next_node = current_story[self.current_node]['choices'][choice]['next_node']
-            if isinstance(next_node, int):
+        current_node_data = current_story.get(self.current_node, {})
+
+        # Check if choice exists for the current node
+        if choice in current_node_data.get('choices', {}):
+            next_node = current_node_data['choices'][choice]['next_node']
+
+            # Check if the next node exists in the current story
+            if isinstance(next_node, int) and next_node in current_story:
                 self.current_node = next_node
                 self.update_story()
-            else:
+            elif isinstance(next_node, str) and next_node in self.stories:
+                # If next_node is a story key, switch stories and start at node 1
                 self.current_story_key = next_node
                 self.current_node = 1
                 self.update_story()
+            else:
+                # Handle missing node or invalid story key
+                messagebox.showerror("Error", "The chosen path does not lead to a valid node. Restarting...")
+                self.setup_intro_screen()  # Reset to the intro screen
         else:
             messagebox.showwarning("Invalid Choice", "This choice is not available.")
 
@@ -207,6 +217,14 @@ class StoryGame:
         choices = story_data.get('choices', {})
         self.button1.config(text=choices.get(1, {}).get('text', ""), state=tk.NORMAL if 1 in choices else tk.DISABLED)
         self.button2.config(text=choices.get(2, {}).get('text', ""), state=tk.NORMAL if 2 in choices else tk.DISABLED)
+
+        image_path = story_data.get('image', None)
+        print(f"Loading image from path: {image_path}")  # Debugging line
+        if image_path and os.path.exists(image_path):
+            print(f"Image found at {image_path}")
+        else:
+            print("Image not found or path is invalid")
+
 
 
 root = tk.Tk()
