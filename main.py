@@ -206,24 +206,18 @@ class StoryGame:
         self.story_text.set(story_text)
 
         image_path = story_data.get('image', None)
+        print(f"Current node: {self.current_node}, Image path: {image_path}")  # Debugging line
         if image_path and os.path.exists(image_path):
             img = Image.open(image_path)
-            self.story_image = ImageTk.PhotoImage(img)
+            self.story_image = ImageTk.PhotoImage(img)  # Keep reference to avoid garbage collection
             self.image_label.config(image=self.story_image)
+            self.image_label.pack()  # Ensure image label is packed to display
         else:
-            self.image_label.config(image='')
-            self.image_label.pack_forget()
+            self.image_label.config(image='')  # Clear the image if not found
+            self.image_label.pack_forget()  # Hide the label if no image
+            print("Image not found or path is invalid")  # Debugging line
+            
 
-        choices = story_data.get('choices', {})
-        self.button1.config(text=choices.get(1, {}).get('text', ""), state=tk.NORMAL if 1 in choices else tk.DISABLED)
-        self.button2.config(text=choices.get(2, {}).get('text', ""), state=tk.NORMAL if 2 in choices else tk.DISABLED)
-
-        image_path = story_data.get('image', None)
-        print(f"Loading image from path: {image_path}")  # Debugging line
-        if image_path and os.path.exists(image_path):
-            print(f"Image found at {image_path}")
-        else:
-            print("Image not found or path is invalid")
 
 
 # Create the main window
