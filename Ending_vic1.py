@@ -879,8 +879,8 @@ victim_story = {
             "hard for him to distinguish between what’s real and what’s not."
         ),
         'choices': {
-            #1: {'text': "Reach out for help before it’s too late", 'next_node': 156},
-            #2: {'text': "Continue to withdraw from the world", 'next_node': 157}
+            1: {'text': "Reach out for help before it’s too late", 'next_node': 156},
+            2: {'text': "Continue to withdraw from the world", 'next_node': 157}
         }
     },
 
@@ -889,8 +889,8 @@ victim_story = {
             "Zach feels overwhelmed by his emotions but knows he needs to take a step forward."
         ),
         'choices': {
-           #1: {'text': "Reach out to a friend for support.", 'next_node': 133},
-           #2: {'text': "Write in his journal to process his feelings.", 'next_node': 134}
+           1: {'text': "Reach out to a friend for support.", 'next_node': 133},
+           2: {'text': "Write in his journal to process his feelings.", 'next_node': 134}
         }
     },
 
@@ -899,8 +899,8 @@ victim_story = {
             "Zach confronts a bully at school, surprising himself with his courage."
         ),
         'choices': {
-            #1: {'text': "Feel proud and empowered.", 'next_node': 135},
-            #2: {'text': "Worry about potential retaliation.", 'next_node': 136}
+            1: {'text': "Feel proud and empowered.", 'next_node': 135},
+            2: {'text': "Worry about potential retaliation.", 'next_node': 136}
         }
     },
 
@@ -909,8 +909,8 @@ victim_story = {
             "Zach has a heart-to-heart with his parents about his struggles."
         ),
         'choices': {
-            #1: {'text': "Feel closer to them and supported.", 'next_node': 137},
-            #2: {'text': "Still feel misunderstood and alone.", 'next_node': 138}
+            1: {'text': "Feel closer to them and supported.", 'next_node': 137},
+            2: {'text': "Still feel misunderstood and alone.", 'next_node': 138}
         }
     },
 
@@ -919,8 +919,8 @@ victim_story = {
             "Zach finds solace in a new hobby, allowing him to express himself creatively."
         ),
         'choices': {
-            #1: {'text': "Dedicate more time to this hobby.", 'next_node': 139},
-            #2: {'text': "Feel guilty for not focusing on his issues.", 'next_node': 140}
+            1: {'text': "Dedicate more time to this hobby.", 'next_node': 139},
+            2: {'text': "Feel guilty for not focusing on his issues.", 'next_node': 140}
         }
     },
 
@@ -929,7 +929,7 @@ victim_story = {
             "Zach starts to feel a sense of belonging with a new group of friends."
         ),
         'choices': {
-            #1: {'text': "Open up to them about his past.", 'next_node': 141},
+            1: {'text': "Open up to them about his past.", 'next_node': 141},
             2: {'text': "Keep his struggles to himself for now.", 'next_node': 142}
         }
     },
@@ -1284,148 +1284,175 @@ victim_story = {
     # Endings from 122 onward would connect all possible outcomes, 
     # ensuring each choice leads to a conclusion that matches the narrative direction.
     122: {
-        'text': "Zach finds peace and acceptance in his journey, fully embracing his new sense of self."
+        'text': "Zach finds peace and acceptance in his journey, fully embracing his new sense of self. (ENDING 35: Embracing Self)"
     },
     123: {
-        'text': "Zach continues to struggle, but he knows he’s not alone in his fight anymore."
+        'text': "Zach continues to struggle, but he knows he’s not alone in his fight anymore. (ENDING 36: Strength in Unity)"
     },
     124: {
-        'text': "Zach becomes a powerful advocate for bullying prevention, sharing his story to inspire others."
+        'text': "Zach becomes a powerful advocate for bullying prevention, sharing his story to inspire others. (ENDING 37: Advocate for Change)"
     },
     125: {
-        'text': "Zach finds solace in helping others heal, realizing that his experiences have given him strength."
+        'text': "Zach finds solace in helping others heal, realizing that his experiences have given him strength. (ENDING 38: Healing Through Helping)"
     },
     126: {
-        'text': "Zach faces setbacks, but each time he gets back up, he grows stronger and more resilient."
+        'text': "Zach faces setbacks, but each time he gets back up, he grows stronger and more resilient. (ENDING 39: Resilience in Adversity)"
     },
     127: {
-        'text': "Zach forgives those who hurt him and moves forward with a sense of peace and freedom."
+        'text': "Zach forgives those who hurt him and moves forward with a sense of peace and freedom. (ENDING 40: Peaceful Forgiveness)"
     },
-
     129: {
-        'text': "Zach finds fulfillment in helping others, using his own experiences to guide them through their challenges."
+        'text': "Zach finds fulfillment in helping others, using his own experiences to guide them through their challenges. (ENDING 41: Guiding Light)"
     },
     130: {
-        'text': "Zach builds strong relationships with those who support him, finding a community that cares for him."
+        'text': "Zach builds strong relationships with those who support him, finding a community that cares for him. (ENDING 42: Found Family)"
     },
     131: {
-        'text': "Zach becomes a mentor for younger people, sharing his story and offering advice."
+        'text': "Zach becomes a mentor for younger people, sharing his story and offering advice. (ENDING 43: Mentorship Path)"
     },
     132: {
-        'text': "Zach decides to focus on his own recovery before helping others, ensuring he’s strong enough to support them."
+        'text': "Zach decides to focus on his own recovery before helping others, ensuring he’s strong enough to support them. (ENDING 44: Self-Care First)"
     },
     133: {
-        'text': "Zach feels a sense of closure after finally confronting the painful memories of his past."
+        'text': "Zach feels a sense of closure after finally confronting the painful memories of his past. (ENDING 45: Confronting the Past)"
     },
     134: {
-        'text': "Zach embraces the future with newfound confidence, knowing he has the tools to overcome challenges."
+        'text': "Zach embraces the future with newfound confidence, knowing he has the tools to overcome challenges. (ENDING 46: Confident Future)"
     },
     135: {
-        'text': "Zach struggles to let go of the past, but realizes that his journey is ongoing and that it’s okay to take his time."
+        'text': "Zach struggles to let go of the past, but realizes that his journey is ongoing and that it’s okay to take his time. (ENDING 47: Ongoing Journey)"
     },
     136: {
-        'text': "Zach becomes an advocate for mental health, helping others who have experienced similar struggles."
+        'text': "Zach becomes an advocate for mental health, helping others who have experienced similar struggles. (ENDING 48: Mental Health Advocate)"
     },
     137: {
-        'text': "Zach feels proud of the progress he’s made, even though there are still difficult days."
+        'text': "Zach feels proud of the progress he’s made, even though there are still difficult days. (ENDING 49: Proud Progress)"
     },
     138: {
-        'text': "Zach forgives himself for the years of pain and begins to focus on a brighter future."
+        'text': "Zach forgives himself for the years of pain and begins to focus on a brighter future. (ENDING 50: Self-Forgiveness)"
     },
     139: {
-        'text': "Zach accepts that healing is a lifelong journey, but he’s committed to doing the work."
+        'text': "Zach accepts that healing is a lifelong journey, but he’s committed to doing the work. (ENDING 51: Commitment to Healing)"
     },
     140: {
-        'text': "Zach’s relationships with others become stronger as he learns to trust and open up."
+        'text': "Zach’s relationships with others become stronger as he learns to trust and open up. (ENDING 52: Strengthened Connections)"
     },
     141: {
-        'text': "Zach feels a deep sense of purpose in helping others, turning his pain into a source of strength."
+        'text': "Zach feels a deep sense of purpose in helping others, turning his pain into a source of strength. (ENDING 53: Purpose in Pain)"
     },
     142: {
-        'text': "Zach decides to pursue a career in mental health, inspired by his own experiences."
+        'text': "Zach decides to pursue a career in mental health, inspired by his own experiences. (ENDING 54: Mental Health Career)"
     },
     143: {
-        'text': "Zach feels hopeful for the future, knowing that he’s no longer defined by his past."
+        'text': "Zach feels hopeful for the future, knowing that he’s no longer defined by his past. (ENDING 55: Hopeful Rebirth)"
     },
     144: {
-        'text': "Zach continues to work on himself, understanding that healing takes time and patience."
+        'text': "Zach continues to work on himself, understanding that healing takes time and patience. (ENDING 56: Patient Progress)"
     },
     145: {
-        'text': "Zach finds peace in the realization that his past does not control his future."
+        'text': "Zach finds peace in the realization that his past does not control his future. (ENDING 57: Freedom from the Past)"
     },
     146: {
-        'text': "Zach becomes a source of strength for others, offering support and understanding to those who need it."
+        'text': "Zach becomes a source of strength for others, offering support and understanding to those who need it. (ENDING 58: Supportive Guide)"
     },
     147: {
-        'text': "Zach finds comfort in the friendships he’s built, realizing he’s not alone in his journey."
+        'text': "Zach finds comfort in the friendships he’s built, realizing he’s not alone in his journey. (ENDING 58: Comfort in Friendship)"
     },
     148: {
-        'text': "Zach reflects on how far he’s come, feeling proud of the progress he’s made."
+        'text': "Zach reflects on how far he’s come, feeling proud of the progress he’s made. (ENDING 59: Reflective Pride)"
     },
     149: {
-        'text': "Zach feels empowered by his ability to overcome challenges and help others do the same."
+        'text': "Zach feels empowered by his ability to overcome challenges and help others do the same. (ENDING 60: Empowered by Experience)"
     },
     150: {
-        'text': "Zach continues to grow, accepting that healing is a process that takes time and effort."
+        'text': "Zach continues to grow, accepting that healing is a process that takes time and effort. (ENDING 61: Growth in Process)"
     },
     151: {
-        'text': "Zach feels a sense of accomplishment as he looks back on his journey and how much he’s grown."
+        'text': "Zach feels a sense of accomplishment as he looks back on his journey and how much he’s grown. (ENDING 62: Sense of Accomplishment)"
     },
     152: {
-        'text': "Zach forgives those who hurt him, realizing that forgiveness is a key part of his healing process."
+        'text': "Zach forgives those who hurt him, realizing that forgiveness is a key part of his healing process. (ENDING 63: Forgiveness as Freedom)"
     },
     153: {
-        'text': "Zach accepts that while the past has shaped him, it doesn’t define who he is."
+        'text': "Zach accepts that while the past has shaped him, it doesn’t define who he is. (ENDING 64: Redefined Self)"
     },
     154: {
-        'text': "Zach focuses on his recovery with professional help, beginning to see the light at the end of the tunnel."
+        'text': "Zach focuses on his recovery with professional help, beginning to see the light at the end of the tunnel. (ENDING 65: Professional Support)"
     },
     155: {
-        'text': "Zach resists help, feeling that it’s too late for him, but his loved ones continue to support him."
+        'text': "Zach resists help, feeling that it’s too late for him, but his loved ones continue to support him. (ENDING 66: Late Hope)"
     },
     156: {
-        'text': "Zach finally realizes that it’s never too late to heal, and he begins to accept the help he’s been offered."
+        'text': "Zach finally realizes that it’s never too late to heal, and he begins to accept the help he’s been offered. (ENDING 67: Embracing Help)"
     },
     157: {
-        'text': "Zach decides to take one day at a time, focusing on small victories in his journey toward healing."
+        'text': "Zach decides to take one day at a time, focusing on small victories in his journey toward healing. (ENDING 68: Small Steps Forward)"
     },
-
-
-
-
-
-    158: {'text': "Zach fully commits to therapy, making steady progress. Though the road to recovery is long, he starts to find peace within himself. (ENDING 1: Recovery & Growth)"},
-    159: {'text': "Zach quits therapy, unable to overcome his skepticism. Without the support he needs, his mental health continues to deteriorate. (ENDING 2: Downward Spiral)"},
-    160: {'text': "Zach seeks help and is able to regain control of his life. It’s a difficult journey, but he starts to heal. (ENDING 3: A Second Chance)"},
-    161: {'text': "Zach retreats further into isolation. His dissociation becomes so severe that he’s eventually hospitalized. (ENDING 4: Collapse)"},
-    162: {'text': "Zach opens up to his parents, and they support him through his recovery. Slowly, he starts to rebuild his life. (ENDING 5: Family Support)"},
-    163: {'text': "Zach keeps his parents in the dark, and his mental health worsens. Eventually, the isolation becomes unbearable. (ENDING 6: Breaking Point)"},
-    164: {'text': "Zach reaches out for professional help, and though it’s difficult, he begins to regain control of his dissociation. (ENDING 7: Grounded)"},
-    165: {'text': "Zach avoids seeking help, and his dissociation spirals out of control, leading to a complete breakdown. (ENDING 8: Fragmented Mind)"},
-    166: {'text': "Zach confides in his teacher, who helps him access mental health resources. It’s a turning point in his recovery. (ENDING 9: A Lifeline)"},
-    167: {'text': "Zach tells his teacher everything is fine, but the pressure eventually causes him to collapse. (ENDING 10: Overwhelmed)"},
-    168: {'text': "Zach opens up about his darkest thoughts, leading to immediate intervention and support. It’s a step towards healing. (ENDING 11: Intervention)"},
-    169: {'text': "Zach keeps his feelings hidden, leading to a dangerous escalation of his mental health struggles. (ENDING 12: Silence & Despair)"},
+    158: {
+        'text': "Zach fully commits to therapy, making steady progress. Though the road to recovery is long, he starts to find peace within himself. (ENDING 1: Recovery & Growth)"
+    },
+    159: {'text': "Zach quits therapy, unable to overcome his skepticism. Without the support he needs, his mental health continues to deteriorate. (ENDING 2: Downward Spiral)"
+    },
+    160: {'text': "Zach seeks help and is able to regain control of his life. It’s a difficult journey, but he starts to heal. (ENDING 3: A Second Chance)"
+    },
+    161: {'text': "Zach retreats further into isolation. His dissociation becomes so severe that he’s eventually hospitalized. (ENDING 4: Collapse)"
+    },
+    162: {'text': "Zach opens up to his parents, and they support him through his recovery. Slowly, he starts to rebuild his life. (ENDING 5: Family Support)"
+    },
+    163: {'text': "Zach keeps his parents in the dark, and his mental health worsens. Eventually, the isolation becomes unbearable. (ENDING 6: Breaking Point)"
+    },
+    164: {'text': "Zach reaches out for professional help, and though it’s difficult, he begins to regain control of his dissociation. (ENDING 7: Grounded)"
+    },
+    165: {'text': "Zach avoids seeking help, and his dissociation spirals out of control, leading to a complete breakdown. (ENDING 8: Fragmented Mind)"
+    },
+    166: {'text': "Zach confides in his teacher, who helps him access mental health resources. It’s a turning point in his recovery. (ENDING 9: A Lifeline)"
+    },
+    167: {'text': "Zach tells his teacher everything is fine, but the pressure eventually causes him to collapse. (ENDING 10: Overwhelmed)"
+    },
+    168: {'text': "Zach opens up about his darkest thoughts, leading to immediate intervention and support. It’s a step towards healing. (ENDING 11: Intervention)"
+    },
+    169: {'text': "Zach keeps his feelings hidden, leading to a dangerous escalation of his mental health struggles. (ENDING 12: Silence & Despair)"
+    },
     170: {'text': "Zach makes an effort to reconnect with his friends. Though it’s awkward at first, they welcome him back with open arms. (ENDING 13: Friendship & Healing)"},
-    171: {'text': "Zach lets his friendships fade, and his sense of isolation deepens. Without support, his recovery falters. (ENDING 14: Alone)"},
-    172: {'text': "Zach stays committed to therapy, and though the road is hard, he makes meaningful progress. (ENDING 15: Steady Progress)"},
-    173: {'text': "Zach gets overwhelmed and quits therapy. Without the guidance and structure, his mental health declines again. (ENDING 16: Relapse)"},
+    171: {'text': "Zach lets his friendships fade, and his sense of isolation deepens. Without support, his recovery falters. (ENDING 14: Alone)"
+    },
+    172: {'text': "Zach stays committed to therapy, and though the road is hard, he makes meaningful progress. (ENDING 15: Steady Progress)"
+    },
+    173: {'text': "Zach gets overwhelmed and quits therapy. Without the guidance and structure, his mental health declines again. (ENDING 16: Relapse)"
+    },
     174: {'text': "Zach accepts the need for medical intervention, and after a long recovery process, he begins to rebuild his health. (ENDING 17: Physical & Mental Healing)"},
-    175: {'text': "Zach refuses to cooperate with doctors, and his health continues to deteriorate. (ENDING 18: Physical Decline)"},
-    176: {'text': "Zach accepts his parents' support, and together, they work towards rebuilding their relationship and his health. (ENDING 19: Family Rebuilding)"},
-    177: {'text': "Zach struggles with the idea that he’s too far gone, and it affects his ability to move forward in recovery. (ENDING 20: Stuck in Limbo)"},
-    178: {'text': "Zach stays committed to therapy and, in time, finds ways to cope with his trauma. (ENDING 21: Trauma Healing)"},
-    179: {'text': "Zach avoids delving too deep into his trauma, which leads to his recovery stalling. (ENDING 22: Stagnation)"},
-    180: {'text': "Zach agrees to hospitalization, and though it’s a frightening experience, it’s a turning point in his recovery. (ENDING 23: Emergency Intervention)"},
-    181: {'text': "Zach resists hospitalization, leading to further escalation in his mental health struggles. (ENDING 24: Escalation)"},
-    182: {'text': "Zach listens to his friends, and with their support, he begins to get the help he needs. (ENDING 25: Friendship Saves)"},
-    183: {'text': "Zach insists he’s fine, and without their help, he continues to spiral. (ENDING 26: Isolation & Decline)"},
-    184: {'text': "Zach tells a trusted adult about his struggles, and with their help, he begins the road to recovery. (ENDING 27: Saved in Time)"},
-    185: {'text': "Zach keeps his struggles hidden, and eventually, his health reaches a breaking point. (ENDING 28: Hidden Struggles)"},
-    186: {'text': "Zach embraces the ups and downs of recovery, staying resilient even through setbacks. (ENDING 29: Resilience)"},
-    187: {'text': "Zach gets discouraged and abandons recovery, falling back into old habits. (ENDING 30: Abandonment)"},
-    188: {'text': "Zach celebrates his progress and continues to work on his mental health, knowing the journey is ongoing. (ENDING 31: Lifelong Healing)"},
-    189: {'text': "Zach fears relapse and pulls away from his support network, putting himself at risk. (ENDING 32: Fear of Relapse)"},
-    190: {'text': "Zach finally accepts the need for help after a health scare, and though the journey is long, he begins to heal. (ENDING 33: Healing After Crisis)"},
-    191: {'text': "Zach continues in a downward spiral, believing he has nothing left to lose. (ENDING 34: Total Decline)"}
+    175: {'text': "Zach refuses to cooperate with doctors, and his health continues to deteriorate. (ENDING 18: Physical Decline)"
+    },
+    176: {'text': "Zach accepts his parents' support, and together, they work towards rebuilding their relationship and his health. (ENDING 19: Family Rebuilding)"
+    },
+    177: {'text': "Zach struggles with the idea that he’s too far gone, and it affects his ability to move forward in recovery. (ENDING 20: Stuck in Limbo)"
+    },
+    178: {'text': "Zach stays committed to therapy and, in time, finds ways to cope with his trauma. (ENDING 21: Trauma Healing)"
+    },
+    179: {'text': "Zach avoids delving too deep into his trauma, which leads to his recovery stalling. (ENDING 22: Stagnation)"
+    },
+    180: {'text': "Zach agrees to hospitalization, and though it’s a frightening experience, it’s a turning point in his recovery. (ENDING 23: Emergency Intervention)"
+    },
+    181: {'text': "Zach resists hospitalization, leading to further escalation in his mental health struggles. (ENDING 24: Escalation)"
+    },
+    182: {'text': "Zach listens to his friends, and with their support, he begins to get the help he needs. (ENDING 25: Friendship Saves)"
+    },
+    183: {'text': "Zach insists he’s fine, and without their help, he continues to spiral. (ENDING 26: Isolation & Decline)"
+    },
+    184: {'text': "Zach tells a trusted adult about his struggles, and with their help, he begins the road to recovery. (ENDING 27: Saved in Time)"
+    },
+    185: {'text': "Zach keeps his struggles hidden, and eventually, his health reaches a breaking point. (ENDING 28: Hidden Struggles)"
+    },
+    186: {'text': "Zach embraces the ups and downs of recovery, staying resilient even through setbacks. (ENDING 29: Resilience)"
+    },
+    187: {'text': "Zach gets discouraged and abandons recovery, falling back into old habits. (ENDING 30: Abandonment)"
+    },
+    188: {'text': "Zach celebrates his progress and continues to work on his mental health, knowing the journey is ongoing. (ENDING 31: Lifelong Healing)"
+    },
+    189: {'text': "Zach fears relapse and pulls away from his support network, putting himself at risk. (ENDING 32: Fear of Relapse)"
+    },
+    190: {'text': "Zach finally accepts the need for help after a health scare, and though the journey is long, he begins to heal. (ENDING 33: Healing After Crisis)"
+    },
+    191: {'text': "Zach continues in a downward spiral, believing he has nothing left to lose. (ENDING 34: Total Decline)"
+    }
 }
