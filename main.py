@@ -215,8 +215,11 @@ class StoryGame:
         else:
             self.image_label.config(image='')  # Clear the image if not found
             self.image_label.pack_forget()  # Hide the label if no image
-            print("Image not found or path is invalid")  # Debugging line
-            
+
+        choices = story_data.get('choices', {})
+        self.button1.config(text=choices.get(1, {}).get('text', ""), state=tk.NORMAL if 1 in choices else tk.DISABLED)
+        self.button2.config(text=choices.get(2, {}).get('text', ""), state=tk.NORMAL if 2 in choices else tk.DISABLED)
+                
 
 
 
