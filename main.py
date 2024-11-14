@@ -226,7 +226,10 @@ class StoryGame:
             print("Image not found or path is invalid")
 
 
-
+# Create the main window
 root = tk.Tk()
 game = StoryGame(root)
+
+# Run the application
 root.mainloop()
+
