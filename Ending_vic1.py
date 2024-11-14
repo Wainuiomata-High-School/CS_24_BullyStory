@@ -1301,6 +1301,9 @@ victim_story = {
     127: {
         'text': "Zach forgives those who hurt him and moves forward with a sense of peace and freedom. (ENDING 40: Peaceful Forgiveness)"
     },
+    128: {
+    'text': "Zach finds fulfillment in helping others, using his own experiences to guide them through their challenges. (ENDING 58: Mentor of Hope)",
+    },
     129: {
         'text': "Zach finds fulfillment in helping others, using his own experiences to guide them through their challenges. (ENDING 41: Guiding Light)"
     },
