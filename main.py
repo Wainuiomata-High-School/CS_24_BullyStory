@@ -219,8 +219,7 @@ class StoryGame:
         choices = story_data.get('choices', {})
         self.button1.config(text=choices.get(1, {}).get('text', ""), state=tk.NORMAL if 1 in choices else tk.DISABLED)
         self.button2.config(text=choices.get(2, {}).get('text', ""), state=tk.NORMAL if 2 in choices else tk.DISABLED)
-                
-
+        
 
 
 # Create the main window
