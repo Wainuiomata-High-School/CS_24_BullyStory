@@ -196,12 +196,15 @@ class StoryGame:
                 self.current_story_key = next_node
                 self.current_node = 1
                 self.update_story()
+            elif choice == 1 and current_node_data['choices'][1]['text'] == "Restart":
+                # Reset game state for a clean restart
+                self.current_node = 1
+                self.current_story_key = 'victim'  # Or set this to the starting story
+                self.setup_intro_screen()
             else:
                 # Handle missing node or invalid story key
                 messagebox.showerror("Error", "The chosen path does not lead to a valid node. Restarting...")
                 self.setup_intro_screen()  # Reset to the intro screen
-        elif choice == 'Restart':
-            self.restart_game()  # Call the restart method to reset the game
         else:
             messagebox.showwarning("Invalid Choice", "This choice is not available.")
 
