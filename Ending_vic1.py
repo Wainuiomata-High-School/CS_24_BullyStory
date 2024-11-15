@@ -1385,459 +1385,458 @@ victim_story = {
     # ensuring each choice leads to a conclusion that matches the narrative direction.
 endings = {
     122: {
-        'text': { 
+        'text': ( 
             "Zach finds peace and acceptance in his journey, fully embracing his new sense of self. (ENDING 35: Embracing Self)"
-        },
+        ),
         'image': 'images/bullyscene_node122.png'
     },
     123: {
-        'text': { 
+        'text': (
             "Zach continues to struggle, but he knows he’s not alone in his fight anymore. (ENDING 36: Strength in Unity)"
-        },
+        ),
     },
     
 
     124: {
-        'text': { 
+        'text': (
             "Zach becomes a powerful advocate for bullying prevention, sharing his story to inspire others. (ENDING 37: Advocate for Change)"
-        },
+        ),
     },
 
 
     125: {
-        'text': {
+        'text': (
              "Zach finds solace in helping others heal, realizing that his experiences have given him strength. (ENDING 38: Healing Through Helping)"
-        },
+        ),
 
         },
     
     126: {
-        'text': {
+        'text': (
             "Zach faces setbacks, but each time he gets back up, he grows stronger and more resilient. (ENDING 39: Resilience in Adversity)"
 
-        },
+        ),
     },
 
     122: {
-        'text': { 
+        'text': ( 
             "Zach finds peace and acceptance in his journey, fully embracing his new sense of self. (ENDING 35: Embracing Self)"
         
-        },
+        ),
         'image': 'images/bullyscene_node122.png'
     },
         123: {
-        'text': { 
+        'text': ( 
             "Zach feels a sense of closure after finally confronting the painful memories of his past. (ENDING 46: Confident Future)"
         
-        },
+        ),
         'image': 'images/bullyscene_node123.png'
     },
     124: {
-        'text': { 
+        'text': ( 
             "Zach becomes a powerful advocate for bullying prevention, sharing his story to inspire others. (ENDING 37: Advocate for Change)"
         
-        },
+        ),
         'image': 'images/bullyscene_node124.png'
     },
     125: {
-        'text': { 
+        'text': (
             "Zach finds solace in helping others heal, realizing that his experiences have given him strength. (ENDING 38: Healing Through Helping)"
         
-        },
+        ),
         'image': 'images/bullyscene_node125.png'
     },
     126: {
-        'text': { 
+        'text': ( 
             "Zach faces setbacks, but each time he gets back up, he grows stronger and more resilient. (ENDING 39: Resilience in Adversity)"
-        },
+        ),
         'image': 'images/bullyscene_node126.png'
     },
 
     127: {
-        'text': { 
+        'text': (
             "Zach forgives those who hurt him and moves forward with a sense of peace and freedom. (ENDING 40: Peaceful Forgiveness)"
-        },
+        ),
         'image': 'images/bullyscene_node127.png'
     },
 
     128: {
-        'text': { 
+        'text': ( 
             "Zach finds fulfillment in helping others, using his own experiences to guide them through their challenges. (ENDING 58: Mentor of Hope)"
-        },
+        ),
         'image': 'images/bullyscene_node128.png'
     },
     129: {
-        'text': { 
+        'text': (
             "Zach builds strong relationships with those who support him, finding a community that cares for him. (ENDING 42: Found Family)"
-        },
+        ),
         'image': 'images/bullyscene_node129.png'
     },
     130: {
-        'text': { 
+        'text': (
             "Zach learns to navigate his life with newfound strength, balancing his past experiences with hope. (ENDING 43: Mentorship Path)"
-        },
+        ),
         'image': 'images/bullyscene_node130.png'
     },
     131: {
-        'text': { 
+        'text': (
             "Zach becomes a mentor for younger people, sharing his story and offering advice. (ENDING 44: Self-Care First)"
-        },
+        ),
         'image': 'images/bullyscene_node131.png'
     },
     132: {
-        'text': { 
+        'text': ( 
             "Zach decides to focus on his own recovery before helping others, ensuring he’s strong enough to support them. (ENDING 45: Confronting the Past)"
-        },
+        ),
         'image': 'images/bullyscene_node132.png'
     },
     133: {
-        'text': { 
+        'text': ( 
             "Zach feels a sense of closure after finally confronting the painful memories of his past. (ENDING 46: Confident Future)"
-        },
+        ),
         'image': 'images/bullyscene_node133.png'
     },
     134: {
-        'text': { 
+        'text': (
             "Zach embraces the future with newfound confidence, knowing he has the tools to overcome challenges. (ENDING 47: Ongoing Journey)"
-        },
+        ),
         'image': 'images/bullyscene_node134.png'
     },
     135: {
-        'text': { 
+        'text': ( 
             "Zach struggles to let go of the past, but realizes that his journey is ongoing and that it’s okay to take his time. (ENDING 48: Mental Health Advocate)"
-        },
+        ),
         'image': 'images/bullyscene_node135.png'
     },
     136: {
-        'text': { 
+        'text': (
             "Zach becomes an advocate for mental health, helping others who have experienced similar struggles. (ENDING 49: Proud Progress)"
-        },
+        ),
         'image': 'images/bullyscene_node136.png'
     },
     137: {
-        'text': { 
+        'text': (
             "Zach feels proud of the progress he’s made, even though there are still difficult days. (ENDING 50: Self-Forgiveness)"
-        },
+        ),
         'image': 'images/bullyscene_node137.png'
     },
     138: {
-        'text': { 
+        'text': ( 
             "Zach forgives himself for the years of pain and begins to focus on a brighter future. (ENDING 51: Commitment to Healing)"
-        },
+        ),
         'image': 'images/bullyscene_node138.png'
     },
     139: {
-        'text': { 
+        'text': ( 
             "Zach finds peace in the realization that his past does not control his future. (ENDING 52: Strengthened Connections)"
-        },
+        ),
         'image': 'images/bullyscene_node139.png'
     },
     140: {
-        'text': { 
+        'text': (
             "Zach’s relationships with others become stronger as he learns to trust and open up. (ENDING 53: Purpose in Pain)"
-        },
+        ),
         'image': 'images/bullyscene_node140.png'
     },
     141: {
-        'text': { 
+        'text': (
             "Zach feels a deep sense of purpose in helping others, turning his pain into a source of strength. (ENDING 54: Mental Health Career)"
-        },
+        ),
         'image': 'images/bullyscene_node141.png'
     },
     142: {
-        'text': { 
+        'text': ( 
             "Zach decides to pursue a career in mental health, inspired by his own experiences. (ENDING 55: Hopeful Rebirth)"
-        },
+        ),
         'image': 'images/bullyscene_node142.png'
     },
     143: {
-        'text': { 
+        'text': ( 
             "Zach feels hopeful for the future, knowing that he’s no longer defined by his past. (ENDING 56: Patient Progress)"
-        },
+        ),
         'image': 'images/bullyscene_node143.png'
     },
     144: {
-        'text': { 
+        'text': ( 
             "Zach continues to work on himself, understanding that healing takes time and patience. (ENDING 57: Freedom from the Past)"
-        },
+        ),
         'image': 'images/bullyscene_node144.png'
     },
     145: {
-        'text': { 
+        'text': ( 
             "Zach finds peace in the realization that his past does not control his future. (ENDING 58: Comfort in Friendship)"
-        },
+        ),
         'image': 'images/bullyscene_node145.png'
     },
     146: {
-        'text': { 
+        'text': ( 
             "Zach becomes a source of strength for others, offering support and understanding to those who need it. (ENDING 59: Reflective Pride)"
-        },
+        ),
         'image': 'images/bullyscene_node146.png'
     },
     147: {
-        'text': { 
+        'text': ( 
             "Zach reflects on how far he’s come, feeling proud of the progress he’s made. (ENDING 60: Empowered by Experience)"
-        },
+        ),
         'image': 'images/bullyscene_node147.png'
     },
     148: {
-        'text': { 
+        'text': (
             "Zach finds fulfillment in helping others, using his own experiences to guide them through their challenges. (ENDING 58: Mentor of Hope)"
-        },
+        ),
         'image': 'images/bullyscene_node148.png'
     },
     149: {
-        'text': { 
+        'text': ( 
             "Zach feels overwhelmed by his emotions but knows he needs to take a step forward. (ENDING 61: Growth in Process)"
-        },
+        ),
         'image': 'images/bullyscene_node149.png'
     },
     150: {
-        'text': { 
+        'text': ( 
             "Zach continues to grow, accepting that healing is a process that takes time and effort. (ENDING 62: Sense of Accomplishment)"
-        },
+        ),
         'image': 'images/bullyscene_node150.png'
     },
     151: {
-        'text': { 
+        'text': (
             "Zach feels a sense of accomplishment as he looks back on his journey and how much he’s grown. (ENDING 63: Forgiveness as Freedom)"
-        },
+        ),
         'image': 'images/bullyscene_node151.png'
     },
     152: {
-        'text': { 
+        'text': ( 
             "Zach forgives those who hurt him, realizing that forgiveness is a key part of his healing process. (ENDING 64: Redefined Self)"
-        },
+        ),
         'image': 'images/bullyscene_node152.png'
     },
     153: {
-        'text': { 
+        'text': ( 
             "Zach accepts that while the past has shaped him, it doesn’t define who he is. (ENDING 65: Professional Support)"
-        },
+        ),
         'image': 'images/bullyscene_node153.png'
     },
     154: {
-        'text': { 
+        'text': ( 
             "Zach focuses on his recovery with professional help, beginning to see the light at the end of the tunnel. (ENDING 66: Late Hope)"
-        },
+        ),
         'image': 'images/bullyscene_node154.png'
     },
     155: {
-        'text': { 
+        'text': ( 
             "Zach finally realizes that it’s never too late to heal, and he begins to accept the help he’s been offered. (ENDING 67: Embracing Help)"
-        },
+        ),
         'image': 'images/bullyscene_node155.png'
     },
     156: {
-        'text': { 
+        'text': ( 
             "Zach decides to take one day at a time, focusing on small victories in his journey toward healing. (ENDING 68: Small Steps Forward)"
-        },
+        ),
         'image': 'images/bullyscene_node156.png'
     },
     157: {
-        'text': { 
+        'text': ( 
             "Zach fully commits to therapy, making steady progress. Though the road to recovery is long, he starts to find peace within himself. (ENDING 1: Recovery & Growth)"
-        },
+        ),
         'image': 'images/bullyscene_node157.png'
     },
     158: {
-        'text': { 
+        'text': (
             "Zach quits therapy, unable to overcome his skepticism. Without the support he needs, his mental health continues to deteriorate. (ENDING 2: Downward Spiral)"
-        },
+        ),
         'image': 'images/bullyscene_node158.png'
     },
     159: {
-        'text': { 
+        'text': ( 
             "Zach seeks help and is able to regain control of his life. It’s a difficult journey, but he starts to heal. (ENDING 3: A Second Chance)"
-        },
+        ),
         'image': 'images/bullyscene_node159.png'
     },
     160: {
-        'text': { 
+        'text': ( 
             "Zach retreats further into isolation. His dissociation becomes so severe that he’s eventually hospitalized. (ENDING 4: Collapse)"
-        },
+        ),
         'image': 'images/bullyscene_node160.png'
     },
     161: {
-        'text': { 
+        'text': ( 
             "Zach opens up to his parents, and they support him through his recovery. Slowly, he starts to rebuild his life. (ENDING 5: Family Support)"
-        },
+        ),
         'image': 'images/bullyscene_node161.png'
     },
     162: {
-        'text': { 
+        'text': ( 
             "Zach keeps his parents in the dark, and his mental health worsens. Eventually, the isolation becomes unbearable. (ENDING 6: Breaking Point)"
-        },
+        ),
         'image': 'images/bullyscene_node162.png'
     },
 
     164: {
-        'text': { 
+        'text': ( 
             "Zach reaches out for professional help, and though it’s difficult, he begins to regain control of his dissociation. (ENDING 7: Grounded)"
-        },
+        ),
         'image': 'images/bullyscene_node164.png'
     },
     165: {
-        'text': { 
+        'text': ( 
             "Zach avoids seeking help, and his dissociation spirals out of control, leading to a complete breakdown. (ENDING 8: Fragmented Mind)"
-        },
+        ),
         'image': 'images/bullyscene_node165.png'
     },
     166: {
-        'text': { 
+        'text': ( 
             "Zach confides in his teacher, who helps him access mental health resources. It’s a turning point in his recovery. (ENDING 9: A Lifeline)"
-        },
+        ),
         'image': 'images/bullyscene_node166.png'
     },
     167: {
-        'text': { 
+        'text': ( 
             "Zach tells his teacher everything is fine, but the pressure eventually causes him to collapse. (ENDING 10: Overwhelmed)"
-        },
+        ),
         'image': 'images/bullyscene_node167.png'
     },
     168: {
-        'text': { 
+        'text': ( 
             "Zach opens up about his darkest thoughts, leading to immediate intervention and support. It’s a step towards healing. (ENDING 11: Intervention)"
-        },
+        ),
         'image': 'images/bullyscene_node168.png'
     },
     169: {
-        'text': { 
+        'text': ( 
             "Zach keeps his feelings hidden, leading to a dangerous escalation of his mental health struggles. (ENDING 12: Silence & Despair)"
-        },
+        ),
         'image': 'images/bullyscene_node169.png'
     },
     170: {
-        'text': { 
+        'text': ( 
             "Zach makes an effort to reconnect with his friends. Though it’s awkward at first, they welcome him back with open arms. (ENDING 13: Friendship & Healing)"
-        },
+        ),
         'image': 'images/bullyscene_node170.png'
     },
     171: {
-        'text': { 
+        'text': ( 
             "Zach lets his friendships fade, and his sense of isolation deepens. Without support, his recovery falters. (ENDING 14: Alone)"
-        },
+        ),
         'image': 'images/bullyscene_node171.png'
     },
     172: {
-        'text': { 
+        'text': ( 
             "Zach stays committed to therapy, and though the road is hard, he makes meaningful progress. (ENDING 15: Steady Progress)"
-        },
+        ),
         'image': 'images/bullyscene_node172.png'
     },
     173: {
-        'text': { 
+        'text': ( 
             "Zach gets overwhelmed and quits therapy. Without the guidance and structure, his mental health declines again. (ENDING 16: Relapse)"
-        },
+        ),
         'image': 'images/bullyscene_node173.png'
     },
     174: {
-        'text': { 
+        'text': ( 
             "Zach accepts the need for medical intervention, and after a long recovery process, he begins to rebuild his health. (ENDING 17: Physical & Mental Healing)"
-        },
+        ),
         'image': 'images/bullyscene_node174.png'
     },
     175: {
-        'text': { 
+        'text': ( 
             "Zach refuses to cooperate with doctors, and his health continues to deteriorate. (ENDING 18: Physical Decline)"
-        },
+        ),
         'image': 'images/bullyscene_node175.png'
     },
     176: {
-        'text': { 
+        'text': ( 
             "Zach accepts his parents' support, and together, they work towards rebuilding their relationship and his health. (ENDING 19: Family Rebuilding)"
-        },
+        ),
         'image': 'images/bullyscene_node176.png'
     },
     177: {
-        'text': { 
+        'text': ( 
             "Zach struggles with the idea that he’s too far gone, and it affects his ability to move forward in recovery. (ENDING 20: Stuck in Limbo)"
-        },
+        ),
         'image': 'images/bullyscene_node177.png'
     },
     178: {
-        'text': { 
+        'text': ( 
             "Zach stays committed to therapy and, in time, finds ways to cope with his trauma. (ENDING 21: Trauma Healing)"
-        },
+        ),
         'image': 'images/bullyscene_node178.png'
     },
     179: {
-        'text': { 
+        'text': ( 
             "Zach avoids delving too deep into his trauma, which leads to his recovery stalling. (ENDING 22: Stagnation)"
-        },
+        ),
         'image': 'images/bullyscene_node179.png'
     },
     180: {
-        'text': { 
+        'text': ( 
             "Zach agrees to hospitalization, and though it’s a frightening experience, it’s a turning point in his recovery. (ENDING 23: Emergency Intervention)"
-        },
+        ),
         'image': 'images/bullyscene_node180.png'
     },
     181: {
-        'text': { 
+        'text': ( 
             "Zach resists hospitalization, leading to further escalation in his mental health struggles. (ENDING 24: Escalation)"
-        },
+        ),
         'image': 'images/bullyscene_node181.png'
     },
     182: {
-        'text': { 
+        'text': ( 
             "Zach listens to his friends, and with their support, he begins to get the help he needs. (ENDING 25: Friendship Saves)"
-        },
+        ),
         'image': 'images/bullyscene_node182.png'
     },
     183: {
-        'text': { 
+        'text': ( 
             "Zach insists he’s fine, and without their help, he continues to spiral. (ENDING 26: Isolation & Decline)"
-        },
+        ),
         'image': 'images/bullyscene_node183.png'
     },
     184: {
-        'text': { 
+        'text': (
             "Zach tells a trusted adult about his struggles, and with their help, he begins the road to recovery. (ENDING 27: Saved in Time)"
-        },
+        ),
         'image': 'images/bullyscene_node184.png'
     },
     185: {
-        'text': { 
+        'text': ( 
             "Zach keeps his struggles hidden, and eventually, his health reaches a breaking point. (ENDING 28: Hidden Struggles)"
-        },
+        ),
         'image': 'images/bullyscene_node185.png'
     },
     186: {
-        'text': { 
+        'text': ( 
             "Zach embraces the ups and downs of recovery, staying resilient even through setbacks. (ENDING 29: Resilience)"
-        },
+        ),
         'image': 'images/bullyscene_node186.png'
     },
     187: {
-        'text': { 
+        'text': ( 
             "Zach gets discouraged and abandons recovery, falling back into old habits. (ENDING 30: Abandonment)"
-        },
+        ),
         'image': 'images/bullyscene_node187.png'
     },
     188: {
-        'text': { 
+        'text': ( 
             "Zach celebrates his progress and continues to work on his mental health, knowing the journey is ongoing. (ENDING 31: Lifelong Healing)"
-        },
+        ),
         'image': 'images/bullyscene_node188.png'
     },
     189: {
-        'text': { 
+        'text': ( 
             "Zach fears relapse and pulls away from his support network, putting himself at risk. (ENDING 32: Fear of Relapse)"
-        },
+        ),
         'image': 'images/bullyscene_node189.png'
     },
     190: {
-        'text': { 
+        'text': (
             "Zach finally accepts the need for help after a health scare, and though the journey is long, he begins to heal. (ENDING 33: Healing After Crisis)"
-        },
+        ),
         'image': 'images/bullyscene_node190.png'
     },
-    191: {
-        'text': { 
+    191: { 
+        'text': ( 
             "Zach continues in a downward spiral, believing he has nothing left to lose. (ENDING 34: Total Decline)"
-        },
-
+        ),
         'image': 'images/bullyscene_node191.png'
     }
 }
