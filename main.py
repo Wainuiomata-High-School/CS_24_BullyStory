@@ -88,6 +88,11 @@ class StoryGame:
         self.setup_game_screen()
         self.update_story()
 
+    def restart_game(self):
+        self.current_node = 1  # Resets to the first node
+        self.current_story_key = 'victim' 
+        self.setup_intro_screen()  # Go back to the introduction screen
+
     def pause_game(self):
         print("Pause menu triggered")
         # Disable main choice buttons to pause interaction
