@@ -195,6 +195,8 @@ class StoryGame:
                 # Handle missing node or invalid story key
                 messagebox.showerror("Error", "The chosen path does not lead to a valid node. Restarting...")
                 self.setup_intro_screen()  # Reset to the intro screen
+        elif choice == 'Restart':
+            self.restart_game()  # Call the restart method to reset the game
         else:
             messagebox.showwarning("Invalid Choice", "This choice is not available.")
 
