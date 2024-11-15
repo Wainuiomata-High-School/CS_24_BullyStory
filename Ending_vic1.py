@@ -1384,39 +1384,7 @@ victim_story = {
     # Endings from 122 onward would connect all possible outcomes, 
     # ensuring each choice leads to a conclusion that matches the narrative direction.
 
-    122: {
-        'text': ( 
-            "Zach finds peace and acceptance in his journey, fully embracing his new sense of self. (ENDING 35: Embracing Self)"
-        ),
-        'image': 'images/bullyscene_node122.png'
-    },
-    123: {
-        'text': (
-            "Zach continues to struggle, but he knows he’s not alone in his fight anymore. (ENDING 36: Strength in Unity)"
-        ),
-    },
-    
 
-    124: {
-        'text': (
-            "Zach becomes a powerful advocate for bullying prevention, sharing his story to inspire others. (ENDING 37: Advocate for Change)"
-        ),
-    },
-
-
-    125: {
-        'text': (
-             "Zach finds solace in helping others heal, realizing that his experiences have given him strength. (ENDING 38: Healing Through Helping)"
-        ),
-
-        },
-    
-    126: {
-        'text': (
-            "Zach faces setbacks, but each time he gets back up, he grows stronger and more resilient. (ENDING 39: Resilience in Adversity)"
-
-        ),
-    },
 
     122: {
         'text': ( 
