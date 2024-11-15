@@ -1638,6 +1638,12 @@ victim_story = {
         ),
         'image': 'images/bullyscene_node162.png'
     },
+    163: {
+        'text': (
+            "Zach feels a sense of fullfilment"
+        ),
+        'image:': 'images/bullyscene_node163.png'
+    },
 
     164: {
         'text': ( 
