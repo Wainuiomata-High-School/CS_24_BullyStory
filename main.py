@@ -180,6 +180,9 @@ class StoryGame:
                 self.setup_game_screen()
                 self.update_story()  # Ensure that the story is updated correctly
                 messagebox.showinfo("Load Game", "Game loaded successfully.")
+                print("choices", choices)
+                print("current_node", current_node)
+                
 
             except (FileNotFoundError, KeyError, json.JSONDecodeError) as e:
                 messagebox.showwarning("Load Game", f"Failed to load the game: {e}")
