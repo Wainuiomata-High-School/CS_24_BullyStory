@@ -7,6 +7,7 @@ import tkinter.filedialog as fd
 
 from Ending_per1 import bully_story
 from Ending_vic1 import victim_story
+from Ending_vic1 import endings
 
 
 class StoryGame:
@@ -105,7 +106,7 @@ class StoryGame:
         # Create a popup window for the pause menu
         pause_popup = tk.Toplevel(self.root)
         pause_popup.title("Game Paused")
-        pause_popup.geometry("200x150")  # Set a size for better layout
+        pause_popup.geometry("300x200")  # Set a size for better layout
 
         pause_label = tk.Label(pause_popup, text="Game is paused.", font=("Arial", 12))
         pause_label.pack(pady=10)
@@ -216,8 +217,27 @@ class StoryGame:
 
     def update_story(self):
         current_story = self.stories[self.current_story_key]
-        story_data = current_story[self.current_node]
         
+        # Check if the current node is an ending node
+        if self.current_node in endings:
+            ending_data = endings[self.current_node]
+            self.story_text.set(ending_data['text'])  # Show the ending text
+            image_path = ending_data.get('image', None)
+            
+            if image_path and os.path.exists(image_path):
+                img = Image.open(image_path)
+                self.story_image = ImageTk.PhotoImage(img)
+                self.image_label.config(image=self.story_image)
+                self.image_label.pack()
+            else:
+                self.image_label.config(image='')
+                self.image_label.pack_forget()  # Hide the image if not found
+            
+            self.button1.config(state=tk.DISABLED)  # Disable buttons for endings
+            self.button2.config(state=tk.DISABLED)
+            return
+
+        story_data = current_story[self.current_node]
         story_text = story_data['text'].format(name=self.player_name.get())
         self.story_text.set(story_text)
 

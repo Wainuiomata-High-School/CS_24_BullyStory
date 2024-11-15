@@ -1380,8 +1380,10 @@ victim_story = {
         },
         'image': 'images/bullyscene_node121.png'
     },
+}
     # Endings from 122 onward would connect all possible outcomes, 
     # ensuring each choice leads to a conclusion that matches the narrative direction.
+endings = {
     122: {
         'text': { 
             "Zach finds peace and acceptance in his journey, fully embracing his new sense of self. (ENDING 35: Embracing Self)"
@@ -1543,8 +1545,10 @@ victim_story = {
         'image': 'images/bullyscene_node141.png'
     },
     142: {
-        'text': "Zach decides to pursue a career in mental health, inspired by his own experiences. (ENDING 55: Hopeful Rebirth)"
-        
+        'text': { 
+            "Zach decides to pursue a career in mental health, inspired by his own experiences. (ENDING 55: Hopeful Rebirth)"
+        },
+        'image': 'images/bullyscene_node142.png'
     },
     143: {
         'text': { 
@@ -1833,6 +1837,7 @@ victim_story = {
         'text': { 
             "Zach continues in a downward spiral, believing he has nothing left to lose. (ENDING 34: Total Decline)"
         },
+
         'image': 'images/bullyscene_node191.png'
     }
 }
