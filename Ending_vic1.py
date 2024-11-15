@@ -1543,10 +1543,8 @@ victim_story = {
         'image': 'images/bullyscene_node141.png'
     },
     142: {
-        'text': { 
-            "Zach decides to pursue a career in mental health, inspired by his own experiences. (ENDING 55: Hopeful Rebirth)"
-        },
-        'image': 'images/bullyscene_node142.png'
+        'text': "Zach decides to pursue a career in mental health, inspired by his own experiences. (ENDING 55: Hopeful Rebirth)"
+        
     },
     143: {
         'text': { 
