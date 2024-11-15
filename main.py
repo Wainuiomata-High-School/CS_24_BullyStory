@@ -175,10 +175,12 @@ class StoryGame:
                 self.player_name.set(game_state["player_name"])
                 self.current_story_key = game_state["current_story_key"]
                 self.current_node = game_state["current_node"]
+                
+                # Set up the game screen after loading the game state
                 self.setup_game_screen()
-                self.update_story()
+                self.update_story()  # Ensure that the story is updated correctly
                 messagebox.showinfo("Load Game", "Game loaded successfully.")
-            
+
             except (FileNotFoundError, KeyError, json.JSONDecodeError) as e:
                 messagebox.showwarning("Load Game", f"Failed to load the game: {e}")
 
