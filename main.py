@@ -116,7 +116,7 @@ class StoryGame:
         save_button = tk.Button(pause_popup, text="Save", command=self.save_game)
         save_button.pack(pady=5)
 
-        save_button = tk.Button(pause_popup, text="Save", command=self.restart_game)
+        save_button = tk.Button(pause_popup, text="Restart", command=self.restart_game)
         save_button.pack(pady=5)
 
         quit_button = tk.Button(pause_popup, text="Quit", command=self.quit_game)
