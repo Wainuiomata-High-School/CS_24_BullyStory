@@ -180,9 +180,6 @@ class StoryGame:
                 self.setup_game_screen()
                 self.update_story()  # Ensure that the story is updated correctly
                 messagebox.showinfo("Load Game", "Game loaded successfully.")
-                print("choices", choices)
-                print("current_node", current_node)
-                
 
             except (FileNotFoundError, KeyError, json.JSONDecodeError) as e:
                 messagebox.showwarning("Load Game", f"Failed to load the game: {e}")
@@ -243,6 +240,7 @@ class StoryGame:
         self.button1.config(text=choices.get(1, {}).get('text', ""), state=tk.NORMAL if 1 in choices else tk.DISABLED)
         self.button2.config(text=choices.get(2, {}).get('text', ""), state=tk.NORMAL if 2 in choices else tk.DISABLED)
         
+        print("buttons created")
         story_data = current_story[self.current_node]
         story_text = story_data['text'].format(name=self.player_name.get())
         self.story_text.set(story_text)
