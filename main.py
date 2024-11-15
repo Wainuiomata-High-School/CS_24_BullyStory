@@ -84,14 +84,17 @@ class StoryGame:
             messagebox.showwarning("Input Required", "Please enter your name.")
             return
         self.current_story_key = story_key
-        self.current_node = 1
+        self.current_node = 1  # Start at the beginning
         self.setup_game_screen()
-        self.update_story()
+        self.update_story()  # Ensure story and buttons are set up correctly from the beginning
+
 
     def restart_game(self):
-        self.current_node = 1  # Resets to the first node
-        self.current_story_key = 'victim' 
+        self.current_node = 1  # Reset to the starting node
+        self.current_story_key = 'victim'  # Or the key of your starting story
+        self.story_text.set("Welcome back! Ready to start Zach's journey again?")  # Reset the displayed text
         self.setup_intro_screen()  # Go back to the introduction screen
+
 
     def pause_game(self):
         print("Pause menu triggered")
