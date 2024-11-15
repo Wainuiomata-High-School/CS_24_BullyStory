@@ -1380,10 +1380,10 @@ victim_story = {
         },
         'image': 'images/bullyscene_node121.png'
     },
-}
+
     # Endings from 122 onward would connect all possible outcomes, 
     # ensuring each choice leads to a conclusion that matches the narrative direction.
-endings = {
+
     122: {
         'text': ( 
             "Zach finds peace and acceptance in his journey, fully embracing his new sense of self. (ENDING 35: Embracing Self)"

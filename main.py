@@ -217,27 +217,8 @@ class StoryGame:
 
     def update_story(self):
         current_story = self.stories[self.current_story_key]
-        
-        # Check if the current node is an ending node
-        if self.current_node in endings:
-            ending_data = endings[self.current_node]
-            self.story_text.set(ending_data['text'])  # Show the ending text
-            image_path = ending_data.get('image', None)
-            
-            if image_path and os.path.exists(image_path):
-                img = Image.open(image_path)
-                self.story_image = ImageTk.PhotoImage(img)
-                self.image_label.config(image=self.story_image)
-                self.image_label.pack()
-            else:
-                self.image_label.config(image='')
-                self.image_label.pack_forget()  # Hide the image if not found
-            
-            self.button1.config(state=tk.DISABLED)  # Disable buttons for endings
-            self.button2.config(state=tk.DISABLED)
-            return
-
         story_data = current_story[self.current_node]
+        
         story_text = story_data['text'].format(name=self.player_name.get())
         self.story_text.set(story_text)
 
@@ -256,6 +237,9 @@ class StoryGame:
         self.button1.config(text=choices.get(1, {}).get('text', ""), state=tk.NORMAL if 1 in choices else tk.DISABLED)
         self.button2.config(text=choices.get(2, {}).get('text', ""), state=tk.NORMAL if 2 in choices else tk.DISABLED)
         
+        story_data = current_story[self.current_node]
+        story_text = story_data['text'].format(name=self.player_name.get())
+        self.story_text.set(story_text)
 
 
 # Create the main window
