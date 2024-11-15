@@ -7,7 +7,7 @@ import tkinter.filedialog as fd
 
 from Ending_per1 import bully_story
 from Ending_vic1 import victim_story
-from Ending_vic1 import endings
+
 
 
 class StoryGame:
@@ -60,6 +60,7 @@ class StoryGame:
 
         self.button2 = tk.Button(self.root, text="", command=lambda: self.make_choice(2))
         self.button2.pack(side=tk.RIGHT, padx=20, pady=10)
+        self.update_story()
 
     def clear_screen(self):
         for widget in self.root.winfo_children():
