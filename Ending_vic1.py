@@ -1387,7 +1387,6 @@ victim_story = {
             "Zach finds peace and acceptance in his journey, fully embracing his new sense of self. (ENDING 35: Embracing Self)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node122.png'
     },
@@ -1396,7 +1395,6 @@ victim_story = {
             "Zach continues to struggle, but he knows he’s not alone in his fight anymore. (ENDING 36: Strength in Unity)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
     },
 
@@ -1405,7 +1403,6 @@ victim_story = {
             "Zach becomes a powerful advocate for bullying prevention, sharing his story to inspire others. (ENDING 37: Advocate for Change)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
     },
 
@@ -1414,51 +1411,40 @@ victim_story = {
              "Zach finds solace in helping others heal, realizing that his experiences have given him strength. (ENDING 38: Healing Through Helping)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
     },
     126: {
         'text': {
             "Zach faces setbacks, but each time he gets back up, he grows stronger and more resilient. (ENDING 39: Resilience in Adversity)"
-        },
-        'choices': {
-            1: {'text': "Restart", 'next_node': 1},
+
         },
     },
 
     122: {
         'text': { 
             "Zach finds peace and acceptance in his journey, fully embracing his new sense of self. (ENDING 35: Embracing Self)"
-        },
-        'choices': {
-            1: {'text': "Restart", 'next_node': 1},
+        
         },
         'image': 'images/bullyscene_node122.png'
     },
         123: {
         'text': { 
             "Zach feels a sense of closure after finally confronting the painful memories of his past. (ENDING 46: Confident Future)"
-        },
-        'choices': {
-            1: {'text': "Restart", 'next_node': 1},
+        
         },
         'image': 'images/bullyscene_node123.png'
     },
     124: {
         'text': { 
             "Zach becomes a powerful advocate for bullying prevention, sharing his story to inspire others. (ENDING 37: Advocate for Change)"
-        },
-        'choices': {
-            1: {'text': "Restart", 'next_node': 1},
+        
         },
         'image': 'images/bullyscene_node124.png'
     },
     125: {
         'text': { 
             "Zach finds solace in helping others heal, realizing that his experiences have given him strength. (ENDING 38: Healing Through Helping)"
-        },
-        'choices': {
-            1: {'text': "Restart", 'next_node': 1},
+        
         },
         'image': 'images/bullyscene_node125.png'
     },
@@ -1467,7 +1453,6 @@ victim_story = {
             "Zach faces setbacks, but each time he gets back up, he grows stronger and more resilient. (ENDING 39: Resilience in Adversity)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node126.png'
     },
@@ -1476,7 +1461,6 @@ victim_story = {
             "Zach forgives those who hurt him and moves forward with a sense of peace and freedom. (ENDING 40: Peaceful Forgiveness)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node127.png'
     },
@@ -1485,7 +1469,6 @@ victim_story = {
             "Zach finds fulfillment in helping others, using his own experiences to guide them through their challenges. (ENDING 58: Mentor of Hope)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node128.png'
     },
@@ -1494,7 +1477,6 @@ victim_story = {
             "Zach builds strong relationships with those who support him, finding a community that cares for him. (ENDING 42: Found Family)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node129.png'
     },
@@ -1503,7 +1485,6 @@ victim_story = {
             "Zach learns to navigate his life with newfound strength, balancing his past experiences with hope. (ENDING 43: Mentorship Path)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node130.png'
     },
@@ -1512,7 +1493,6 @@ victim_story = {
             "Zach becomes a mentor for younger people, sharing his story and offering advice. (ENDING 44: Self-Care First)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node131.png'
     },
@@ -1521,7 +1501,6 @@ victim_story = {
             "Zach decides to focus on his own recovery before helping others, ensuring he’s strong enough to support them. (ENDING 45: Confronting the Past)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node132.png'
     },
@@ -1530,7 +1509,6 @@ victim_story = {
             "Zach feels a sense of closure after finally confronting the painful memories of his past. (ENDING 46: Confident Future)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node133.png'
     },
@@ -1539,7 +1517,6 @@ victim_story = {
             "Zach embraces the future with newfound confidence, knowing he has the tools to overcome challenges. (ENDING 47: Ongoing Journey)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node134.png'
     },
@@ -1548,7 +1525,6 @@ victim_story = {
             "Zach struggles to let go of the past, but realizes that his journey is ongoing and that it’s okay to take his time. (ENDING 48: Mental Health Advocate)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node135.png'
     },
@@ -1557,7 +1533,6 @@ victim_story = {
             "Zach becomes an advocate for mental health, helping others who have experienced similar struggles. (ENDING 49: Proud Progress)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node136.png'
     },
@@ -1566,7 +1541,6 @@ victim_story = {
             "Zach feels proud of the progress he’s made, even though there are still difficult days. (ENDING 50: Self-Forgiveness)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node137.png'
     },
@@ -1575,7 +1549,6 @@ victim_story = {
             "Zach forgives himself for the years of pain and begins to focus on a brighter future. (ENDING 51: Commitment to Healing)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node138.png'
     },
@@ -1584,7 +1557,6 @@ victim_story = {
             "Zach finds peace in the realization that his past does not control his future. (ENDING 52: Strengthened Connections)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node139.png'
     },
@@ -1593,7 +1565,6 @@ victim_story = {
             "Zach’s relationships with others become stronger as he learns to trust and open up. (ENDING 53: Purpose in Pain)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node140.png'
     },
@@ -1602,7 +1573,6 @@ victim_story = {
             "Zach feels a deep sense of purpose in helping others, turning his pain into a source of strength. (ENDING 54: Mental Health Career)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node141.png'
     },
@@ -1611,7 +1581,6 @@ victim_story = {
             "Zach decides to pursue a career in mental health, inspired by his own experiences. (ENDING 55: Hopeful Rebirth)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node142.png'
     },
@@ -1620,7 +1589,6 @@ victim_story = {
             "Zach feels hopeful for the future, knowing that he’s no longer defined by his past. (ENDING 56: Patient Progress)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node143.png'
     },
@@ -1629,7 +1597,6 @@ victim_story = {
             "Zach continues to work on himself, understanding that healing takes time and patience. (ENDING 57: Freedom from the Past)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node144.png'
     },
@@ -1638,7 +1605,6 @@ victim_story = {
             "Zach finds peace in the realization that his past does not control his future. (ENDING 58: Comfort in Friendship)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node145.png'
     },
@@ -1647,7 +1613,6 @@ victim_story = {
             "Zach becomes a source of strength for others, offering support and understanding to those who need it. (ENDING 59: Reflective Pride)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node146.png'
     },
@@ -1656,7 +1621,6 @@ victim_story = {
             "Zach reflects on how far he’s come, feeling proud of the progress he’s made. (ENDING 60: Empowered by Experience)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node147.png'
     },
@@ -1665,7 +1629,6 @@ victim_story = {
             "Zach finds fulfillment in helping others, using his own experiences to guide them through their challenges. (ENDING 58: Mentor of Hope)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node148.png'
     },
@@ -1674,7 +1637,6 @@ victim_story = {
             "Zach feels overwhelmed by his emotions but knows he needs to take a step forward. (ENDING 61: Growth in Process)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node149.png'
     },
@@ -1683,7 +1645,6 @@ victim_story = {
             "Zach continues to grow, accepting that healing is a process that takes time and effort. (ENDING 62: Sense of Accomplishment)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node150.png'
     },
@@ -1692,7 +1653,6 @@ victim_story = {
             "Zach feels a sense of accomplishment as he looks back on his journey and how much he’s grown. (ENDING 63: Forgiveness as Freedom)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node151.png'
     },
@@ -1701,7 +1661,6 @@ victim_story = {
             "Zach forgives those who hurt him, realizing that forgiveness is a key part of his healing process. (ENDING 64: Redefined Self)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node152.png'
     },
@@ -1710,7 +1669,6 @@ victim_story = {
             "Zach accepts that while the past has shaped him, it doesn’t define who he is. (ENDING 65: Professional Support)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node153.png'
     },
@@ -1719,7 +1677,6 @@ victim_story = {
             "Zach focuses on his recovery with professional help, beginning to see the light at the end of the tunnel. (ENDING 66: Late Hope)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node154.png'
     },
@@ -1728,7 +1685,6 @@ victim_story = {
             "Zach finally realizes that it’s never too late to heal, and he begins to accept the help he’s been offered. (ENDING 67: Embracing Help)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node155.png'
     },
@@ -1737,7 +1693,6 @@ victim_story = {
             "Zach decides to take one day at a time, focusing on small victories in his journey toward healing. (ENDING 68: Small Steps Forward)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node156.png'
     },
@@ -1746,7 +1701,6 @@ victim_story = {
             "Zach fully commits to therapy, making steady progress. Though the road to recovery is long, he starts to find peace within himself. (ENDING 1: Recovery & Growth)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node157.png'
     },
@@ -1755,7 +1709,6 @@ victim_story = {
             "Zach quits therapy, unable to overcome his skepticism. Without the support he needs, his mental health continues to deteriorate. (ENDING 2: Downward Spiral)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node158.png'
     },
@@ -1764,7 +1717,6 @@ victim_story = {
             "Zach seeks help and is able to regain control of his life. It’s a difficult journey, but he starts to heal. (ENDING 3: A Second Chance)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node159.png'
     },
@@ -1773,7 +1725,6 @@ victim_story = {
             "Zach retreats further into isolation. His dissociation becomes so severe that he’s eventually hospitalized. (ENDING 4: Collapse)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node160.png'
     },
@@ -1782,7 +1733,6 @@ victim_story = {
             "Zach opens up to his parents, and they support him through his recovery. Slowly, he starts to rebuild his life. (ENDING 5: Family Support)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node161.png'
     },
@@ -1791,7 +1741,6 @@ victim_story = {
             "Zach keeps his parents in the dark, and his mental health worsens. Eventually, the isolation becomes unbearable. (ENDING 6: Breaking Point)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node162.png'
     },
@@ -1801,7 +1750,6 @@ victim_story = {
             "Zach reaches out for professional help, and though it’s difficult, he begins to regain control of his dissociation. (ENDING 7: Grounded)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node164.png'
     },
@@ -1810,7 +1758,6 @@ victim_story = {
             "Zach avoids seeking help, and his dissociation spirals out of control, leading to a complete breakdown. (ENDING 8: Fragmented Mind)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node165.png'
     },
@@ -1819,7 +1766,6 @@ victim_story = {
             "Zach confides in his teacher, who helps him access mental health resources. It’s a turning point in his recovery. (ENDING 9: A Lifeline)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node166.png'
     },
@@ -1828,7 +1774,6 @@ victim_story = {
             "Zach tells his teacher everything is fine, but the pressure eventually causes him to collapse. (ENDING 10: Overwhelmed)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node167.png'
     },
@@ -1837,7 +1782,6 @@ victim_story = {
             "Zach opens up about his darkest thoughts, leading to immediate intervention and support. It’s a step towards healing. (ENDING 11: Intervention)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node168.png'
     },
@@ -1846,7 +1790,6 @@ victim_story = {
             "Zach keeps his feelings hidden, leading to a dangerous escalation of his mental health struggles. (ENDING 12: Silence & Despair)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node169.png'
     },
@@ -1855,7 +1798,6 @@ victim_story = {
             "Zach makes an effort to reconnect with his friends. Though it’s awkward at first, they welcome him back with open arms. (ENDING 13: Friendship & Healing)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node170.png'
     },
@@ -1864,7 +1806,6 @@ victim_story = {
             "Zach lets his friendships fade, and his sense of isolation deepens. Without support, his recovery falters. (ENDING 14: Alone)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node171.png'
     },
@@ -1873,7 +1814,6 @@ victim_story = {
             "Zach stays committed to therapy, and though the road is hard, he makes meaningful progress. (ENDING 15: Steady Progress)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node172.png'
     },
@@ -1882,7 +1822,6 @@ victim_story = {
             "Zach gets overwhelmed and quits therapy. Without the guidance and structure, his mental health declines again. (ENDING 16: Relapse)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node173.png'
     },
@@ -1891,7 +1830,6 @@ victim_story = {
             "Zach accepts the need for medical intervention, and after a long recovery process, he begins to rebuild his health. (ENDING 17: Physical & Mental Healing)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node174.png'
     },
@@ -1900,7 +1838,6 @@ victim_story = {
             "Zach refuses to cooperate with doctors, and his health continues to deteriorate. (ENDING 18: Physical Decline)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node175.png'
     },
@@ -1909,7 +1846,6 @@ victim_story = {
             "Zach accepts his parents' support, and together, they work towards rebuilding their relationship and his health. (ENDING 19: Family Rebuilding)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node176.png'
     },
@@ -1918,7 +1854,6 @@ victim_story = {
             "Zach struggles with the idea that he’s too far gone, and it affects his ability to move forward in recovery. (ENDING 20: Stuck in Limbo)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node177.png'
     },
@@ -1927,7 +1862,6 @@ victim_story = {
             "Zach stays committed to therapy and, in time, finds ways to cope with his trauma. (ENDING 21: Trauma Healing)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node178.png'
     },
@@ -1936,7 +1870,6 @@ victim_story = {
             "Zach avoids delving too deep into his trauma, which leads to his recovery stalling. (ENDING 22: Stagnation)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node179.png'
     },
@@ -1945,7 +1878,6 @@ victim_story = {
             "Zach agrees to hospitalization, and though it’s a frightening experience, it’s a turning point in his recovery. (ENDING 23: Emergency Intervention)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node180.png'
     },
@@ -1954,7 +1886,6 @@ victim_story = {
             "Zach resists hospitalization, leading to further escalation in his mental health struggles. (ENDING 24: Escalation)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node181.png'
     },
@@ -1963,7 +1894,6 @@ victim_story = {
             "Zach listens to his friends, and with their support, he begins to get the help he needs. (ENDING 25: Friendship Saves)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node182.png'
     },
@@ -1972,7 +1902,6 @@ victim_story = {
             "Zach insists he’s fine, and without their help, he continues to spiral. (ENDING 26: Isolation & Decline)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node183.png'
     },
@@ -1981,7 +1910,6 @@ victim_story = {
             "Zach tells a trusted adult about his struggles, and with their help, he begins the road to recovery. (ENDING 27: Saved in Time)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node184.png'
     },
@@ -1990,7 +1918,6 @@ victim_story = {
             "Zach keeps his struggles hidden, and eventually, his health reaches a breaking point. (ENDING 28: Hidden Struggles)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node185.png'
     },
@@ -1999,7 +1926,6 @@ victim_story = {
             "Zach embraces the ups and downs of recovery, staying resilient even through setbacks. (ENDING 29: Resilience)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node186.png'
     },
@@ -2008,7 +1934,6 @@ victim_story = {
             "Zach gets discouraged and abandons recovery, falling back into old habits. (ENDING 30: Abandonment)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node187.png'
     },
@@ -2017,7 +1942,6 @@ victim_story = {
             "Zach celebrates his progress and continues to work on his mental health, knowing the journey is ongoing. (ENDING 31: Lifelong Healing)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node188.png'
     },
@@ -2026,7 +1950,6 @@ victim_story = {
             "Zach fears relapse and pulls away from his support network, putting himself at risk. (ENDING 32: Fear of Relapse)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node189.png'
     },
@@ -2035,7 +1958,6 @@ victim_story = {
             "Zach finally accepts the need for help after a health scare, and though the journey is long, he begins to heal. (ENDING 33: Healing After Crisis)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node190.png'
     },
@@ -2044,7 +1966,6 @@ victim_story = {
             "Zach continues in a downward spiral, believing he has nothing left to lose. (ENDING 34: Total Decline)"
         },
         'choices': {
-            1: {'text': "Restart", 'next_node': 1},
         },
         'image': 'images/bullyscene_node191.png'
     }
