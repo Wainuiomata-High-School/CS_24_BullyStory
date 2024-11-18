@@ -4,7 +4,7 @@ from PIL import Image, ImageTk  # Import from Pillow
 import json  # For saving and loading the game state
 import os  # For file path checks
 import tkinter.filedialog as fd
-
+import re
 from Ending_per1 import bully_story
 from Ending_vic1 import victim_story
 
@@ -88,9 +88,15 @@ class StoryGame:
         self.root.config(menu=menubar)
 
     def start_game(self, story_key):
-        if not self.player_name.get():
-            messagebox.showwarning("Input Required", "Please enter your name.")
+        player_name_value = self.player_name.get().strip()  # Get the name and strip whitespace
+        if len(player_name_value) < 3 or len(player_name_value) > 35:
+            messagebox.showwarning("Invalid Name", "Please enter a name between 3 and 35 characters.")
             return
+
+        if not re.match("^[A-Za-z\s]+$", player_name_value):
+            messagebox.showwarning("Invalid Name", "Please enter a name without symbols. Only letters and spaces are allowed.")
+            return
+
         self.current_story_key = story_key
         self.current_node = 1  # Start at the beginning
         self.setup_game_screen()
