@@ -63,7 +63,10 @@ class StoryGame:
         
         
         self.button3 = tk.Button(self.root, text="▐▐", comand=lambda: self.pause_game )
-        self.button3.pack(side=tk.top,side=tk.RIGHT, padx=10, pady=5)
+        top_frame = tk.Frame(self)
+        top_frame.pack(side=tk.TOP, fill=tk.X)
+        self.button3.pack(in_=top_frame, side=tk.RIGHT, padx=10, pady=5)
+
         self.update_story()
 
     def clear_screen(self):
