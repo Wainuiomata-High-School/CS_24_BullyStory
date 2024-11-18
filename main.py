@@ -60,6 +60,10 @@ class StoryGame:
 
         self.button2 = tk.Button(self.root, text="", command=lambda: self.make_choice(2))
         self.button2.pack(side=tk.RIGHT, padx=20, pady=10)
+        
+        
+        self.button3 = tk.Button(self.root, text="▐▐", comand=lambda: self.pause_game )
+        self.button3.pack(side=tk.top,side=tk.RIGHT, padx=10, pady=5)
         self.update_story()
 
     def clear_screen(self):
