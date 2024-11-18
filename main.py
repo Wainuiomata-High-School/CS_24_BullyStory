@@ -62,7 +62,7 @@ class StoryGame:
         self.button2.pack(side=tk.RIGHT, padx=20, pady=10)
         
         
-        self.button3 = tk.Button(self.root, text="▐▐", comand=lambda: self.pause_game )
+        
       
 
         self.update_story()
