@@ -41,6 +41,7 @@ class StoryGame:
 
         tk.Label(self.root, text="Enter your name:").pack(pady=10)
         tk.Entry(self.root, textvariable=self.player_name).pack(pady=50)
+        tk.Label(self.root, text="Note: press 'p' to pause game.").pack(pady=10)
 
         tk.Button(self.root, text="Begin Zach's story", command=lambda: self.start_game('victim')).pack(pady=10)
         tk.Button(self.root, text="Load Game", command=self.load_game).pack(pady=10)
