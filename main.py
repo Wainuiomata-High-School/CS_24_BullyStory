@@ -34,7 +34,7 @@ class StoryGame:
     def bind_keys(self):
         # Bind "P" key to open pause menu globally
         self.root.bind_all("<p>", lambda event: self.pause_game())
-        print("Keys bound")  # Debug to confirm method execution
+        self.keys_bound = print("Keys bound")  # Debug to confirm method execution
 
     def setup_intro_screen(self):
         self.clear_screen()
@@ -111,7 +111,7 @@ class StoryGame:
 
 
     def pause_game(self):
-        print("Pause menu triggered")
+        self.pause_menu = print("Pause menu triggered")
         # Disable main choice buttons to pause interaction
         self.button1.config(state=tk.DISABLED)
         self.button2.config(state=tk.DISABLED)
@@ -156,18 +156,24 @@ class StoryGame:
             index += 1
             filename = f"{base_filename}_{index}.json"
         
-        game_state = {
-            "player_name": self.player_name.get(),
-            "current_story_key": self.current_story_key,
-            "current_node": self.current_node
-        }
+    def Debugging_save(self):
+        Debugging_dir = "Debugging"
+        os.makedirs(Debugging_dir, exist_ok=True)
         
-        try:
-            with open(filename, "w") as save_file:
-                json.dump(game_state, save_file)
-            messagebox.showinfo("Save Game", f"Game saved successfully as {filename}.")
-        except Exception as e:
-            messagebox.showerror("Save Game", f"Failed to save game: {e}")
+        base_filename = os.path.join(Debugging_dir, f"Debugging_{self.player_name.get()}")
+        index = 1
+        filename = f"{base_filename}_{index}.json"
+        while os.path.exists(filename):
+            index += 1
+            filename = f"{base_filename}_{index}.json"
+
+        debugging_state = {
+            "buttons created": self.buttons_created,
+            "keys bound": self.keys_bound,
+            "current_node": self.current_node,
+            "image path":   self.image_debugging
+        }
+
 
     def load_game(self):
         save_dir = "saves"
@@ -199,6 +205,7 @@ class StoryGame:
     def quit_game(self):
         if messagebox.askyesno("Quit Game", "Do you want to save before quitting?"):
             self.save_game()
+        self.Debugging_save()
         self.root.quit()
 
     def make_choice(self, choice):
@@ -242,7 +249,7 @@ class StoryGame:
         self.button2.config(text=choices.get(2, {}).get('text', ""), state=tk.NORMAL if 2 in choices else tk.DISABLED)
         image_path = story_data.get('image', None)
         
-        print(f"Current node: {self.current_node}, Image path: {image_path}")  # Debugging line
+        self.image_debugging = print(f"Current node: {self.current_node}, Image path: {image_path}")  # Debugging line
         if image_path and os.path.exists(image_path):
             img = Image.open(image_path)
             self.story_image = ImageTk.PhotoImage(img)  # Keep reference to avoid garbage collection
@@ -254,7 +261,7 @@ class StoryGame:
 
 
         
-        print("buttons created")
+        self.buttons_created = print("buttons created")
         story_data = current_story[self.current_node]
         story_text = story_data['text'].format(name=self.player_name.get())
         self.story_text.set(story_text)
