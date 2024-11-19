@@ -8,6 +8,7 @@ import re
 from Ending_per1 import bully_story
 from Ending_vic1 import victim_story
 import logging
+from datetime import datetime
 
 logging.basicConfig(
         filename="debug_log.txt",
@@ -19,6 +20,10 @@ logging.basicConfig(
 def log_debug(message):
         print(message)  # Print to console
         logging.debug(message)  # Save to log file
+
+def start_new_session():
+    with open("debug_log.txt", "a") as log_file:
+        log_file.write("\n--- New Session: {} ---\n\n".format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
 
 
 # Configure logging
@@ -172,7 +177,8 @@ class StoryGame:
         while os.path.exists(filename):
             index += 1
             filename = f"{base_filename}_{index}.json"
-            game_state = {
+        
+        game_state = {
             "player_name": self.player_name.get(),
             "current_story_key": self.current_story_key,
             "current_node": self.current_node
@@ -279,6 +285,7 @@ class StoryGame:
 
 # Create the main window
 root = tk.Tk()
+start_new_session()
 game = StoryGame(root)
 
 # Run the application
