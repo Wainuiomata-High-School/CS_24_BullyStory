@@ -1,0 +1,38 @@
+2024-11-19 15:04:35 - Keys bound
+2024-11-19 15:04:38 - Current node: 1, Image path: None
+2024-11-19 15:04:38 - Buttons created
+2024-11-19 15:04:39 - Current node: 2, Image path: images/bullyscene_node2.png
+2024-11-19 15:04:39 - Buttons created
+2024-11-19 15:04:41 - Current node: 4, Image path: images/bullyscene_node4.png
+2024-11-19 15:04:41 - STREAM b'IHDR' 16 13
+2024-11-19 15:04:41 - STREAM b'sRGB' 41 1
+2024-11-19 15:04:41 - STREAM b'IDAT' 54 8192
+2024-11-19 15:04:41 - Buttons created
+2024-11-19 15:04:41 - Pause menu triggered
+2024-11-19 15:06:52 - Keys bound
+2024-11-19 15:06:55 - Current node: 1, Image path: None
+2024-11-19 15:06:55 - Buttons created
+2024-11-19 15:06:56 - Current node: 2, Image path: images/bullyscene_node2.png
+2024-11-19 15:06:56 - Buttons created
+2024-11-19 15:06:58 - Current node: 4, Image path: images/bullyscene_node4.png
+2024-11-19 15:06:58 - STREAM b'IHDR' 16 13
+2024-11-19 15:06:58 - STREAM b'sRGB' 41 1
+2024-11-19 15:06:58 - STREAM b'IDAT' 54 8192
+2024-11-19 15:06:58 - Buttons created
+2024-11-19 15:06:58 - Current node: 8, Image path: images/bullyscene_node8.png
+2024-11-19 15:06:58 - STREAM b'IHDR' 16 13
+2024-11-19 15:06:58 - STREAM b'sRGB' 41 1
+2024-11-19 15:06:58 - STREAM b'IDAT' 54 8192
+2024-11-19 15:06:58 - Buttons created
+2024-11-19 15:07:00 - Current node: 16, Image path: images/bullyscene_node16.png
+2024-11-19 15:07:00 - STREAM b'IHDR' 16 13
+2024-11-19 15:07:00 - STREAM b'sRGB' 41 1
+2024-11-19 15:07:00 - STREAM b'IDAT' 54 8192
+2024-11-19 15:07:00 - Buttons created
+2024-11-19 15:07:00 - Current node: 32, Image path: images/bullyscene_node32.png
+2024-11-19 15:07:00 - Buttons created
+2024-11-19 15:07:01 - Current node: 64, Image path: images/bullyscene_node64.png
+2024-11-19 15:07:01 - Buttons created
+2024-11-19 15:07:02 - Current node: 128, Image path: images/bullyscene_node128.png
+2024-11-19 15:07:02 - Buttons created
+2024-11-19 15:07:02 - Pause menu triggered

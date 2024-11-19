@@ -9,7 +9,16 @@ from Ending_per1 import bully_story
 from Ending_vic1 import victim_story
 import logging
 
+logging.basicConfig(
+        filename="debug_log.txt",
+        level=logging.DEBUG,
+        format="%(asctime)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
 
+def log_debug(message):
+        print(message)  # Print to console
+        logging.debug(message)  # Save to log file
 
 
 # Configure logging
@@ -35,21 +44,14 @@ class StoryGame:
         self.setup_intro_screen()
         self.setup_menu()
             
-    logging.basicConfig(
-        filename="debug_log.txt",
-        level=logging.DEBUG,
-        format="%(asctime)s - %(message)s",
-        datefmt="%Y-%m-%d %H:%M:%S",
-    )
-
-    def log_debug(message):
+    def log_debug(self,message):
         print(message)  # Print to console
         logging.debug(message)  # Save to log file
 
     def bind_keys(self):
         # Bind "P" key to open pause menu globally
         self.root.bind_all("<p>", lambda event: self.pause_game())
-        self.keys_bound = log_debug("Keys bound")  # Debug to confirm method execution
+        self.keys_bound = self.log_debug("Keys bound")  # Debug to confirm method execution
 
     def setup_intro_screen(self):
         self.clear_screen()
@@ -214,7 +216,6 @@ class StoryGame:
     def quit_game(self):
         if messagebox.askyesno("Quit Game", "Do you want to save before quitting?"):
             self.save_game()
-        self.Debugging_save()
         self.root.quit()
 
     def make_choice(self, choice):
