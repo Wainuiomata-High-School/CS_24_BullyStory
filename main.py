@@ -66,7 +66,7 @@ class StoryGame:
         
       
 
-        self.update_story()
+  
 
     def clear_screen(self):
         for widget in self.root.winfo_children():
