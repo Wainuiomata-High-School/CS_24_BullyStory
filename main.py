@@ -7,8 +7,12 @@ import tkinter.filedialog as fd
 import re
 from Ending_per1 import bully_story
 from Ending_vic1 import victim_story
+import logging
 
 
+
+
+# Configure logging
 
 class StoryGame:
     def __init__(self, root):
@@ -30,11 +34,22 @@ class StoryGame:
         # Set up intro screen and menu
         self.setup_intro_screen()
         self.setup_menu()
-        
+            
+    logging.basicConfig(
+        filename="debug_log.txt",
+        level=logging.DEBUG,
+        format="%(asctime)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+
+    def log_debug(message):
+        print(message)  # Print to console
+        logging.debug(message)  # Save to log file
+
     def bind_keys(self):
         # Bind "P" key to open pause menu globally
         self.root.bind_all("<p>", lambda event: self.pause_game())
-        self.keys_bound = print("Keys bound")  # Debug to confirm method execution
+        self.keys_bound = log_debug("Keys bound")  # Debug to confirm method execution
 
     def setup_intro_screen(self):
         self.clear_screen()
@@ -111,7 +126,7 @@ class StoryGame:
 
 
     def pause_game(self):
-        self.pause_menu = print("Pause menu triggered")
+        self.pause_menu = log_debug("Pause menu triggered")
         # Disable main choice buttons to pause interaction
         self.button1.config(state=tk.DISABLED)
         self.button2.config(state=tk.DISABLED)
@@ -167,30 +182,6 @@ class StoryGame:
             messagebox.showinfo("Save Game", f"Game saved successfully as {filename}.")
         except Exception as e:
             messagebox.showerror("Save Game", f"Failed to save game: {e}")
-
-        
-    def Debugging_save(self):
-        Debugging_dir = "Debugging"
-        os.makedirs(Debugging_dir, exist_ok=True)
-        
-        base_filename = os.path.join(Debugging_dir, f"Debugging_{self.player_name.get()}")
-        index = 1
-        filename = f"{base_filename}_{index}.json"
-        while os.path.exists(filename):
-            index += 1
-            filename = f"{base_filename}_{index}.json"
-
-        debugging_state = {
-            "buttons created": self.buttons_created,
-            "keys bound": self.keys_bound,
-            "current_node": self.current_node,
-            "image path":   self.image_debugging
-        }
-        with open(filename, "w") as save_file:
-            try:
-                json.dump(debugging_state, save_file)
-            except Exception as e:
-                messagebox.showerror("Debugging_state", f"Failed to save debug log: {e}")
 
 
     def load_game(self):
@@ -267,7 +258,7 @@ class StoryGame:
         self.button2.config(text=choices.get(2, {}).get('text', ""), state=tk.NORMAL if 2 in choices else tk.DISABLED)
         image_path = story_data.get('image', None)
         
-        self.image_debugging = print(f"Current node: {self.current_node}, Image path: {image_path}")  # Debugging line
+        self.image_debugging = log_debug(f"Current node: {self.current_node}, Image path: {image_path}")
         if image_path and os.path.exists(image_path):
             img = Image.open(image_path)
             self.story_image = ImageTk.PhotoImage(img)  # Keep reference to avoid garbage collection
@@ -279,7 +270,7 @@ class StoryGame:
 
 
         
-        self.buttons_created = print("buttons created")
+        self.buttons_created = log_debug("Buttons created")
         story_data = current_story[self.current_node]
         story_text = story_data['text'].format(name=self.player_name.get())
         self.story_text.set(story_text)
