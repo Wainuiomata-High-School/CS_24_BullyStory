@@ -155,6 +155,19 @@ class StoryGame:
         while os.path.exists(filename):
             index += 1
             filename = f"{base_filename}_{index}.json"
+            game_state = {
+            "player_name": self.player_name.get(),
+            "current_story_key": self.current_story_key,
+            "current_node": self.current_node
+        }
+        
+        try:
+            with open(filename, "w") as save_file:
+                json.dump(game_state, save_file)
+            messagebox.showinfo("Save Game", f"Game saved successfully as {filename}.")
+        except Exception as e:
+            messagebox.showerror("Save Game", f"Failed to save game: {e}")
+
         
     def Debugging_save(self):
         Debugging_dir = "Debugging"
@@ -173,6 +186,11 @@ class StoryGame:
             "current_node": self.current_node,
             "image path":   self.image_debugging
         }
+        with open(filename, "w") as save_file:
+            try:
+                json.dump(debugging_state, save_file)
+            except Exception as e:
+                messagebox.showerror("Debugging_state", f"Failed to save debug log: {e}")
 
 
     def load_game(self):
